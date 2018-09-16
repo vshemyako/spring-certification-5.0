@@ -17,8 +17,9 @@ public class MessageFactory {
 
     private static MessageFactory instance = new MessageFactory();
 
-    private MessageProvider messageProvider;
-    private MessageRenderer messageRenderer;
+    private final MessageProvider messageProvider;
+    private final MessageRenderer messageRenderer;
+    private final ResourceBundle messageBundle;
 
     /**
      * Instantiates 'message' type classes on application start-up, reading concrete implementation classes
@@ -26,9 +27,9 @@ public class MessageFactory {
      */
     private MessageFactory() {
         try {
-            ResourceBundle resourceBundle = ResourceBundle.getBundle(RESOURCE_BUNDLE_NAME);
-            this.messageProvider = (MessageProvider) Class.forName(resourceBundle.getString(PROVIDER)).newInstance();
-            this.messageRenderer = (MessageRenderer) Class.forName(resourceBundle.getString(RENDERER)).newInstance();
+            this.messageBundle = ResourceBundle.getBundle(RESOURCE_BUNDLE_NAME);
+            this.messageProvider = (MessageProvider) Class.forName(messageBundle.getString(PROVIDER)).newInstance();
+            this.messageRenderer = (MessageRenderer) Class.forName(messageBundle.getString(RENDERER)).newInstance();
         } catch (Exception ex) {
             System.err.println("Failed to instantiate message factory: " + ex.getMessage());
             throw new IllegalStateException("Application is in an undefined state. Review application config.");
