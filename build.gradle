@@ -11,6 +11,13 @@ repositories {
     mavenCentral()
 }
 
+task copyDependencies(type: Copy) {
+    description 'Copy dependencies into build destination folder'
+
+    from configurations.compile
+    into 'build/libs'
+}
+
 dependencies {
     compile group: 'org.springframework', name: 'spring-context', version: '5.0.9.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'

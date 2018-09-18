@@ -1,11 +1,11 @@
-package spring.chapter01.di;
+package spring.chapter01.di.annotation;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import spring.chapter01.decoupled.MessageRenderer;
 
 import java.io.ByteArrayOutputStream;
@@ -13,11 +13,9 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 
 /**
- * Tests functionality of beans detection/creation using 'xml' based configuration
+ * Tests functionality of annotation based application context configuration
  */
-public class XmlApplicationContextTest {
-
-    private static final String APPLICATION_CONTEXT_CONFIG = "chapter01/spring/app-context.xml";
+public class AnnotationBasedApplicationContextTest {
 
     private PrintStream predefinedStream = System.out;
     private OutputStream substitutionStream = new ByteArrayOutputStream();
@@ -33,12 +31,12 @@ public class XmlApplicationContextTest {
     }
 
     /**
-     * Verifies that automatically instantiated class with needed injections indeed prints
-     * greeting message
+     * Verifies rendering functionality of {@link MessageRenderer} class which is instantiated
+     * and configured using Spring DI model
      */
     @Test
     public void shouldPrintGreetingMessage() {
-        ApplicationContext context = new ClassPathXmlApplicationContext(APPLICATION_CONTEXT_CONFIG);
+        ApplicationContext context = new AnnotationConfigApplicationContext(MessageBeansConfiguration.class);
         MessageRenderer renderer = context.getBean(MessageRenderer.class);
         renderer.render();
 
