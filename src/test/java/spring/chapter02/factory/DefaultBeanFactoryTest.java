@@ -1,4 +1,4 @@
-package spring.chapter02;
+package spring.chapter02.factory;
 
 import org.junit.Assert;
 import org.junit.Test;
