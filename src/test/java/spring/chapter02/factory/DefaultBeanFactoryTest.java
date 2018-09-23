@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import spring.chapter02.factory.Oracle;
 
 /**
  * Tests one of the main implementations of {@link org.springframework.beans.factory.BeanFactory} interface
