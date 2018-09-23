@@ -13,6 +13,6 @@ public final class HybridTheory implements CompactDisc {
 
     @Override
     public final void play() {
-        System.out.println(BAND_NAME + " - " + ALBUM_NAME);
+            System.out.println(BAND_NAME + " - " + ALBUM_NAME);
     }
 }
