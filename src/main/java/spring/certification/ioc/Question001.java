@@ -3,10 +3,10 @@ package spring.certification.ioc;
 /**
  * Spring v5.0 Professional Certification.
  * <p>
- * Question 001:
+ * Question 001:<br>
  * What is dependency injection and what are the advantages?
  * <p>
- * Answer:
+ * Answer:<br>
  * <b>Dependency injection</b> is a design pattern which implements <b>Inversion of Control (IoC)</b> design principle,
  * whereby objects only define their dependencies letting some other code to <b>inject</b> those dependencies during
  * object creation. That is why this process is called an inversion: an object doesn't control instantiation of its
@@ -118,7 +118,7 @@ public class Question001 {
              * @param drink which is provided to some object.
              */
             @Override
-            public void giveDrink(Beverage drink) {
+            public void consumeDrink(Beverage drink) {
                 setDrink(drink);
             }
 
@@ -166,7 +166,7 @@ public class Question001 {
         public void injectThroughInterface() {
             // Interface type is exposed.
             DrinkSetter drinkSetter = new WithInjector.ObedientChild();
-            drinkSetter.giveDrink(Refrigerator.getDrink());
+            drinkSetter.consumeDrink(Refrigerator.getDrink());
         }
     }
 
@@ -198,10 +198,10 @@ public class Question001 {
     private interface DrinkSetter {
 
         /**
-         * Gives a drink.
+         * Consumes a drink.
          *
          * @param drink which is provided to some object.
          */
-        void giveDrink(Beverage drink);
+        void consumeDrink(Beverage drink);
     }
 }
