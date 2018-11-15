@@ -1,5 +1,7 @@
 package spring.certification.ioc;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -15,7 +17,11 @@ package spring.certification.ioc;
  * There are several dependency <b>injection types</b>:<br>
  * 1. Constructor injection - dependencies are provided through a constructor<br>
  * 2. Setter injection - dependencies are provided through an exposed setter method<br>
- * 3. Interface injection - dependencies are provided through an exposed setter method of implemented interface<br>
+ * 3. Field injection - dependencies are injected directly in the field, with no constructor or setter method.
+ * In Java language field injection is performed with the help of 'magical' reflection technology, so even private
+ * fields can be populated in that way. Fields have to be annotated with the {@link Autowired} annotation to become
+ * candidate to field injection<br>
+ * 4. Interface injection - dependencies are provided through an exposed setter method of implemented interface<br>
  * <p>
  * Dependency injection <b>advantages</b> are the following:<br>
  * 1. Code is cleaner (object configuration details are externalized)<br>

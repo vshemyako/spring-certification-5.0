@@ -16,7 +16,13 @@ package spring.certification.ioc;
  * 3. Makes code easier to test
  * <p>
  * Those advantages are the main reasons why interfaces are suggested to be used by Spring beans (replacements,
- * interception, decoration of beans is possible).
+ * interception, decoration of beans is possible).<br>
+ * <p>
+ * <p>
+ * Note:<br>
+ * Spring bean is an object which is instantiated, assembled and otherwise managed by Spring IoC container.
+ * The motivation for using the name 'bean' arose as a response to the complexity of <b>Enterprise JavaBeans</b>
+ * technology.
  * <p>
  * Examples of mentioned terms:<br>
  * {@link Question003.InterfaceExample} - shows advantages of programming to an interface not an implementation.<br>

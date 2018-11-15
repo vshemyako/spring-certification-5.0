@@ -3,7 +3,7 @@ package spring.certification.ioc;
 /**
  * Spring v5.0 Professional Certification.
  * <p>
- * Additional information related to <b>Inversion of Control</b> design principle.
+ * 1. Additional information related to <b>Inversion of Control</b> design principle.
  * <p>
  * There's also another flavour of Inversion of Control design pattern which is called <b>Dependency Lookup</b>.
  * This kind of IoC implementation implies that dependent object retrieves required components (collaborators) from
