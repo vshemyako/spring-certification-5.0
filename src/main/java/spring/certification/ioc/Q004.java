@@ -17,10 +17,10 @@ import org.springframework.context.ApplicationContext;
  * 2. Resource loading<br>
  * 3. Events publishing to registered listeners<br>
  * 4. Internationalization<br>
- * 5. Compose inheritance chains with other contexts
+ * 5. Composition of inheritance chains with other contexts
  *
  * @author Valentine Shemyako
  * @since November 16, 2018
  */
-public class Question004 {
+public class Q004 {
 }

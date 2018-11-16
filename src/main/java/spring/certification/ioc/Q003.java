@@ -25,12 +25,12 @@ package spring.certification.ioc;
  * technology.
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Question003.InterfaceExample} - shows advantages of programming to an interface not an implementation.<br>
+ * {@link Q003.InterfaceExample} - shows advantages of programming to an interface not an implementation.<br>
  *
  * @author Valentine Shemyako
  * @since November 13, 2018
  */
-public class Question003 {
+public class Q003 {
 
     /**
      * Demonstrates advantages of using an interface instead of a class.

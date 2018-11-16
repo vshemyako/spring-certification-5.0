@@ -17,17 +17,17 @@ package spring.certification.ioc;
  * ineffective and counterproductive. <b>God object</b> is well known object-oriented anti-pattern.
  * <p>
  * Dependency injection is a design pattern which makes code look cleaner, decreases decoupling between objects,
- * makes code easier to test. For more information about dependency injection design pattern look at {@link Question001}.
+ * makes code easier to test. For more information about dependency injection design pattern look at {@link Q001}.
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Question002.DesignPattern} - an example of good coding practice (design pattern).<br>
- * {@link Question002.AntiPattern} - an example of bad coding practice (anti-pattern).<br>
- * {@link Question001} - discusses dependency injection design pattern in greater details.
+ * {@link Q002.DesignPattern} - an example of good coding practice (design pattern).<br>
+ * {@link Q002.AntiPattern} - an example of bad coding practice (anti-pattern).<br>
+ * {@link Q001} - discusses dependency injection design pattern in greater details.
  *
  * @author Valentine Shemyako
  * @since November 12, 2018
  */
-public class Question002 {
+public class Q002 {
 
     /**
      * Example demonstrates good programming practice in regard of software design.

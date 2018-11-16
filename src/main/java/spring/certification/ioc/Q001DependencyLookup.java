@@ -11,12 +11,12 @@ package spring.certification.ioc;
  * implement, it clutters up application with wiring code.
  * <p>
  * Examples of mentioned terms:
- * {@link Question001Additional.DependencyLookUp} - simplistic example of <b>Dependency Lookup</b> design pattern.
+ * {@link Q001DependencyLookup.DependencyLookUp} - simplistic example of <b>Dependency Lookup</b> design pattern.
  *
  * @author Valentine Shemyako
  * @since November 14, 2018
  */
-public class Question001Additional {
+public class Q001DependencyLookup {
 
     /**
      * Example of an object looking up for it dependencies by itself.
