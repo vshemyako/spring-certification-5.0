@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * Spring v5.0 Professional Certification.
  * <p>
  * Question 010:<br>
- * Describe dependency injection using Java annotations.<br>
+ * Describe dependency injection using Java configuration.<br>
  * <p>
  * Answer:
  * Dependency injection using Java annotation is based on two central annotations:<br>

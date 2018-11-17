@@ -16,7 +16,7 @@
  * 8. How are you going to create an ApplicationContext in an integration test?<br>
  * 9.1. What is the preferred way to close an application context?<br>
  * 9.2. Does Spring Boot close application context for you?<br>
- * 10. Describe dependency injection using Java annotations. {@link spring.certification.ioc.Q010 link}<br>
+ * 10. Describe dependency injection using Java configuration. {@link spring.certification.ioc.Q010 link}<br>
  * 11. Describe dependency injection using annotations (@Component, @Autowired).<br>
  * 12.1. Describe component-scanning.<br>
  * 12.2. Describe stereotypes.<br>
