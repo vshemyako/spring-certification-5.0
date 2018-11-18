@@ -47,11 +47,12 @@
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.Q026 link}<br>
  * 27. What is the default bean id if you only use @Bean? How can you override this?
  * {@link spring.certification.ioc.Q027 link}<br>
- * 28.1. Why are you not allowed to annotate a final class with @Configuration?<br>
- * 28.2. How do @Configuration annotated classes support singleton beans?<br>
- * 28.3. Why can’t @Bean methods be final either?<br>
- * 29.1. How do you configure profiles?<br>
- * 29.2. What are possible use cases where they might be useful?<br>
+ * 28.1. Why are you not allowed to annotate a final class with @Configuration?
+ * {@link spring.certification.ioc.Q028 link}<br>
+ * 28.2. How do @Configuration annotated classes support singleton beans? {@link spring.certification.ioc.Q028 link}<br>
+ * 28.3. Why can’t @Bean methods be final either? {@link spring.certification.ioc.Q028 link}<br>
+ * 29.1. How do you configure profiles? {@link spring.certification.ioc.Q029 link}<br>
+ * 29.2. What are possible use cases where they might be useful? {@link spring.certification.ioc.Q029 link}<br>
  * 30. Can you use @Bean together with @Profile?<br>
  * 31. Can you use @Component together with @Profile?<br>
  * 32. How many profiles can you have?<br>
