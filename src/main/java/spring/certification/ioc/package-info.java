@@ -53,8 +53,8 @@
  * 28.3. Why can’t @Bean methods be final either? {@link spring.certification.ioc.Q028 link}<br>
  * 29.1. How do you configure profiles? {@link spring.certification.ioc.Q029 link}<br>
  * 29.2. What are possible use cases where they might be useful? {@link spring.certification.ioc.Q029 link}<br>
- * 30. Can you use @Bean together with @Profile?<br>
- * 31. Can you use @Component together with @Profile?<br>
+ * 30. Can you use @Bean together with @Profile? {@link spring.certification.ioc.Q030 link}<br>
+ * 31. Can you use @Component together with @Profile? {@link spring.certification.ioc.Q031 link}<br>
  * 32. How many profiles can you have?<br>
  * 33. How do you inject scalar/literal values into Spring beans?<br>
  * 34. What is @Value used for?<br>
