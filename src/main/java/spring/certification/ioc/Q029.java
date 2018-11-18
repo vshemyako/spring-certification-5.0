@@ -44,4 +44,20 @@ public class Q029 {
             return "Success!";
         }
     }
+
+    /**
+     * Demonstrates basic usage of profile expressions.
+     */
+    @Profile("production & leadDeveloper")
+    @Configuration
+    public static class LeadDeveloperProductionConfiguration {
+
+        /**
+         * @return lead developer's password.
+         */
+        @Bean
+        public String password() {
+            return "HighFive";
+        }
+    }
 }

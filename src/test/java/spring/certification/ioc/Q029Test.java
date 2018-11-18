@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Profile;
+import org.springframework.core.env.ConfigurableEnvironment;
 
 /**
  * Verifies basic functionality of {@link Profile} annotation.
@@ -33,5 +34,20 @@ public class Q029Test {
     public void defaultContainerShouldFailToReturnStartupMessage() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Q029.DevelopmentConfiguration.class);
         context.getBean("startupMessage");
+    }
+
+    /**
+     * Verifies that password bean is registered only in case of more complex 'and' profile expression.
+     */
+    @Test
+    public void leadDeveloperProfileShouldRegisterConfig() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.getEnvironment().setActiveProfiles("production", "leadDeveloper");
+        context.register(Q029.LeadDeveloperProductionConfiguration.class);
+        context.refresh();
+
+        String password = context.getBean(String.class);
+        Assert.assertNotNull(password); // Not needed actually
+        context.close();
     }
 }
