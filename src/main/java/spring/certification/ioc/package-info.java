@@ -45,7 +45,8 @@
  * 24.3. What is the power of a proxy object and where are the disadvantages?<br>
  * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.Q025 link}<br>
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.Q026 link}<br>
- * 27. What is the default bean id if you only use @Bean? How can you override this?<br>
+ * 27. What is the default bean id if you only use @Bean? How can you override this?
+ * {@link spring.certification.ioc.Q027 link}<br>
  * 28.1. Why are you not allowed to annotate a final class with @Configuration?<br>
  * 28.2. How do @Configuration annotated classes support singleton beans?<br>
  * 28.3. Why can’t @Bean methods be final either?<br>

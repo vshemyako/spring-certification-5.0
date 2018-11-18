@@ -3,6 +3,7 @@ package spring.certification.ioc;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.time.Duration;
 import java.time.Period;
 
 /**
@@ -21,7 +22,7 @@ import java.time.Period;
  * {@link Q027.JavaBeanNameConfig} - demonstrates how to change default bean name.
  *
  * @author Valentine Shemyako
- * @since Ноябрь 17, 2018
+ * @since November 17, 2018
  */
 public class Q027 {
 
@@ -50,9 +51,17 @@ public class Q027 {
         /**
          * @return 30-day period bean with default name changed to "month".
          */
-        @Bean(value = "month")
+        @Bean(value = {"month"})
         public Period thirtyDays() {
             return Period.ofDays(30);
+        }
+
+        /**
+         * @return 30-minutes period, bean name of which was changed to array of values.
+         */
+        @Bean(name = {"thirtyMinutes", "halfAnHour"})
+        public Duration thirtyMinutes() {
+            return Duration.ofMinutes(30);
         }
     }
 }
