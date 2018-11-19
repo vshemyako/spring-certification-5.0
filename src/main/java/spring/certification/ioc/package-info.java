@@ -55,7 +55,7 @@
  * 29.2. What are possible use cases where they might be useful? {@link spring.certification.ioc.Q029 link}<br>
  * 30. Can you use @Bean together with @Profile? {@link spring.certification.ioc.Q030 link}<br>
  * 31. Can you use @Component together with @Profile? {@link spring.certification.ioc.Q031 link}<br>
- * 32. How many profiles can you have?<br>
+ * 32. How many profiles can you have? {@link spring.certification.ioc.Q032 link}<br>
  * 33. How do you inject scalar/literal values into Spring beans?<br>
  * 34. What is @Value used for?<br>
  * 35. What is Spring Expression Language (SpEL for short)?<br>
