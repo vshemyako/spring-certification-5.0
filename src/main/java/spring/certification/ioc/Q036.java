@@ -25,7 +25,7 @@ import org.springframework.core.env.EnvironmentCapable;
  * Beans managed by {@link ApplicationContext} may register {@link EnvironmentAware} hook or directly injection
  * environment reference by the means of DI.<br>
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q036.EnvironmentAbstraction} - demonstrates how to access environment active profiles and jmv properties.<br>
  *
  * @author Valentine Shemyako
  * @since November 19, 2018

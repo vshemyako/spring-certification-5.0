@@ -59,7 +59,7 @@
  * 33. How do you inject scalar/literal values into Spring beans?<br>
  * 34. What is @Value used for?<br>
  * 35. What is Spring Expression Language (SpEL for short)?<br>
- * 36. What is the Environment abstraction in Spring?<br>
+ * 36. What is the Environment abstraction in Spring? {@link spring.certification.ioc.Q036 link}<br>
  * 37. Where can properties in the environment come from?<br>
  * 38. What can you reference using SpEL?<br>
  * 39. What is the difference between $ and # in @Value expressions?
