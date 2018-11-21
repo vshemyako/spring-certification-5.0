@@ -46,7 +46,8 @@ import org.springframework.core.env.PropertySources;
  * which resolves ${...} placeholders within bean definition property values and {@code @Value} annotations against the
  * current Spring {@link Environment} and its set of {@link PropertySources}.
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q016.ProcessedByPostProcessorConfiguration} - demonstrates basic usage of property placeholders which will be
+ * substituted by {@link PropertySourcesPlaceholderConfigurer} post-processor bean.
  *
  * @author Valentine Shemyako
  * @since November 20, 2018

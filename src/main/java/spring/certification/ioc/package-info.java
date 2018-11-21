@@ -21,12 +21,13 @@
  * 12.1. Describe component-scanning.<br>
  * 12.2. Describe stereotypes.<br>
  * 12.3. Describe meta-annotations.<br>
- * 13. Describe scopes for Spring beans. What is the default scope?<br>
+ * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.Q013}<br>
  * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour?<br>
  * 15. What is a property source? How would you use @PropertySource annotation?<br>
- * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked?<br>
- * 16.2. Why would you define a static @Bean method?<br>
- * 16.3. What is a PropertySourcePlaceholderConfigurer used for?<br>
+ * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked?
+ * {@link spring.certification.ioc.Q016}<br>
+ * 16.2. Why would you define a static @Bean method? {@link spring.certification.ioc.Q016}<br>
+ * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.Q016}<br>
  * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When
  * are they called?<br>
  * 18. What is an initialization method and how is it declared on a Spring bean?<br>
