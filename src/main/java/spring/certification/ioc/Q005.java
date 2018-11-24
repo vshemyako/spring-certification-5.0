@@ -40,7 +40,8 @@ import javax.annotation.PreDestroy;
  * 9. {@link BeanPostProcessor#postProcessAfterInitialization} methods are invoked for each {@link BeanPostProcessor}<br>
  * 10. Application runs<br>
  * 11. Application terminates<br>
- * 12. Destruction life-cycle callbacks are called: {@link PreDestroy}, {@link DisposableBean},
+ * 12. Spring IoC container is being closed<br>
+ * 13. Destruction life-cycle callbacks are called: {@link PreDestroy}, {@link DisposableBean},
  * {@link Bean#destroyMethod()}<br>
  * <p>
  * Examples of mentioned terms:<br>
