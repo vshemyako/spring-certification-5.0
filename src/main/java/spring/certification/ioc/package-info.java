@@ -11,7 +11,7 @@
  * 3.2. Why are they recommended for Spring beans? {@link spring.certification.ioc.Q003 link}<br>
  * 4. What is meant by 'application-context'? {@link spring.certification.ioc.Q004 link}<br>
  * 5. What is the concept of a 'container' and what is its lifecycle? {@link spring.certification.ioc.Q005 link}<br>
- * 6. How are you going to create a new instance of an ApplicationContext?<br>
+ * 6. How are you going to create a new instance of an ApplicationContext? {@link spring.certification.ioc.Q006 link}<br>
  * 7. Can you describe the lifecycle of a Spring Bean in an ApplicationContext?<br>
  * 8. How are you going to create an ApplicationContext in an integration test?<br>
  * 9.1. What is the preferred way to close an application context?<br>
@@ -30,7 +30,7 @@
  * 16.2. Why would you define a static @Bean method? {@link spring.certification.ioc.Q016 link}<br>
  * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.Q016 link}<br>
  * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When
- * are they called?<br>
+ * are they called? {@link spring.certification.ioc.Q017 link}<br>
  * 18. What is an initialization method and how is it declared on a Spring bean?<br>
  * 19.1. What is a destroy method, how is it declared and when is it called?<br>
  * 19.2. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get
