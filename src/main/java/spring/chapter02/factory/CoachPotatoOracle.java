@@ -16,6 +16,6 @@ public class CoachPotatoOracle implements Oracle {
 
     @Override
     public String getMeaningOfLife() {
-        return "Bear for the life";
+        return "Beer for the life";
     }
 }

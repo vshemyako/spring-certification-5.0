@@ -25,6 +25,6 @@ public class DefaultBeanFactoryTest {
         Oracle oracle = beanFactory.getBean(Oracle.class);
 
         // assert
-        Assert.assertEquals("Bear for the life", oracle.getMeaningOfLife());
+        Assert.assertEquals("Beer for the life", oracle.getMeaningOfLife());
     }
 }

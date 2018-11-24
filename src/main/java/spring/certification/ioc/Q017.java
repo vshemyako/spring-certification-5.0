@@ -1,9 +1,12 @@
 package spring.certification.ioc;
 
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 
 /**
@@ -44,4 +47,77 @@ import org.springframework.core.Ordered;
  * @since November 24, 2018
  */
 public class Q017 {
+
+    /**
+     * Simple java-based IoC configuration class.
+     */
+    @Configuration
+    public static class AlcoholicConfiguration {
+
+        /**
+         * Bean factory which returns instance of an {@link Alcohol} interface.
+         */
+        @Bean
+        public Alcohol wine() {
+            return new Wine();
+        }
+
+        /**
+         * Static bean factory to register {@link BeanPostProcessor} as soon as possible.
+         */
+        @Bean
+        public static AlcoholicPostProcessor alcoholicPostProcessor() {
+            return new AlcoholicPostProcessor();
+        }
+    }
+
+    /**
+     * Bean post-processor which will substitute created {@link Wine} instance with {@link Beer} instances.
+     */
+    public static class AlcoholicPostProcessor implements BeanPostProcessor {
+
+        @Override
+        public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+            Object substitution = bean;
+            // check type of post-processed bean
+            if (substitution instanceof Wine) {
+                // substitute with bear instance
+                substitution = new Beer();
+            }
+            return substitution;
+        }
+    }
+
+    /**
+     * Alcoholic drink made of fermented grapes.
+     */
+    public static class Wine implements Alcohol {
+
+        @Override
+        public String getName() {
+            return "wine";
+        }
+    }
+
+    /**
+     * Bitter alcoholic drink made from grain.
+     */
+    public static class Beer implements Alcohol {
+
+        @Override
+        public String getName() {
+            return "bear";
+        }
+    }
+
+    /**
+     * Colorless liquid with some implicit benefits.
+     */
+    public interface Alcohol {
+
+        /**
+         * @return name of an alcoholic drink.
+         */
+        String getName();
+    }
 }
