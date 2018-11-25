@@ -2,8 +2,10 @@ package spring.certification.ioc;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -26,10 +28,96 @@ import javax.annotation.PreDestroy;
  * interfaces. The logic behind implemented methods is the same.
  * <p>
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q019.CinemaConfiguration} - demonstrates basic usage of {@link PostConstruct} and {@link PreDestroy}
+ * annotations.
  *
  * @author Valentine Shemyako
  * @since November 25, 2018
  */
 public class Q019 {
+
+    /**
+     * Java-based config class to be processed by Spring IoC container.
+     */
+    @Configuration
+    public static class CinemaConfiguration {
+
+        @Bean
+        public SloganMaker sloganMaker() {
+            return new SloganMaker();
+        }
+
+        @Bean
+        public Cinema cinema(@Value("The Shawshank Redemption") String filmName, SloganMaker sloganMaker) {
+            return new Cinema(filmName, sloganMaker);
+        }
+    }
+
+    /**
+     * A movie theater.
+     */
+    public static class Cinema {
+
+        private String filmName;
+        private SloganMaker sloganMaker;
+        private Signboard signboard;
+
+        public Cinema(String filmName, SloganMaker sloganMaker) {
+            this.filmName = filmName;
+            this.sloganMaker = sloganMaker;
+        }
+
+        /**
+         * Initialization callback which fills cinema's signboard.
+         */
+        @PostConstruct
+        private void init() {
+            String slogan = sloganMaker.composeSlogan(this.filmName);
+            this.signboard = new Signboard(slogan);
+        }
+
+        /**
+         * Destruction signboard which cleans up cinema's signboard.
+         */
+        @PreDestroy
+        private void cleanUp() {
+            this.signboard.clear();
+        }
+    }
+
+    /**
+     * A board which displays something.
+     */
+    public static class Signboard {
+        private String title;
+
+        public Signboard(String title) {
+            this.title = title;
+        }
+
+        public void clear() {
+            this.title = null;
+        }
+    }
+
+    /**
+     * A person who writes slogans.
+     */
+    public static class SloganMaker {
+
+        /**
+         * Composes slogan based on a film {@link SloganMaker} has watched.
+         */
+        public String composeSlogan(String filmTitle) {
+            // Some magic happens here
+            switch (filmTitle) {
+                case "The Shawshank Redemption":
+                    return "Fear can hold you prisoner. Hope can set you free.";
+                case "El Maquinista":
+                    return "How do you wake up from a nightmare if you're not asleep?";
+                default:
+                    return "There can be only one.";
+            }
+        }
+    }
 }
