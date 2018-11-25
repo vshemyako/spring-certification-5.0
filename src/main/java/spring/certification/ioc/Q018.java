@@ -40,6 +40,9 @@ public class Q018 {
             return new BookProvider();
         }
 
+        /**
+         * Bean factory method with specified init and destroy methods.
+         */
         @Bean(initMethod = "fillBookCollection", destroyMethod = "releaseBookCollection")
         public Library library(BookProvider bookProvider) {
             return new Library(bookProvider);
@@ -92,6 +95,13 @@ public class Q018 {
         private void addBook(String author, String title) {
             Book desiredBook = this.bookProvider.provide(author, title);
             this.books.add(desiredBook);
+        }
+
+        /**
+         * @return all books stored in the library.
+         */
+        public List<Book> getBooks() {
+            return books;
         }
     }
 
