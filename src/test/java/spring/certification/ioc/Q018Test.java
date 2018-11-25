@@ -28,6 +28,6 @@ public class Q018Test {
 
         // Verify that book collection has been cleaned - thus destroy-method indeed has been invoked
         context.close();
-        Assert.assertEquals(0, books.size());
+        Assert.assertTrue(books.isEmpty());
     }
 }

@@ -22,7 +22,8 @@ import java.util.List;
  * destroy-method is to release resources that the bean was dependent on. To specify destroy-method of a bean
  * {@link Bean#destroyMethod()} annotation type element is used.<br.
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q018.LibraryConfiguration} - demonstrates how bean factory can be created with init and destroy methods
+ * specified at a {@link Bean} annotation level.
  *
  * @author Valentine Shemyako
  * @since November 24, 2018
