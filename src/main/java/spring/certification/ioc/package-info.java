@@ -31,11 +31,11 @@
  * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.Q016 link}<br>
  * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When
  * are they called? {@link spring.certification.ioc.Q017 link}<br>
- * 18. What is an initialization method and how is it declared on a Spring bean?<br>
- * 19.1. What is a destroy method, how is it declared and when is it called?<br>
- * 19.2. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get
+ * 18.1. What is an initialization method and how is it declared on a Spring bean?<br>
+ * 18.2. What is a destroy method, how is it declared and when is it called?<br>
+ * 19.1. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get
  * called?<br>
- * 19.3. How else can you define an initialization or destruction method for a Spring bean?<br>
+ * 19.2. How else can you define an initialization or destruction method for a Spring bean?<br>
  * 20. What does component-scanning do?<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and
  * method injection?<br>
