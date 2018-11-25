@@ -83,6 +83,10 @@ public class Q019 {
         private void cleanUp() {
             this.signboard.clear();
         }
+
+        public Signboard getSignboard() {
+            return signboard;
+        }
     }
 
     /**
@@ -97,6 +101,10 @@ public class Q019 {
 
         public void clear() {
             this.title = null;
+        }
+
+        public String getTitle() {
+            return title;
         }
     }
 
