@@ -36,8 +36,9 @@
  * 18.2. What is a destroy method, how is it declared and when is it called?
  * {@link spring.certification.ioc.Q018 link}<br>
  * 19.1. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get
- * called?<br>
- * 19.2. How else can you define an initialization or destruction method for a Spring bean?<br>
+ * called? {@link spring.certification.ioc.Q019 link}<br>
+ * 19.2. How else can you define an initialization or destruction method for a Spring bean?
+ * {@link spring.certification.ioc.Q019 link}<br>
  * 20. What does component-scanning do?<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and
  * method injection?<br>
