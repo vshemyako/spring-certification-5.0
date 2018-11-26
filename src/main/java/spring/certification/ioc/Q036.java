@@ -22,7 +22,7 @@ import org.springframework.core.env.EnvironmentCapable;
  * {@link ApplicationContext} is {@link EnvironmentCapable}, therefore it exposes {@link EnvironmentCapable#getEnvironment()}
  * method to get reference to the single environment in which current application is running.<br>
  * <p>
- * Beans managed by {@link ApplicationContext} may register {@link EnvironmentAware} hook or directly injection
+ * Beans managed by {@link ApplicationContext} may register {@link EnvironmentAware} hook or directly inject
  * environment reference by the means of DI.<br>
  * Examples of mentioned terms:<br>
  * {@link Q036.EnvironmentAbstraction} - demonstrates how to access environment active profiles and jmv properties.<br>
