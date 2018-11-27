@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -20,7 +23,16 @@ import java.lang.annotation.Target;
  * Describe meta-annotations.<br>
  * <p>
  * Answer:<br>
- * Meta annotation is an annotation which can be applied to other types of annotations. Some predefined meta-annotations
+ * <b>Stereotype</b> (in a Spring framework sense) is some kind of a class which conforms to a fixed, community
+ * standardized role. Spring framework defines a set of <b>stereotype</b> annotations to highlight the main purpose
+ * of an annotated class (in addition to being auto-detected as a Spring bean):<br>
+ * 1. {@link Component} - root annotation, which may serve as a meta-annotation.<br>
+ * 2. {@link Service} - general-purpose role class<br>
+ * 3. {@link Repository} - data access object class<br>
+ * 4. {@link Controller} - web controller class<br>
+ * 5. {@link Configuration} - class which contains bean meta-information<br>
+ * <p>
+ * <b>Meta annotation</b> is an annotation which can be applied to other types of annotations. Some predefined meta-annotations
  * which come with JDK are: {@link Target}, {@link Retention}, etc. For an annotation to become a meta-annotation
  * appropriate {@link ElementType} should be used ({@link ElementType#ANNOTATION_TYPE}, {@link ElementType#TYPE} or none).<br>
  * <p>
