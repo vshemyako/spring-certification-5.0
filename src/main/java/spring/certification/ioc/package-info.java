@@ -20,7 +20,7 @@
  * 11. Describe dependency injection using annotations (@Component, @Autowired).<br>
  * 12.1. Describe component-scanning.<br>
  * 12.2. Describe stereotypes.<br>
- * 12.3. Describe meta-annotations.<br>
+ * 12.3. Describe meta-annotations. {@link spring.certification.ioc.Q012 link}<br>
  * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.Q013 link}<br>
  * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour?
  * {@link spring.certification.ioc.Q014 link}<br>
@@ -43,7 +43,7 @@
  * 20. What does component-scanning do?<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and
  * method injection?<br>
- * 22. What do you have to do, if you would like to inject something into a private field? Ho does  this impact
+ * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing?<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired?<br>
  * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?<br>
