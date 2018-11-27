@@ -3,6 +3,7 @@ package spring.certification.ioc;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -23,6 +24,11 @@ import java.lang.annotation.Target;
  * Describe meta-annotations.<br>
  * <p>
  * Answer:<br>
+ * <b>Component scanning</b> allows to implicitly register bean definitions without additional configuration specified
+ * in java-based classes or xml documents. For enabling component scanning {@link ComponentScan} annotation should be
+ * used (or appropriate {@code <context:component-scan>} xml element). For more information about component scanning
+ * refer to {@link Q020}.<br>
+ * <p>
  * <b>Stereotype</b> (in a Spring framework sense) is some kind of a class which conforms to a fixed, community
  * standardized role. Spring framework defines a set of <b>stereotype</b> annotations to highlight the main purpose
  * of an annotated class (in addition to being auto-detected as a Spring bean):<br>
