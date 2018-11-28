@@ -17,7 +17,7 @@
  * 9.1. What is the preferred way to close an application context? {@link spring.certification.ioc.Q009 link}<br>
  * 9.2. Does Spring Boot close application context for you? {@link spring.certification.ioc.Q009 link}<br>
  * 10. Describe dependency injection using Java configuration. {@link spring.certification.ioc.Q010 link}<br>
- * 11. Describe dependency injection using annotations (@Component, @Autowired).<br>
+ * 11. Describe dependency injection using annotations (@Component, @Autowired). {@link spring.certification.ioc.Q011 link}<br>
  * 12.1. Describe component-scanning. {@link spring.certification.ioc.Q012 link}<br>
  * 12.2. Describe stereotypes. {@link spring.certification.ioc.Q012 link}<br>
  * 12.3. Describe meta-annotations. {@link spring.certification.ioc.Q012 link}<br>

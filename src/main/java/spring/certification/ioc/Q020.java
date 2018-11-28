@@ -16,4 +16,5 @@ package spring.certification.ioc;
  * @since November 28, 2018
  */
 public class Q020 {
+    // TODO: add thorough explanation of component scanning
 }
