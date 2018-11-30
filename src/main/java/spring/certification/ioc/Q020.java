@@ -7,14 +7,11 @@ package spring.certification.ioc;
  * What does component-scanning do?<br>
  * <p>
  * Answer:<br>
- * -<br>
+ * See related questions {@link Q011}, {@link Q012}, {@link Q023}<br>
  * <p>
- * Examples of mentioned terms:<br>
- * -
  *
  * @author Valentine Shemyako
  * @since November 28, 2018
  */
 public class Q020 {
-    // TODO: add thorough explanation of component scanning
 }

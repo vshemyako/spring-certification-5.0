@@ -27,7 +27,7 @@ import java.lang.annotation.Target;
  * <b>Component scanning</b> allows to implicitly register bean definitions without additional configuration specified
  * in java-based classes or xml documents. For enabling component scanning {@link ComponentScan} annotation should be
  * used (or appropriate {@code <context:component-scan>} xml element). For more information about component scanning
- * refer to {@link Q020}.<br>
+ * refer to {@link Q011}.<br>
  * <p>
  * <b>Stereotype</b> (in a Spring framework sense) is some kind of a class which conforms to a fixed, community
  * standardized role. Spring framework defines a set of <b>stereotype</b> annotations to highlight the main purpose
