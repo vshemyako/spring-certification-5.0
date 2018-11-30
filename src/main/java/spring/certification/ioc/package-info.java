@@ -44,7 +44,7 @@
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and
  * method injection?<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
- * testing?<br>
+ * testing? {@link spring.certification.ioc.Q022 link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired?<br>
  * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?<br>
  * 24.2. What are the limitations of these proxies (per type)?<br>

@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * <p>
  * Question 022:<br>
  * What do you have to do, if you would like to inject something into a private field?<br>
+ * // TODO: add explanation, example and unit test after studying Spring Test library
  * How does this impact testing?<br>
  * <p>
  * Answer:<br>
@@ -19,7 +20,8 @@ import org.springframework.context.annotation.Configuration;
  * 2. Using {@link Value} annotation<br>
  * <p>
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q022.SpringFramework} - demonstrates how to inject values into private fields using {@link Autowired} or
+ * {@link Value} annotations<br>
  *
  * @author Valentine Shemyako
  * @since November 29, 2018
