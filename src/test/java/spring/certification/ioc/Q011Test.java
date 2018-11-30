@@ -27,4 +27,12 @@ public class Q011Test {
             Assert.assertNotNull(ink);
         }
     }
+
+    @Test
+    public void shouldSucceed() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SimplePojo.class);
+    }
+
+    public static class SimplePojo {
+    }
 }
