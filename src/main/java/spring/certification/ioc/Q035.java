@@ -21,6 +21,7 @@ import org.springframework.expression.ExpressionParser;
  * - literal expressions (should be wrapped into <b>'</b> single quotation marks<br>
  * - boolean and relational operators<br>
  * - regular expressions (using matches keyword)<br>
+ * - class expressions<br>
  * - etc.<br>
  * Examples of mentioned terms:<br>
  * -

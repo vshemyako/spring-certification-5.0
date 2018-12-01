@@ -66,4 +66,25 @@ public class Q035Test {
         Boolean regexpResult = PARSER.parseExpression("'Bonnie' matches '\\w*'").getValue(Boolean.class);
         Assert.assertTrue(regexpResult);
     }
+
+    /**
+     * Verifies SpEL functionality of evaluating class expressions.
+     */
+    @Test
+    public void shouldEvaluateClassExpression() {
+        WordWrapper wordWrapper = new WordWrapper();
+        String wrappedWord = PARSER.parseExpression("word").getValue(wordWrapper, String.class);
+        Assert.assertEquals("Santa is coming", wrappedWord);
+    }
+
+    /**
+     * Simple wrapper to demonstrate evaluation of class expressions
+     */
+    private static class WordWrapper {
+        private String word = "Santa is coming";
+
+        public String getWord() {
+            return word;
+        }
+    }
 }
