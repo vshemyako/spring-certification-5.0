@@ -13,7 +13,7 @@
  * 5. What is the concept of a 'container' and what is its lifecycle? {@link spring.certification.ioc.Q005 link}<br>
  * 6. How are you going to create a new instance of an ApplicationContext? {@link spring.certification.ioc.Q006 link}<br>
  * 7. Can you describe the lifecycle of a Spring Bean in an ApplicationContext? {@link spring.certification.ioc.Q007 link}<br>
- * 8. How are you going to create an ApplicationContext in an integration test?<br>
+ * 8. How are you going to create an ApplicationContext in an integration test? {@link spring.certification.ioc.Q008 link}<br>
  * 9.1. What is the preferred way to close an application context? {@link spring.certification.ioc.Q009 link}<br>
  * 9.2. Does Spring Boot close application context for you? {@link spring.certification.ioc.Q009 link}<br>
  * 10. Describe dependency injection using Java configuration. {@link spring.certification.ioc.Q010 link}<br>
@@ -46,9 +46,10 @@
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.Q022 link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.Q023 link}<br>
- * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?<br>
- * 24.2. What are the limitations of these proxies (per type)?<br>
- * 24.3. What is the power of a proxy object and where are the disadvantages?<br>
+ * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?
+ * {@link spring.certification.ioc.Q024 link}<br>
+ * 24.2. What are the limitations of these proxies (per type)? {@link spring.certification.ioc.Q024 link}<br>
+ * 24.3. What is the power of a proxy object and where are the disadvantages? {@link spring.certification.ioc.Q024 link}<br>
  * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.Q025 link}<br>
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.Q026 link}<br>
  * 27. What is the default bean id if you only use @Bean? How can you override this?
@@ -64,7 +65,7 @@
  * 32. How many profiles can you have? {@link spring.certification.ioc.Q032 link}<br>
  * 33. How do you inject scalar/literal values into Spring beans?<br>
  * 34. What is @Value used for?<br>
- * 35. What is Spring Expression Language (SpEL for short)?<br>
+ * 35. What is Spring Expression Language (SpEL for short)? {@link spring.certification.ioc.Q035 link}<br>
  * 36. What is the Environment abstraction in Spring? {@link spring.certification.ioc.Q036 link}<br>
  * 37. Where can properties in the environment come from?<br>
  * 38. What can you reference using SpEL?<br>

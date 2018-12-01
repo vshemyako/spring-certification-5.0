@@ -8,7 +8,6 @@ package spring.certification.ioc;
  * <p>
  * Answer:<br>
  * // TODO: add explanation, example and unit test after studying Spring Test library
- * -<br>
  * <p>
  * Examples of mentioned terms:<br>
  * -
