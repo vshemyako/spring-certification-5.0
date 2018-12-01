@@ -64,7 +64,7 @@ public class Q034 {
          * (by default applies to a constructor)
          */
         @Autowired
-        public void setMaterial(@Value("#{plastic.getMaterialName()}") String material) {
+        public void setMaterial(@Value("#{@plastic.getMaterialName()}") String material) {
             this.material = material;
         }
 
