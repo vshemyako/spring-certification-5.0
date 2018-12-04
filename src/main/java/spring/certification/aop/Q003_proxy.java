@@ -14,9 +14,6 @@ package spring.certification.aop;
  * be intercepted.<br>
  * 2. CGLIB proxies - in case target object does not implement any interface, or in case all concrete object methods
  * invocations should be intercepted.<br>
- * <p>
- * Examples of mentioned terms:<br>
- * -
  *
  * @author Valentine Shemyako
  * @since December 04, 2018
