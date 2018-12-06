@@ -8,7 +8,8 @@ package spring.certification.aop;
  * What visibility must Spring bean methods have to be proxied using Spring AOP?<br>
  * <p>
  * Answer:<br>
- * <b>Common limitation</b> for both JDK and CGLIB dynamic proxies is that interception of inner method calls is not
+ * <b>Common limitation:</b><br>
+ * 1. Both JDK and CGLIB dynamic proxies is that interception of inner method calls is not
  * performed (due to limitation of run-time proxies).<br>
  * <b>JDK proxies limitations (interface-based dynamic proxy):</b><br>
  * 1. Target object has to implement at least one interface.<br>

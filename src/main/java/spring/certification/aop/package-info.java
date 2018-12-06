@@ -11,8 +11,9 @@
  * 2. What is a pointcut, a join point, an advice, an aspect, a weaving?
  * {@link spring.certification.aop.Q002_terminology link}<br>
  * 3. How does Spring framework solve a cross cutting concern? {@link spring.certification.aop.Q003_proxy link}<br>
- * 4.1. What are the limitations of the two proxy types?<br>
- * 4.2. What visibility must Spring bean methods have to be proxied using Spring AOP?<br>
+ * 4.1. What are the limitations of the two proxy types? {@link spring.certification.aop.Q004_limitations link}<br>
+ * 4.2. What visibility must Spring bean methods have to be proxied using Spring AOP?
+ * {@link spring.certification.aop.Q004_limitations link}<br>
  * 5.1. How many advice types does Spring support. Can you name each one?<br>
  * 5.2. What different advice types are used for?<br>
  * 5.3. Which types of advices can you use if you would like to try and catch exceptions?<br>
