@@ -17,8 +17,9 @@
  * 5.1. How many advice types does Spring support. Can you name each one?<br>
  * 5.2. What different advice types are used for?<br>
  * 5.3. Which types of advices can you use if you would like to try and catch exceptions?<br>
- * 6.1. What do you have to do to enable the detection of the @Aspect annotation?<br>
- * 6.2. What does @EnableAspectJAutoProxy do?<br>
+ * 6.1. What do you have to do to enable the detection of the @Aspect annotation?
+ * {@link spring.certification.aop.Q006_aspectj link}<br>
+ * 6.2. What does @EnableAspectJAutoProxy do? {@link spring.certification.aop.Q006_aspectj link}<br>
  * 7.1. If shown pointcut expressions, would you understand them?<br>
  * 7.2. For example, in the course we matched getter methods on Spring Beans, what would be the correct pointcut<br>
  * expression to match both getter and setter methods?<br>
