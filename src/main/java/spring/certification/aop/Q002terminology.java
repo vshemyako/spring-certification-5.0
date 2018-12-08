@@ -21,5 +21,5 @@ package spring.certification.aop;
  * @author Valentine Shemyako
  * @since December 03, 2018
  */
-public class Q002_terminology {
+public class Q002terminology {
 }

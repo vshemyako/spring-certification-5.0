@@ -22,5 +22,5 @@ package spring.certification.aop;
  * @author Valentine Shemyako
  * @since December 04, 2018
  */
-public class Q004_limitations {
+public class Q004limitations {
 }

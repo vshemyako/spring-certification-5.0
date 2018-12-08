@@ -24,5 +24,5 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @author Valentine Shemyako
  * @since December 05, 2018
  */
-public class Q006_aspectj {
+public class Q006aspectj {
 }

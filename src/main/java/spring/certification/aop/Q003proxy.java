@@ -18,5 +18,5 @@ package spring.certification.aop;
  * @author Valentine Shemyako
  * @since December 04, 2018
  */
-public class Q003_proxy {
+public class Q003proxy {
 }

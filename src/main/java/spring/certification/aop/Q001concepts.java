@@ -40,5 +40,5 @@ package spring.certification.aop;
  * @author Valentine Shemyako
  * @since December 03, 2018
  */
-public class Q001_concepts {
+public class Q001concepts {
 }
