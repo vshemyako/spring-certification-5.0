@@ -9,6 +9,7 @@ import spring.certification.aop.Q007pointcut.Executor;
 import spring.certification.aop.Q007pointcut.Politeness;
 import spring.certification.aop.helper.AnnotatedPointcutHelper;
 import spring.certification.aop.helper.PointcutHelper;
+import spring.certification.aop.helper.Pojo;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -21,7 +22,7 @@ import java.util.stream.Stream;
 public class Q007pointcutTest {
 
     private static final String EMPTY_STRING = "";
-    
+
     /**
      * Fields to redefine system streams.
      */
@@ -36,6 +37,7 @@ public class Q007pointcutTest {
     private AnnotatedPointcutHelper annotatedHelper;
     private Politeness politeness;
     private PointcutHelper helper;
+    private Pojo pojo;
 
     /**
      * Substitutes system stream with 'dummy' byte array stream.
@@ -50,6 +52,7 @@ public class Q007pointcutTest {
         executor = context.getBean(Executor.class);
         annotatedHelper = context.getBean(AnnotatedPointcutHelper.class);
         helper = context.getBean(PointcutHelper.class);
+        pojo = context.getBean(Pojo.class);
     }
 
     /**
@@ -100,6 +103,33 @@ public class Q007pointcutTest {
 
         String actualValue = outputStream.toString();
         String expectedValue = Stream.of("@Within", "Help", "Ignore")
+                .collect(Collectors.joining(System.lineSeparator(), EMPTY_STRING, System.lineSeparator()));
+        Assert.assertEquals(expectedValue, actualValue);
+    }
+
+    /**
+     * Verifies functionality of args pointcut designator.
+     */
+    @Test
+    public void shouldMatchStringArgsMethod() {
+        helper.printOut("Drop it");
+
+        String actualValue = outputStream.toString();
+        String expectedValue = Stream.of("Args", "Drop it")
+                .collect(Collectors.joining(System.lineSeparator(), EMPTY_STRING, System.lineSeparator()));
+        Assert.assertEquals(expectedValue, actualValue);
+    }
+
+    /**
+     * Verifies functionality of pointcut expression which matches getters and setters.
+     */
+    @Test
+    public void shouldMatchGetterAndSetterAccess() {
+        pojo.setCount(1);
+        pojo.getCount();
+
+        String actualValue = outputStream.toString();
+        String expectedValue = Stream.of("Detected property access", "Detected property access")
                 .collect(Collectors.joining(System.lineSeparator(), EMPTY_STRING, System.lineSeparator()));
         Assert.assertEquals(expectedValue, actualValue);
     }

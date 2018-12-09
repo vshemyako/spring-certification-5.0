@@ -17,4 +17,13 @@ public class PointcutHelper {
     public void ignore() {
         System.out.println("Ignore");
     }
+
+    /**
+     * Prints specified message.
+     *
+     * @param message to print.
+     */
+    public void printOut(String message) {
+        System.out.println(message);
+    }
 }

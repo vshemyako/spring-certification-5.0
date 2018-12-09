@@ -23,12 +23,23 @@ import spring.certification.aop.helper.WithinHelper;
  * Valid designators are:<br>
  * <b>execution</b> - matches method execution points.<br>
  * Pattern: [access-modifier] [return-type] [package].[class].[method]([parameters] [throws exceptions])<br>
- * <b>within</b> - matches method execution in specific class.
- * Pattern: [package].[class]
- * <b>@within</b> - matches method execution in a class annotated with specific annotation.
+ * <b>within</b> - matches method execution in specific class.<br>
+ * Pattern: [package].[class]<br>
+ * <b>@within</b> - matches method execution in a class annotated with specific annotation.<br>
+ * <b>args</b> - matches method execution with arguments of specified type.<br>
+ * Pattern: [package].[class]<br>
+ * <b>@args</b> - matches method execution with arguments type of which has specified annotation.<br>
+ * <b>@annotation</b> - matches method execution annotated with specified annotation.<br>
+ * More exotic:<br>
+ * <b>this</b> - AOP proxy is of specified type.<br>
+ * <b>target</b> - proxied class is of specified type.<br>
+ * <b>@target</b> - proxied class has specified annotation.<br>
+ * <b>bean</b> - proxied bean name.<br>
+ * <p>
+ * Pointcut designators can be combined using {@code &&}, {@code ||}, {@code !} symbols.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * -
+ * {@link ExecutionMatcher} - demonstrates basic usage of the most common pointcut designators.
  *
  * @author Valentine Shemyako
  * @since December 08, 2018
@@ -73,6 +84,17 @@ public class Q007pointcut {
         @Pointcut("@within(spring.certification.aop.helper.WithinHelper)")
         public void withinAnnotatedClass() {
         }
+
+        /**
+         * Specifies pointcut which matches any method with argument of type {@link String}.
+         */
+        @Pointcut("args(word)")
+        public void withSpecificArgument(String word) {
+        }
+
+        @Pointcut("execution(void set*(..)) || execution(* get*())")
+        public void getterOrSetter() {
+        }
     }
 
     /**
@@ -112,6 +134,22 @@ public class Q007pointcut {
         @Before(value = "spring.certification.aop.Q007pointcut.Pointcuts.withinAnnotatedClass()")
         public void withinAnnotatedHelperClass() {
             System.out.println("@Within");
+        }
+
+        /**
+         * Prints out simple message before methods with {@link String} argument.
+         */
+        @Before(value = "spring.certification.aop.Q007pointcut.Pointcuts.withSpecificArgument(word)", argNames = "word")
+        public void stringArgsMethod(String word) {
+            System.out.println("Args");
+        }
+
+        /**
+         * Prints out property access detection message.
+         */
+        @After(value = "spring.certification.aop.Q007pointcut.Pointcuts.getterOrSetter()")
+        public void getterSetterMethod() {
+            System.out.println("Detected property access");
         }
     }
 
