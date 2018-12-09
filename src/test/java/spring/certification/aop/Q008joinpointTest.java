@@ -39,7 +39,7 @@ public class Q008joinpointTest {
     @Before
     public void setUp() {
         System.setOut(new PrintStream(outputStream));
-        context = new AnnotationConfigApplicationContext(Q007pointcut.PointcutConfigurationMarker.class);
+        context = new AnnotationConfigApplicationContext(Q008joinpoint.JoinPointMarkerConfiguration.class);
         context.registerShutdownHook();
         calculator = context.getBean(Q008joinpoint.Calculator.class);
     }

@@ -92,6 +92,10 @@ public class Q007pointcut {
         public void withSpecificArgument(String word) {
         }
 
+        @Pointcut("within(spring.certification.aop.helper.PointcutHelper)")
+        public void withinPointcutHelper() {
+        }
+
         @Pointcut("execution(void set*(..)) || execution(* get*())")
         public void getterOrSetter() {
         }
@@ -139,7 +143,8 @@ public class Q007pointcut {
         /**
          * Prints out simple message before methods with {@link String} argument.
          */
-        @Before(value = "spring.certification.aop.Q007pointcut.Pointcuts.withSpecificArgument(word)", argNames = "word")
+        @Before(value = "spring.certification.aop.Q007pointcut.Pointcuts.withSpecificArgument(word)" +
+                "&& spring.certification.aop.Q007pointcut.Pointcuts.withinPointcutHelper()", argNames = "word")
         public void stringArgsMethod(String word) {
             System.out.println("Args");
         }
