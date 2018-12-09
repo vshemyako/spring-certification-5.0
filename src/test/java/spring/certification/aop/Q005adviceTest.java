@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import spring.certification.aop.Q005advice.ConfigurationMarker;
 import spring.certification.aop.Q005advice.Fool;
+import spring.certification.aop.Q005advice.PanicException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -69,7 +70,7 @@ public class Q005adviceTest {
      * Verifies that {@link AfterReturning} advice is executed 'after' {@link Fool#nameQueen(String)} method.
      */
     @Test
-    public void shouldExecuteAfterAdvice() {
+    public void shouldExecuteAfterReturningAdvice() {
         fool.nameQueen("England");
 
         String actualString = outputStream.toString();
@@ -82,12 +83,54 @@ public class Q005adviceTest {
      * Verifies that {@link AfterThrowing} advice is executed 'after exception has been thrown' from
      * {@link Fool#nameContinent(String)} method.
      */
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = PanicException.class)
     public void shouldExecuteAfterThrowingAdvice() {
         fool.nameContinent("China");
 
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Asia")
+                .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
+        Assert.assertEquals(expectedString, actualString);
+    }
+
+    /**
+     * Verifies that {@link org.aspectj.lang.annotation.After} advice is executed 'after' normal returning
+     * of {@link Fool#nameCurrency(String)} method.
+     */
+    @Test
+    public void shouldExecuteAfterNormalAdvice() {
+        fool.nameCurrency("Denmark");
+
+        String actualString = outputStream.toString();
+        String expectedString = Stream.of("No money no honey", "The euro")
+                .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
+        Assert.assertEquals(expectedString, actualString);
+    }
+
+    /**
+     * Verifies that {@link org.aspectj.lang.annotation.After} advice is executed 'after' exceptional returning
+     * of {@link Fool#nameCurrency(String)} method.
+     */
+    @Test(expected = PanicException.class)
+    public void shouldExecuteAfterExceptionalAdvice() {
+        fool.nameCurrency("Russia");
+
+        String actualString = outputStream.toString();
+        String expectedString = Stream.of("Russian ruble")
+                .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
+        Assert.assertEquals(expectedString, actualString);
+    }
+
+    /**
+     * Verifies that {@link org.aspectj.lang.annotation.Around} advice is executed 'before' and 'after' execution
+     * of {@link Fool#nameNeighboring(String)} method.
+     */
+    @Test
+    public void shouldExecuteAroundAdvice() {
+        fool.nameNeighboring("Belarus");
+
+        String actualString = outputStream.toString();
+        String expectedString = Stream.of("Poland", "No idea", "Ukraine")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
         Assert.assertEquals(expectedString, actualString);
     }

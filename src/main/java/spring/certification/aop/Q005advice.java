@@ -1,5 +1,6 @@
 package spring.certification.aop;
 
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +30,7 @@ import java.lang.annotation.Target;
  * a join point. Join point can be invoked one, many or none times.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * -
+ * {@link Q005advice} - lots of examples of advice usages.
  *
  * @author Valentine Shemyako
  * @since December 07, 2018
@@ -102,6 +103,45 @@ public class Q005advice {
             }
             System.out.println(continent);
         }
+
+        /**
+         * Gives a cue regardless of exceptional or normal flow.
+         */
+        @After(value = "@annotation(spring.certification.aop.Q005advice.GiveMeAfterAnyCue) && args(country)")
+        public void giveAnyCue(String country) {
+            String currency;
+            switch (country) {
+                case "Russia":
+                    currency = "Russian ruble";
+                    break;
+                default:
+                    currency = "The euro";
+                    break;
+            }
+            System.out.println(currency);
+        }
+
+        @Around(value = "@annotation(spring.certification.aop.Q005advice.GiveMeAroundCue) && args(country)")
+        public void giveAroundCue(ProceedingJoinPoint joinPoint, String country) {
+            String neighbor;
+            switch (country) {
+                case "Belarus":
+                    neighbor = "Poland";
+                    break;
+                default:
+                    // Don't judge me =).
+                    neighbor = "Vatican";
+                    break;
+            }
+            System.out.println(neighbor);
+
+            try {
+                joinPoint.proceed();
+            } catch (Throwable throwable) {
+                System.out.println(throwable.getMessage());
+                System.out.println("Ukraine");
+            }
+        }
     }
 
     /**
@@ -131,7 +171,26 @@ public class Q005advice {
          */
         @GiveMeExceptionalCue
         public void nameContinent(String country) {
-            throw new IllegalArgumentException(String.format("Continent of %s unknown", country));
+            throw new PanicException(String.format("Continent of %s unknown", country));
+        }
+
+        /**
+         * A fool person known something about currency. But sometimes also panics.
+         */
+        @GiveMeAfterAnyCue
+        public void nameCurrency(String country) {
+            if ("Russia".equals(country)) {
+                throw new PanicException();
+            }
+            System.out.println("No money no honey");
+        }
+
+        /**
+         * A fool person doesn't know anything about neighboring countries. Just panics.
+         */
+        @GiveMeAroundCue
+        public void nameNeighboring(String country) {
+            throw new PanicException("No idea");
         }
     }
 
@@ -151,5 +210,28 @@ public class Q005advice {
     @Target(ElementType.METHOD)
     @Retention(RetentionPolicy.RUNTIME)
     public @interface GiveMeExceptionalCue {
+    }
+
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.RUNTIME)
+    public @interface GiveMeAfterAnyCue {
+    }
+
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.RUNTIME)
+    public @interface GiveMeAroundCue {
+    }
+
+    /**
+     * Sometimes people panic.
+     */
+    public static class PanicException extends RuntimeException {
+
+        public PanicException() {
+        }
+
+        public PanicException(String message) {
+            super(message);
+        }
     }
 }
