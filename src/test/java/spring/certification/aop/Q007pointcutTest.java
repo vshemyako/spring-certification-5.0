@@ -75,7 +75,7 @@ public class Q007pointcutTest {
 
         String actualValue = outputStream.toString();
         String expectedValue = Stream.of("Before", "Greet", "Goodbye", "After")
-                .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
+                .collect(Collectors.joining(System.lineSeparator(), EMPTY_STRING, System.lineSeparator()));
         Assert.assertEquals(expectedValue, actualValue);
     }
 
@@ -89,7 +89,7 @@ public class Q007pointcutTest {
 
         String actualValue = outputStream.toString();
         String expectedValue = Stream.of("Execute", "Within", "Ignore")
-                .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
+                .collect(Collectors.joining(System.lineSeparator(), EMPTY_STRING, System.lineSeparator()));
         Assert.assertEquals(expectedValue, actualValue);
     }
 

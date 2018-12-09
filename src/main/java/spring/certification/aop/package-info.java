@@ -25,7 +25,7 @@
  * 7.1. If shown pointcut expressions, would you understand them? {@link spring.certification.aop.Q007pointcut link}<br>
  * 7.2. For example, in the course we matched getter methods on Spring Beans, what would be the correct pointcut
  * expression to match both getter and setter methods? {@link spring.certification.aop.Q007pointcut link}<br>
- * 8. What is the JoinPoint argument used for?<br>
+ * 8. What is the JoinPoint argument used for? {@link spring.certification.aop.Q008joinpoint link}<br>
  * 9.1. What is a ProceedingJoinPoint?<br>
  * 9.2. When ProceedingJoinPoint is used?<br>
  *
