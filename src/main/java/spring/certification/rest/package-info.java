@@ -2,8 +2,8 @@
  * Spring v5.0 Professional Certification.
  * <p>
  * Table of contents:<br>
- * 1. What does REST stand for?<br>
- * 2. What is a resource?<br>
+ * 1. What does REST stand for? {@link spring.certification.rest.Q001rest link}<br>
+ * 2. What is a resource? {@link spring.certification.rest.Q002resource link}<br>
  * 3. What does CRUD mean?<br>
  * 4.1. Is REST secure?<br>
  * 4.2. What can you do to secure it?<br>
