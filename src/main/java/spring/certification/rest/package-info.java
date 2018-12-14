@@ -7,7 +7,7 @@
  * 3. What does CRUD mean?<br>
  * 4.1. Is REST secure?<br>
  * 4.2. What can you do to secure it?<br>
- * 5. What are safe REST operations?<br>
+ * 5. What are safe REST operations? {@link spring.certification.rest.Q005safe link}<br>
  * 6.1. What are idempotent operations?<br>
  * 6.2. Why is idempotency important?<br>
  * 7. Is REST scalable and/or interoperable?<br>
