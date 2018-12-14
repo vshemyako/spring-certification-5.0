@@ -13,6 +13,7 @@ package spring.certification.rest;
  * - GET<br>
  * - HEAD<br>
  * - OPTIONS<br>
+ * - TRACE<br>
  *
  * @author Valentine Shemyako
  * @since December 13, 2018
