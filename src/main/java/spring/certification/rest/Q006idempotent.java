@@ -27,5 +27,5 @@ package spring.certification.rest;
  * @author Valentine Shemyako
  * @since December 14, 2018
  */
-public class Q006idempotency {
+public class Q006idempotent {
 }
