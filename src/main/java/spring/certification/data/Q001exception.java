@@ -1,5 +1,7 @@
 package spring.certification.data;
 
+import org.springframework.dao.DataAccessException;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -26,7 +28,11 @@ package spring.certification.data;
  * Therefore Spring framework prefers unchecked exceptions which do not clutter client's code and, if needed, can also
  * be caught and handled appropriately.<br>
  * <p>
- *
+ * {@link DataAccessException} hierarchy has been introduced with two main reasons in mind:<br>
+ * 1. It offers technology agnostic hierarchy of exceptions.<br>
+ * 2. It wraps checked exceptions with unchecked counterparts, which are not required to be caught and, in comparison
+ * to JDBC, are more descriptive and vast.<br>
+ *  
  * @author Valentine Shemyako
  * @since December 15, 2018
  */
