@@ -7,6 +7,14 @@
  * 1.3. What is the data access exception hierarchy? {@link spring.certification.data.Q001exception link}<br>
  * 2.1. How do you configure a DataSource in Spring? {@link spring.certification.data.Q002datasource link}<br>
  * 2.2. Which bean is very useful for development/test databases? {@link spring.certification.data.Q002datasource link}<br>
+ * 3. What is the Template design pattern and what is the JDBC template?<br>
+ * 4.1. What is a callback?<br>
+ * 4.2. What are the three JdbcTemplate callback interfaces that can be used with queries?<br>
+ * 4.3. What each JdbcTemplate is used for?<br>
+ * 5. Can you execute a plain SQL statement with the JDBC template?<br>
+ * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template? Why?<br>
+ * 7.1. How does the JdbcTemplate support generic queries?<br>
+ * 7.2. How does it return objects and lists/maps of objects?<br>6
  *
  * @author Valentine Shemyako
  * @since December 15, 2018
