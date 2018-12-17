@@ -1,5 +1,7 @@
 package spring.certification.data;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -11,7 +13,22 @@ package spring.certification.data;
  * in particular order. This order cannot be changed, but some of the steps can be altered or are required to be
  * implemented by a subclass.<br>
  * <p>
- *
+ * {@link JdbcTemplate} is a class which implements template method design pattern and performs some boilerplate jdbc
+ * operations. Thus user is only required to define sql statements and result set custom mappings.<br>
+ * <p>
+ * Operations which are performed by Jdbc template:<br>
+ * - Open the connection<br>
+ * - Prepare, execute statements<br>
+ * - Iterate through result set<br>
+ * - Exception processing<br>
+ * - Transaction handling<br>
+ * - Close connection, statement, result set<br>
+ * <p>
+ * Operations which should be performed by Jdbc template client:<br>
+ * - Define connection parameters<br>
+ * - Specify SQL statement and it's parameters<br>
+ * - Specify mappings for each result set iteration<br>
+ * <p>
  * Examples of mentioned terms:<br>
  * {@link TemplateMethod} - demonstrates basic example of a template method design pattern.<br>
  *
