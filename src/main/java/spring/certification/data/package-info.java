@@ -14,7 +14,7 @@
  * 5. Can you execute a plain SQL statement with the JDBC template?<br>
  * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template? Why?<br>
  * 7.1. How does the JdbcTemplate support generic queries?<br>
- * 7.2. How does it return objects and lists/maps of objects?<br>6
+ * 7.2. How does it return objects and lists/maps of objects?<br>
  *
  * @author Valentine Shemyako
  * @since December 15, 2018

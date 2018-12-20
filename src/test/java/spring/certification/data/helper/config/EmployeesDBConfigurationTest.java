@@ -1,4 +1,4 @@
-package spring.employees.config;
+package spring.certification.data.helper.config;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -21,21 +21,31 @@ public class EmployeesDBConfigurationTest {
         context.registerShutdownHook();
     }
 
+    /**
+     * Verifies that {@link DataSource} bean has been configured and picked up by Spring IoC.
+     */
     @Test
     public void shouldConstructDatasource() {
         DataSource dataSource = context.getBean(DataSource.class);
         Assert.assertNotNull(dataSource);
     }
 
+    /**
+     * Verifies that {@link JdbcTemplate} bean has been configured and picked up by Spring IoC.
+     */
     @Test
     public void shouldConstructJdbcTemplate() {
         JdbcTemplate jdbcTemplate = context.getBean(JdbcTemplate.class);
         Assert.assertNotNull(jdbcTemplate);
     }
 
+    /**
+     * Verifies connection to MySQL 'employees' database via {@link JdbcTemplate} functionality.
+     */
     @Test
     public void shouldSucceedToConnectToDatabase() {
         JdbcTemplate jdbcTemplate = context.getBean(JdbcTemplate.class);
-        jdbcTemplate.execute("SELECT version()");
+        String databaseVersion = jdbcTemplate.queryForObject("SELECT version()", String.class);
+        Assert.assertNotNull(databaseVersion);
     }
 }
