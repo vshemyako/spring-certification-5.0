@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
  * of result set.<br>
  * The following methods allow to execute plain SQL statements:<br>
  * - {@link JdbcTemplate#execute(String)} - used for some DDL (Data Definition Language) sql statements<br>
+ * - {@link JdbcTemplate#queryForObject(String, Class)} - used for extracting exactly one row<br>
  *
  * @author Valentine Shemyako
  * @since December 20, 2018
@@ -29,6 +30,9 @@ public class Q005sql {
                     ")";
     static final String SQL_TABLE_VERIFICATION_STATEMENT = "SELECT 1 FROM %s";
     static final String SQL_DROP_TABLE_STATEMENT = "DROP TABLE %s";
+
+    static final String SQL_COUNT_QUERY = "SELECT count(*) FROM %s";
+
     static final String SQL_INSERT_STATEMENT = "INSERT INTO employees VALUES(%s, %s, %s, %s, %s)";
 
     /**
@@ -49,6 +53,13 @@ public class Q005sql {
          */
         public void executeDdlStatement(String ddlString) {
             jdbcTemplate.execute(ddlString);
+        }
+
+        /**
+         * Executes plain-sql query string using {@link JdbcTemplate}
+         */
+        public <T> T executeQuery(String queryString, Class<T> requiredType) {
+            return jdbcTemplate.queryForObject(queryString, requiredType);
         }
     }
 }
