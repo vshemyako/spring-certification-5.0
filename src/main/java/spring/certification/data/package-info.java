@@ -11,8 +11,8 @@
  * 4.1. What is a callback?<br>
  * 4.2. What are the three JdbcTemplate callback interfaces that can be used with queries?<br>
  * 4.3. What each JdbcTemplate is used for?<br>
- * 5. Can you execute a plain SQL statement with the JDBC template?<br>
- * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template? Why?<br>
+ * 5. Can you execute a plain SQL statement with the JDBC template? {@link spring.certification.data.Q005sql}<br>
+ * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template?<br>
  * 7.1. How does the JdbcTemplate support generic queries?<br>
  * 7.2. How does it return objects and lists/maps of objects?<br>
  *
