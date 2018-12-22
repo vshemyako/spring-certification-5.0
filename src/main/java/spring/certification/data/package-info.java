@@ -14,8 +14,8 @@
  * 5. Can you execute a plain SQL statement with the JDBC template? {@link spring.certification.data.Q005sql link}<br>
  * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template?
  * {@link spring.certification.data.Q006connection link}<br>
- * 7.1. How does the JdbcTemplate support generic queries?<br>
- * 7.2. How does it return objects and lists/maps of objects?<br>
+ * 7.1. How does the JdbcTemplate support generic queries? {@link spring.certification.data.Q007generics link}<br>
+ * 7.2. How does it return objects and lists/maps of objects? {@link spring.certification.data.Q007generics link}<br>
  *
  * @author Valentine Shemyako
  * @since December 15, 2018

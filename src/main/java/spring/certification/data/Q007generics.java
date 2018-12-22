@@ -22,7 +22,7 @@ import org.springframework.jdbc.core.RowMapper;
  * - {@link JdbcTemplate#queryForList(String, Class)}<br>
  * - {@link JdbcTemplate#queryForMap(String)}<br>
  * Examples of mentioned terms:<br>
- * -
+ * Look at corresponding unit test section.<br>
  *
  * @author Valentine Shemyako
  * @since December 22, 2018
