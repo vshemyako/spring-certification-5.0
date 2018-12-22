@@ -17,8 +17,8 @@
  * 7.1. How does the JdbcTemplate support generic queries? {@link spring.certification.data.Q007generics link}<br>
  * 7.2. How does it return objects and lists/maps of objects? {@link spring.certification.data.Q007generics link}<br>
  * <p>
- * 8.1. What is a transaction?<br>
- * 8.2. What is the difference between a local and a global transaction?<br>
+ * 8.1. What is a transaction? {@link spring.certification.data.Q008transaction link}<br>
+ * 8.2. What is the difference between a local and a global transaction? {@link spring.certification.data.Q008transaction link}<br>
  * 9.1. Is a transaction a cross cutting concern?<br>
  * 9.2. How is it implemented by Spring?<br>
  * 10.1. Is a transaction a cross cutting concern? How is it implemented by Spring?<br>
