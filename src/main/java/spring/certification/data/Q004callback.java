@@ -13,6 +13,11 @@ import java.util.function.Consumer;
  * Answer:<br>
  * <b>Callback</b> is a function 'A' which is provided as an argument to a function 'B' and is allowed to be called by
  * the function 'B'.<br>
+ * <b>Main JdbcTemplate callbacks:</b><br>
+ * - {@link org.springframework.jdbc.core.CallableStatementCreator} - is used for executing stored procedures<br>
+ * - {@link org.springframework.jdbc.core.PreparedStatementCreator} - is used for repeatable executing of pre-compiled
+ * SQL statements<br>
+ * - {@link org.springframework.jdbc.core.RowCallbackHandler} - is used for mapping ResultSet results on one-row basis<br>
  * <p>
  * Examples of mentioned terms:<br>
  * {@link CallbackExample} - demonstrates a basic usage of callback function.<br>
@@ -35,13 +40,20 @@ public class Q004callback {
             /**
              * The score to be displayed on a board.
              */
-            private String score;
+            private String score = "0 - 0";
 
             /**
              * Setter will be our call-back function, which is invoked in case score changes.
              */
             public void setScore(String score) {
                 this.score = score;
+            }
+
+            /**
+             * Getter, to verify behavior of a callback function in unit tests.
+             */
+            public String getScore() {
+                return score;
             }
         }
 
