@@ -15,8 +15,9 @@ package spring.certification.data;
  * - Isolation - guaranties that one transaction cannot read data from another transaction until the first one finishes<br>
  * - Durability - guaranties that after a transaction completes - it is somehow reliably stored (e.g. on the hard drive)<br>
  * <p>
- * Examples of mentioned terms:<br>
- * -
+ * - <b>Local transactions</b> are transactions which work only with a single transactional resource (e.g. JDBC connection).<br>
+ * - <b>Global transactions</b> are transactions which work with multiple transactional resources. Those transactions are
+ * managed by application-server.<br>
  *
  * @author Valentine Shemyako
  * @since December 22, 2018
