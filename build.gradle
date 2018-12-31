@@ -22,7 +22,8 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.0.RELEASE'
     compile group: 'javax.inject', name: 'javax.inject', version: '1'
     compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.2'
+    // compile dependency type is used instead of testCompile to reference classes in java-docs
     compile group: 'org.springframework', name: 'spring-test', version: '5.1.0.RELEASE'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
 }
