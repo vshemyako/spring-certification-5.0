@@ -1,5 +1,6 @@
 package spring.certification.test;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,7 +29,7 @@ public class Q004transactionTest {
     @ContextConfiguration(classes = DatabaseConfiguration.class)
     public static class TransactionalUsage extends AbstractTransactionalJUnit4SpringContextTests {
 
-        private static final String TABLE_NAME = "holidays";
+        private static final String HOLIDAYS_TABLE_NAME = "holidays";
 
         /**
          * Setup method which runs out of a transaction.
@@ -39,19 +40,33 @@ public class Q004transactionTest {
         }
 
         /**
-         * Verification that database set-up method works as expected.
-         */
-        @Test
-        public void databaseShouldExist() {
-            countRowsInTable(TABLE_NAME);
-        }
-
-        /**
          * Tear down method which runs out of a transaction.
          */
         @AfterTransaction
         public void tearDown() {
+            int rowCount = countRowsInTable(HOLIDAYS_TABLE_NAME);
+            Assert.assertEquals(0, rowCount);
+
             executeSqlScript("drop-database.sql", false);
+        }
+
+        /**
+         * Verification that database set-up method works as expected.
+         */
+        @Test
+        public void databaseShouldExist() {
+            countRowsInTable(HOLIDAYS_TABLE_NAME);
+        }
+
+        /**
+         * Verifies that changes are not committed to the database (default behavior). Verification
+         * of rollback policy is performed in {@link #tearDown()} block of code.
+         */
+        @Test
+        public void shouldRollbackTransaction() {
+            jdbcTemplate.execute(String.format("INSERT INTO holidays (name) VALUES ('%s')", HOLIDAYS_TABLE_NAME));
+            int rowsCount = countRowsInTable(HOLIDAYS_TABLE_NAME);
+            Assert.assertEquals(1, rowsCount);
         }
     }
 
@@ -66,7 +81,6 @@ public class Q004transactionTest {
             return new EmbeddedDatabaseBuilder()
                     .setType(EmbeddedDatabaseType.H2)
                     .build();
-
         }
 
         @Bean

@@ -1,5 +1,4 @@
 CREATE TABLE holidays (
-  id   INTEGER PRIMARY KEY,
-  name VARCHAR(50),
-  date DATE
+  id   INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50)
 );
