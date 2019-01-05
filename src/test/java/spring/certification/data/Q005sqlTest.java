@@ -18,10 +18,6 @@ import static spring.certification.data.Q005sql.*;
  */
 public class Q005sqlTest {
 
-    private static final String HOLIDAYS_TABLE_NAME = "holidays";
-    private static final String EMPLOYEES_TABLE_NAME = "employees";
-    private static final String EMPLOYEE_ID_COLUMN = "emp_no";
-
     private AnnotationConfigApplicationContext context;
     private PlainSqlExecutor plainSqlExecutor;
 

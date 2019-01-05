@@ -19,4 +19,12 @@ public class Employee {
     private String lastName;
     private Gender gender;
     private LocalDate hireDate;
+
+    public Employee(LocalDate birthDate, String firstName, String lastName, Gender gender, LocalDate hireDate) {
+        this.birthDate = birthDate;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.hireDate = hireDate;
+    }
 }

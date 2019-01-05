@@ -25,21 +25,25 @@ import spring.certification.data.helper.Employee;
  */
 public class Q005sql {
 
-    static final String SQL_CREATE_TABLE_STATEMENT =
+    public static final String HOLIDAYS_TABLE_NAME = "holidays";
+    public static final String EMPLOYEES_TABLE_NAME = "employees";
+    public static final String EMPLOYEE_ID_COLUMN = "emp_no";
+
+    public static final String SQL_CREATE_TABLE_STATEMENT =
             "CREATE TABLE IF NOT EXISTS %s " +
                     "(" +
                     "id INT, " +
                     "name VARCHAR(50)" +
                     ")";
-    static final String SQL_TABLE_VERIFICATION_STATEMENT = "SELECT 1 FROM %s";
-    static final String SQL_DROP_TABLE_STATEMENT = "DROP TABLE %s";
+    public static final String SQL_TABLE_VERIFICATION_STATEMENT = "SELECT 1 FROM %s";
+    public static final String SQL_DROP_TABLE_STATEMENT = "DROP TABLE %s";
 
-    static final String SQL_COUNT_QUERY = "SELECT count(*) FROM %s";
-    static final String SQL_MAX_QUERY = "SELECT max(%s) FROM %s";
+    public static final String SQL_COUNT_QUERY = "SELECT count(*) FROM %s";
+    public static final String SQL_MAX_QUERY = "SELECT max(%s) FROM %s";
 
-    static final String SQL_INSERT_STATEMENT = "INSERT INTO employees (emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(%s, %s, %s, %s, %s, %s)";
+    public static final String SQL_INSERT_STATEMENT = "INSERT INTO employees (emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(%s, %s, %s, %s, %s, %s)";
 
-    static final String QUOTE_WRAPPER = "'%s'";
+    public static final String QUOTE_WRAPPER = "'%s'";
 
     /**
      * Wrapper class which executes only plain-sql statements using {@link JdbcTemplate} capabilities.

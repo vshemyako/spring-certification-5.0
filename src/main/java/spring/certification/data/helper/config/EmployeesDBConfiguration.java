@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -15,6 +18,7 @@ import java.sql.SQLException;
  */
 @PropertySource("classpath:employees.properties")
 @Configuration
+@EnableTransactionManagement
 public class EmployeesDBConfiguration {
 
     @Value("${db.server}")
@@ -51,5 +55,13 @@ public class EmployeesDBConfiguration {
     @Bean
     public JdbcTemplate jdbcTemplate() throws SQLException {
         return new JdbcTemplate(employeesDatasource());
+    }
+
+    /**
+     * Configures {@link DataSourceTransactionManager} bean which is used to manage datasource transactions.
+     */
+    @Bean
+    public PlatformTransactionManager transactionManager() throws SQLException {
+        return new DataSourceTransactionManager(employeesDatasource());
     }
 }
