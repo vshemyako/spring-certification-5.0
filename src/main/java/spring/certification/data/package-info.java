@@ -30,9 +30,9 @@
  * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.Q013enable link}<br>
  * 14. What does transaction propagation mean? {@link spring.certification.data.Q014propagation link}<br>
  * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the
- * same object instance?<br>
- * 16.1. Where can the @Transactional annotation be used?<br>
- * 16.2. What is a typical usage if you put it at class level?<br>
+ * same object instance? {@link spring.certification.data.Q015innercall link}<br>
+ * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.Q016transactional link}<br>
+ * 16.2. What is a typical usage if you put it at class level? {@link spring.certification.data.Q016transactional link}<br>
  * 17. What does declarative transaction management mean?<br>
  * 18. What is the default rollback policy? How can you override it?<br>
  * 19. What is the default rollback policy in a JUnit test, when you use the @RunWith(SpringJUnit4ClassRunner.class) in
