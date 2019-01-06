@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -63,5 +64,13 @@ public class EmployeesDBConfiguration {
     @Bean
     public PlatformTransactionManager transactionManager() throws SQLException {
         return new DataSourceTransactionManager(employeesDatasource());
+    }
+
+    /**
+     * Configures {@link TransactionTemplate} bean which is used for low-level transaction management.
+     */
+    @Bean
+    public TransactionTemplate transactionTemplate() throws SQLException {
+        return new TransactionTemplate(transactionManager());
     }
 }

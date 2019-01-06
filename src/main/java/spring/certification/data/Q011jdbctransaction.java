@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionCallback;
+import org.springframework.transaction.support.TransactionTemplate;
 import spring.certification.data.Q005sql.*;
 import spring.certification.data.helper.Employee;
 import spring.certification.data.helper.config.EmployeesDBConfiguration;
@@ -25,7 +27,9 @@ import static spring.certification.data.Q005sql.*;
  * and declaratively:<br>
  * - {@link EmployeeService#saveEmployeeErroneously(Employee)} - demonstrates how to participate in transaction
  * declaratively. Note that {@link EmployeesDBConfiguration} constructs {@link PlatformTransactionManager} bean and
- * is itself annotated with {@link EnableTransactionManagement}.
+ * is itself annotated with {@link EnableTransactionManagement}.<br>
+ * - {@link EmployeeService#rollbackSavedEmployee(Employee)} - demonstrates how to participate in transaction
+ * programmatically.
  *
  * @author Valentine Shemyako
  * @since January 05, 2019
@@ -44,10 +48,12 @@ public class Q011jdbctransaction {
     public static class EmployeeService {
 
         private PlainSqlExecutor plainSqlExecutor;
+        private TransactionTemplate transactionTemplate;
 
         @Autowired
-        public EmployeeService(PlainSqlExecutor plainSqlExecutor) {
+        public EmployeeService(PlainSqlExecutor plainSqlExecutor, TransactionTemplate transactionTemplate) {
             this.plainSqlExecutor = plainSqlExecutor;
+            this.transactionTemplate = transactionTemplate;
         }
 
         /**
@@ -61,6 +67,23 @@ public class Q011jdbctransaction {
 
             plainSqlExecutor.executeInsert(employee);
             throw new IllegalStateException("Failed to insert employee");
+        }
+
+        /**
+         * Intentionally rollbacks the transaction after inserting (@code employee) into the database.
+         * Method was implemented to verify workings of programmatic jdbc-transactions.
+         */
+        public void rollbackSavedEmployee(Employee employee) {
+            int nextNumber = generateNextNumber();
+            employee.setNumber(nextNumber);
+
+            TransactionCallback<Void> callback = status -> {
+                plainSqlExecutor.executeInsert(employee);
+                status.setRollbackOnly();
+                return null;
+            };
+
+            transactionTemplate.execute(callback);
         }
 
         private int generateNextNumber() {

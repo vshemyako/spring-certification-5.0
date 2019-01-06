@@ -24,7 +24,7 @@
  * 10.1. How are you going to define transaction in Spring? {@link spring.certification.data.Q010transactionmanager link}<br>
  * 10.2. What does @Transactional do? {@link spring.certification.data.Q010transactionmanager link}<br>
  * 10.3. What is the PlatformTransactionManager? {@link spring.certification.data.Q010transactionmanager link}<br>
- * 11. Is the JDBC template able to participate in an existing transaction?<br>
+ * 11. Is the JDBC template able to participate in an existing transaction? {@link spring.certification.data.Q011jdbctransaction link}<br>
  * 12.1. What is a transaction isolation level? {@link spring.certification.data.Q012isolation link}<br>
  * 12.2. How many transaction isolation levels do we have and how are they ordered? {@link spring.certification.data.Q012isolation link}<br>
  * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.Q013enable link}<br>

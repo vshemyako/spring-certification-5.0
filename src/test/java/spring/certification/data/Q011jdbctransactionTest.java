@@ -32,13 +32,7 @@ public class Q011jdbctransactionTest {
      */
     @Test
     public void shouldRollbackInsert() {
-        Employee employee = new Employee(
-                LocalDate.of(1990, 5, 21),
-                "Valentine",
-                "Shemyako",
-                Gender.M,
-                LocalDate.of(2000, 1, 1)
-        );
+        Employee employee = getEmployee();
 
         long beforeInsertEmployeesCount = employeeService.countEmployees();
         try {
@@ -48,5 +42,27 @@ public class Q011jdbctransactionTest {
         }
         long afterInsertEmployeesCount = employeeService.countEmployees();
         Assert.assertEquals(beforeInsertEmployeesCount, afterInsertEmployeesCount);
+    }
+
+    /**
+     * Verifies {@link JdbcTemplate} queries might participate in programmatic transactions.
+     */
+    @Test
+    public void shouldRollbackInsertProgrammatically() {
+        Employee employee = getEmployee();
+        long beforeInsertEmployeesCount = employeeService.countEmployees();
+        employeeService.rollbackSavedEmployee(employee);
+        long afterInsertEmployeesCount = employeeService.countEmployees();
+        Assert.assertEquals(beforeInsertEmployeesCount, afterInsertEmployeesCount);
+    }
+
+    private Employee getEmployee() {
+        return new Employee(
+                LocalDate.of(1990, 5, 21),
+                "Valentine",
+                "Shemyako",
+                Gender.M,
+                LocalDate.of(2000, 1, 1)
+        );
     }
 }
