@@ -23,7 +23,7 @@ import javax.persistence.Id;
  * @author Valentine Shemyako
  * @since January 07, 2019
  */
-public class Q022entity {
+public class Q022entitymanager {
 
     /**
      * An example of an entity-class. The following is required for a class to be an entity-class:<br>

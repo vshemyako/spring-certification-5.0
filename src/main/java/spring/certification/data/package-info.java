@@ -44,13 +44,14 @@
  * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.Q021jpa link}<br>
  * 21.2. What is the idea behind an ORM? {@link spring.certification.data.Q021jpa link}<br>
  * 21.3. What are benefits/disadvantages or ORM? {@link spring.certification.data.Q021jpa link}<br>
- * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both? {@link spring.certification.data.Q022entity link}<br>
- * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.Q022entity link}<br>
- * 23. What do you need to do in Spring if you would like to work with JPA?<br>
+ * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both? {@link spring.certification.data.Q022entitymanager link}<br>
+ * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.Q022entitymanager link}<br>
+ * 23. What do you need to do in Spring if you would like to work with JPA? {@link spring.certification.data.Q023entitymanagerfactory link}<br>
  * 24. Are you able to participate in a given transaction in Spring while working with JPA?<br>
  * 25. Which PlatformTransactionManager(s) can you use with JPA?<br>
  * 26. What does @PersistenceContext do?<br>
- * 27. What do you have to configure to use JPA with Spring? How does Spring Boot make this easier?<br>
+ * 27.1. What do you have to configure to use JPA with Spring?<br>
+ * 27.2. How does Spring Boot make this easier?<br>
  * <p>
  * 28. What is an "instant repository"? (hint: recall Spring Data)<br>
  * 29.1. How do you define an “instant” repository?<br>
