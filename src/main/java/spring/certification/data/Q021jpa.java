@@ -7,8 +7,6 @@ package spring.certification.data;
  * What does JPA stand for - what about ORM?<br>
  * What is the idea behind an ORM?<br>
  * What are benefits/disadvantages or ORM?<br>
- * What is a PersistenceContext and what is an EntityManager. What is the relationship between both?<br>
- * Why do you need the @Entity annotation. Where can it be placed?<br>
  * <p>
  * Answer:<br>
  * <b>JPA</b> stands for Java Persistence API - it's a specification, implementation of which is supplied by different
