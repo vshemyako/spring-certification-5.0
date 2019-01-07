@@ -1,0 +1,4 @@
+CREATE TABLE holidays (
+  id   INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50)
+);

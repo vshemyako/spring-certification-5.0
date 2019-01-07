@@ -1,10 +1,11 @@
-package spring.certification.data.helper.config;
+package spring.certification.data.helper.config.jdbc;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
+import spring.certification.data.helper.config.EmployeesDBConfiguration;
 
 import javax.sql.DataSource;
 
