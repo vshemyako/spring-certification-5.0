@@ -34,30 +34,30 @@
  * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.Q016transactional link}<br>
  * 16.2. What is a typical usage if you put it at class level? {@link spring.certification.data.Q016transactional link}<br>
  * 17. What does declarative transaction management mean? {@link spring.certification.data.Q017declarative link}<br>
- * 18. What is the default rollback policy? How can you override it?<br>
+ * 18. What is the default rollback policy? How can you override it? {@link spring.certification.data.Q018rollbackpolicy link}<br>
  * 19. What is the default rollback policy in a JUnit test, when you use the @RunWith(SpringJUnit4ClassRunner.class) in
  * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?
  * {@link spring.certification.data.Q019testrollbackpolicy link}<br>
  * 20. Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
  * {@link spring.certification.data.Q020autocommit link}<br>
  * <p>
- * 21.1. What does JPA stand for - what about ORM?<br>
- * 21.2. What is the idea behind an ORM?<br>
- * 21.3. What are benefits/disadvantages or ORM?<br>
- * 21.4. What is a PersistenceContext and what is an EntityManager. What is the relationship between both?<br>
- * 21.5. Why do you need the @Entity annotation. Where can it be placed?<br>
- * 22. What do you need to do in Spring if you would like to work with JPA?<br>
- * 23. Are you able to participate in a given transaction in Spring while working with JPA?<br>
- * 24. Which PlatformTransactionManager(s) can you use with JPA?<br>
- * 25. What does @PersistenceContext do?<br>
- * 26. What do you have to configure to use JPA with Spring? How does Spring Boot make this easier?<br>
+ * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.Q021jpa link}<br>
+ * 21.2. What is the idea behind an ORM? {@link spring.certification.data.Q021jpa link}<br>
+ * 21.3. What are benefits/disadvantages or ORM? {@link spring.certification.data.Q021jpa link}<br>
+ * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both?<br>
+ * 22.2. Why do you need the @Entity annotation. Where can it be placed?<br>
+ * 23. What do you need to do in Spring if you would like to work with JPA?<br>
+ * 24. Are you able to participate in a given transaction in Spring while working with JPA?<br>
+ * 25. Which PlatformTransactionManager(s) can you use with JPA?<br>
+ * 26. What does @PersistenceContext do?<br>
+ * 27. What do you have to configure to use JPA with Spring? How does Spring Boot make this easier?<br>
  * <p>
- * 27. What is an "instant repository"? (hint: recall Spring Data)<br>
- * 28.1. How do you define an “instant” repository?<br>
- * 28.2. Why is it an interface not a class?<br>
- * 29. What is the naming convention for finder methods?<br>
- * 30. How are Spring Data repositories implemented by Spring at runtime?<br>
- * 31. What is @Query used for?<br>
+ * 28. What is an "instant repository"? (hint: recall Spring Data)<br>
+ * 29.1. How do you define an “instant” repository?<br>
+ * 29.2. Why is it an interface not a class?<br>
+ * 30. What is the naming convention for finder methods?<br>
+ * 31. How are Spring Data repositories implemented by Spring at runtime?<br>
+ * 32. What is @Query used for?<br>
  *
  * @author Valentine Shemyako
  * @since December 15, 2018
