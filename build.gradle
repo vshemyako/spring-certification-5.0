@@ -28,9 +28,10 @@ dependencies {
     compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.2'
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
-    testCompile group: 'org.springframework', name: 'spring-test', version: '5.1.0.RELEASE'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
+    // compile dependency type is used instead of testCompile to reference classes in java-docs
+    compile group: 'org.springframework', name: 'spring-test', version: '5.1.0.RELEASE'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.mockito', name: 'mockito-core', version: '1.9.5'
     // embedded database driver
     testCompile group: 'com.h2database', name: 'h2', version: '1.4.197'
 }
