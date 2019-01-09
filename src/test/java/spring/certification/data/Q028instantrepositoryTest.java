@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import spring.certification.data.helper.config.jpa.config.EmbeddedDBConfiguration;
@@ -22,13 +24,31 @@ import java.util.Optional;
 @ContextConfiguration(classes = EmbeddedDBConfiguration.class)
 public class Q028instantrepositoryTest {
 
+    private static final String CHRISTMAS = "Christmas";
+
     @Autowired
     private InstantHolidayRepository holidayRepository;
 
+    /**
+     * Verifies that jpa repositories were configured correctly, by fetching
+     * a {@link Holiday} instance from a database.
+     */
     @Test
-    public void shouldReturnChristmas() {
+    public void shouldFindChristmasById() {
         Optional<Holiday> christmas = holidayRepository.findById(1);
         Assert.assertTrue(christmas.isPresent());
-        Assert.assertEquals("Christmas", christmas.get().getName());
+        Assert.assertEquals(CHRISTMAS, christmas.get().getName());
+    }
+
+    /**
+     * Verifies functionality of a method which is defined within intermediate interface.
+     * Consequently verifies functionality of a {@link NoRepositoryBean} annotation, which
+     * essentially demarcate interface for which {@link BeanDefinition} should not be created.
+     */
+    @Test
+    public void shouldFindChristmasByName() {
+        Optional<Holiday> christmas = holidayRepository.findByName(CHRISTMAS);
+        Assert.assertTrue(christmas.isPresent());
+        Assert.assertEquals(CHRISTMAS, christmas.get().getName());
     }
 }
