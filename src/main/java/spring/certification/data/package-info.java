@@ -58,7 +58,7 @@
  * 29.2. Why is it an interface not a class? {@link spring.certification.data.Q029instantrepositoryconfig link}<br>
  * 30. What is the naming convention for finder methods? {@link spring.certification.data.Q030findermethods link}<br>
  * 31. How are Spring Data repositories implemented by Spring at runtime? {@link spring.certification.data.Q031runtimegeneration link}<br>
- * 32. What is @Query used for?<br>
+ * 32. What is @Query used for? {@link spring.certification.data.Q032query link}<br>
  *
  * @author Valentine Shemyako
  * @since December 15, 2018

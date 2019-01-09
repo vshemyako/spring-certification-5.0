@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -16,9 +17,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Verified functionality of instant spring-data repositories.
@@ -88,6 +87,17 @@ public class Q028instantrepositoryTest {
                 .collect(Collectors.toList());
         assertEquals(2, holidayNames.size());
         assertTrue(holidayNames.containsAll(Arrays.asList(NEW_YEAR, HALLOWEEN)));
+    }
+
+    /**
+     * Verifies workings of spring-data jpa queries specified
+     * using {@link Query} annotation.
+     */
+    @Test
+    public void shouldFindDistinctHolidays() {
+        List<Holiday> holidays = holidayRepository.getUnique();
+        assertTrue(!holidays.isEmpty());
+        assertEquals(4, holidays.size());
     }
 
     private void assertChristmasHoliday(Holiday holiday) {
