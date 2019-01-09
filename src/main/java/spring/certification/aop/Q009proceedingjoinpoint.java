@@ -21,7 +21,7 @@ import java.util.List;
  * <p>
  * Answer:<br>
  * {@link ProceedingJoinPoint} is an extension of an {@link JoinPoint} interface which allows to control execution logic
- * of advised method. In particular it allows to adjust input parameters of advised method, skip execution of an adviced
+ * of advised method. In particular it allows to adjust input parameters of advised method, skip execution of an advised
  * method, or invoke advised method logic multiple times. In order to invoke advised method {@link ProceedingJoinPoint#proceed()}
  * or {@link ProceedingJoinPoint#proceed(Object[])} method should be used.<br>
  * {@link ProceedingJoinPoint} must be the first argument of the advice and is only accessible in {@link Around} advices.<br>
