@@ -10,7 +10,7 @@ package spring.certification.data;
  * Answer:<br>
  * Please take a look at {@link Q023entitymanagerfactory} and related integration tests which explain how to configure
  * JPA in Spring application.<br>
- * // TODO: details about Spring-Boot approach will be added earlier
+ * // TODO: details about Spring-Boot approach will be added later
  *
  * @author Valentine Shemyako
  * @since January 08, 2019
