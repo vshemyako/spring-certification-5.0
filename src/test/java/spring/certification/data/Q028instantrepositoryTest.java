@@ -1,6 +1,5 @@
 package spring.certification.data;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,14 @@ import spring.certification.data.helper.config.jpa.config.EmbeddedDBConfiguratio
 import spring.certification.data.helper.config.jpa.entity.Holiday;
 import spring.certification.data.helper.config.jpa.instant.InstantHolidayRepository;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Verified functionality of instant spring-data repositories.
@@ -25,6 +31,8 @@ import java.util.Optional;
 public class Q028instantrepositoryTest {
 
     private static final String CHRISTMAS = "Christmas";
+    public static final String NEW_YEAR = "New Year";
+    public static final String HALLOWEEN = "Halloween";
 
     @Autowired
     private InstantHolidayRepository holidayRepository;
@@ -36,8 +44,7 @@ public class Q028instantrepositoryTest {
     @Test
     public void shouldFindChristmasById() {
         Optional<Holiday> christmas = holidayRepository.findById(1);
-        Assert.assertTrue(christmas.isPresent());
-        Assert.assertEquals(CHRISTMAS, christmas.get().getName());
+        assertChristmasHoliday(christmas.orElse(null));
     }
 
     /**
@@ -48,7 +55,43 @@ public class Q028instantrepositoryTest {
     @Test
     public void shouldFindChristmasByName() {
         Optional<Holiday> christmas = holidayRepository.findByName(CHRISTMAS);
-        Assert.assertTrue(christmas.isPresent());
-        Assert.assertEquals(CHRISTMAS, christmas.get().getName());
+        assertChristmasHoliday(christmas.orElse(null));
+    }
+
+    /**
+     * Verifies method name parsing mechanism, which allows to declare custom queries.
+     */
+    @Test
+    public void shouldFindChristmasByAlternativeQueries() {
+        Holiday holiday = holidayRepository.readByName(CHRISTMAS);
+        assertChristmasHoliday(holiday);
+
+        holiday = holidayRepository.queryByName(CHRISTMAS);
+        assertChristmasHoliday(holiday);
+    }
+
+    /**
+     * Verifies that number of entities fetched from a database can be controlled
+     * by 'Top' or 'First' keywords.
+     */
+    @Test
+    public void shouldFindTop2Holidays() {
+        List<Holiday> holidays = holidayRepository.readTop2By();
+        assertEquals(2, holidays.size());
+    }
+
+    @Test
+    public void shouldFindHolidaysByNames() {
+        List<Holiday> holidays = holidayRepository.readByNameOrName(NEW_YEAR, HALLOWEEN);
+        List<String> holidayNames = holidays.stream()
+                .map(Holiday::getName)
+                .collect(Collectors.toList());
+        assertEquals(2, holidayNames.size());
+        assertTrue(holidayNames.containsAll(Arrays.asList(NEW_YEAR, HALLOWEEN)));
+    }
+
+    private void assertChristmasHoliday(Holiday holiday) {
+        assertNotNull(holiday);
+        assertEquals(CHRISTMAS, holiday.getName());
     }
 }

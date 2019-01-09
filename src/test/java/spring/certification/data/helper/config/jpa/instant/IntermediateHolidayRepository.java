@@ -20,4 +20,8 @@ public interface IntermediateHolidayRepository<T, ID> extends CrudRepository<T, 
      * @return found object if any.
      */
     Optional<T> findByName(String name);
+
+    T readByName(String name);
+
+    T queryByName(String name);
 }
