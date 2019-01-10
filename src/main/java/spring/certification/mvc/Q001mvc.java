@@ -14,6 +14,9 @@ package spring.certification.mvc;
  * - View - model presented to the user in desired format<br>
  * - Controller - users' requests handler, interacts with the model (usually via service layer) and directs users
  * to the appropriate view<br>
+ * <p>
+ * MVC design pattern can be implemented in different ways. Spring Framework utilizes <b>Front Controller</b> design
+ * pattern which funnels all user requests through a single <b>Dispatcher Servlet</b> object.<br>
  *
  * @author Valentine Shemyako
  * @since January 10, 2019
