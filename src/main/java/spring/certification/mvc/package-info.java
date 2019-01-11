@@ -2,9 +2,9 @@
  * Spring v5.0 Professional Certification.
  * <p>
  * Table of contents:<br>
- * 1. MVC is an abbreviation for a design pattern. What does it stand for and what is the idea behind it?<br>
- * 2. Do you need spring-mvc.jar in your classpath or is it part of spring-core?<br>
- * 3. What is the DispatcherServlet and what is it used for?<br>
+ * 1. MVC is an abbreviation for a design pattern. What does it stand for and what is the idea behind it? {@link spring.certification.mvc.Q001mvc link}<br>
+ * 2. Do you need spring-mvc.jar in your classpath or is it part of spring-core? {@link spring.certification.mvc.Q002jar link}<br>
+ * 3. What is the DispatcherServlet and what is it used for? {@link org.springframework.web.servlet.DispatcherServlet link}<br>
  * 4. Is the DispatcherServlet instantiated via an application context?<br>
  * 5. What is a web application context? What extra scopes does it offer?<br>
  * <p>
