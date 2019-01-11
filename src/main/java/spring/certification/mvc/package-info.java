@@ -6,7 +6,7 @@
  * 2. Do you need spring-mvc.jar in your classpath or is it part of spring-core? {@link spring.certification.mvc.Q002jar link}<br>
  * 3. What is the DispatcherServlet and what is it used for? {@link org.springframework.web.servlet.DispatcherServlet link}<br>
  * 4. Is the DispatcherServlet instantiated via an application context? {@link spring.certification.mvc.Q004bootstrap link}<br>
- * 5. What is a web application context? What extra scopes does it offer?<br>
+ * 5. What is a web application context? What extra scopes does it offer? {@link spring.certification.mvc.Q005webapplicationcontext link}<br>
  * <p>
  * 6. What is the @Controller annotation used for?<br>
  * 7. How is an incoming request mapped to a controller and mapped to a method?<br>
