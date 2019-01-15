@@ -8,7 +8,7 @@
  * 4. Is the DispatcherServlet instantiated via an application context? {@link spring.certification.mvc.Q004bootstrap link}<br>
  * 5. What is a web application context? What extra scopes does it offer? {@link spring.certification.mvc.Q005webapplicationcontext link}<br>
  * <p>
- * 6. What is the @Controller annotation used for?<br>
+ * 6. What is the @Controller annotation used for? {@link spring.certification.mvc.Q006controller link}<br>
  * 7. How is an incoming request mapped to a controller and mapped to a method?<br>
  * 8. What is the difference between @RequestMapping and @GetMapping?<br>
  * 9. What is @RequestParam used for?<br>
