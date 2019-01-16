@@ -15,7 +15,7 @@
  * 10. What are the differences between @RequestParam and @PathVariable? {@link spring.certification.mvc.Q010pathvariable link}<br>
  * 11. What are some of the parameter types for a controller method? {@link spring.certification.mvc.Q011parametertypes link}<br>
  * 12. What other annotations might you use on a controller method parameter? {@link spring.certification.mvc.Q012annotations link}<br>
- * 13. What are some of the valid return types of a controller method?<br>
+ * 13. What are some of the valid return types of a controller method? {@link spring.certification.mvc.Q013returntypes link}<br>
  * <p>
  * 14. What is a View and what's the idea behind supporting different types of View?<br>
  * 15. How is the right View chosen when it comes to the rendering phase?<br>
