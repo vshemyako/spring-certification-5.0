@@ -10,7 +10,7 @@
  * <p>
  * 6. What is the @Controller annotation used for? {@link spring.certification.mvc.Q006controller link}<br>
  * 7. How is an incoming request mapped to a controller and mapped to a method? {@link spring.certification.mvc.Q007requestmapping link}<br>
- * 8. What is the difference between @RequestMapping and @GetMapping?<br>
+ * 8. What is the difference between @RequestMapping and @GetMapping? {@link spring.certification.mvc.Q008mappingdifference link}<br>
  * 9. What is @RequestParam used for?<br>
  * 10. What are the differences between @RequestParam and @PathVariable?<br>
  * 11. What are some of the parameter types for a controller method?<br>
