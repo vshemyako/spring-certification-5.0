@@ -20,7 +20,7 @@
  * 14. What is a View and what's the idea behind supporting different types of View? {@link spring.certification.mvc.Q014view link}<br>
  * 15. How is the right View chosen when it comes to the rendering phase? {@link spring.certification.mvc.Q015viewresolution link}<br>
  * 16. What is the Model? {@link spring.certification.mvc.Q016model link}<br>
- * 17. Why do you have access to the model in your View? Where does it come from?<br>
+ * 17. Why do you have access to the model in your View? Where does it come from? {@link spring.certification.mvc.Q017viewmodelrelation link}<br>
  * 18. What is the purpose of the session scope?<br>
  * 19. What is the default scope in the web context?<br>
  * 20. Why are controllers testable artifacts?<br>
