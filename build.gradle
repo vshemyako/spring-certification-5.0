@@ -23,6 +23,7 @@ dependencies {
     compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.1.0.RELEASE'
     compile group: 'org.springframework', name: 'spring-orm', version: '5.0.0.RELEASE'
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.0.Final'
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
     compile group: 'javax.inject', name: 'javax.inject', version: '1'
     compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
     compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.2'
