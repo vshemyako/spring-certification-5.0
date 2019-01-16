@@ -17,8 +17,8 @@
  * 12. What other annotations might you use on a controller method parameter? {@link spring.certification.mvc.Q012annotations link}<br>
  * 13. What are some of the valid return types of a controller method? {@link spring.certification.mvc.Q013returntypes link}<br>
  * <p>
- * 14. What is a View and what's the idea behind supporting different types of View?<br>
- * 15. How is the right View chosen when it comes to the rendering phase?<br>
+ * 14. What is a View and what's the idea behind supporting different types of View? {@link spring.certification.mvc.Q014view link}<br>
+ * 15. How is the right View chosen when it comes to the rendering phase? {@link spring.certification.mvc.Q015viewresolution link}<br>
  * 16. What is the Model?<br>
  * 17. Why do you have access to the model in your View? Where does it come from?<br>
  * 18. What is the purpose of the session scope?<br>
