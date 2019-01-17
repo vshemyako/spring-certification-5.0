@@ -13,8 +13,8 @@
  * 7. In which order do you have to write multiple intercept-url's? {@link spring.certification.security.Q007intercepturlorder link}<br>
  * 8. What does the ** pattern in an antMatcher or mvcMatcher do? {@link spring.certification.security.Q008urlwildcard link}<br>
  * 9. Why is an mvcMatcher more secure than an antMatcher? {@link spring.certification.security.Q009pathmatchers link}<br>
- * 10.1. Does Spring Security support password hashing?<br>
- * 10.2. What is salting?<br>
+ * 10.1. Does Spring Security support password hashing? {@link spring.certification.security.Q010hashing link}<br>
+ * 10.2. What is salting? {@link spring.certification.security.Q010hashing link}<br>
  * <p>
  * 11.1. Why do you need method security?<br>
  * 11.2. What type of object is typically secured at the method level (think of its purpose not its Java type).<br>
