@@ -2,7 +2,7 @@
  * Spring v5.0 Professional Certification.
  * <p>
  * Table of contents:<br>
- * 1. What are authentication and authorization? Which must come first?<br>
+ * 1. What are authentication and authorization? Which must come first? {@link spring.certification.security.Q001concepts link}<br>
  * 2.1. Is security a cross cutting concern?<br>
  * 2.2. How is it implemented internally?<br>
  * 3. What is the delegating filter proxy?<br>
