@@ -9,7 +9,7 @@
  * 4. What is the security filter chain? {@link spring.certification.security.Q004securityfilterchain link}<br>
  * 5. What is a security context? {@link spring.certification.security.Q005securitycontext link}<br>
  * <p>
- * 6. Why do you need the intercept-url?<br>
+ * 6. Why do you need the intercept-url? {@link spring.certification.security.Q006url link}<br>
  * 7. In which order do you have to write multiple intercept-url's?<br>
  * 8. What does the ** pattern in an antMatcher or mvcMatcher do?<br>
  * 9. Why is an mvcMatcher more secure than an antMatcher?<br>
