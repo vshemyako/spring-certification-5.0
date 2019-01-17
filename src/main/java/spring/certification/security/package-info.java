@@ -7,7 +7,7 @@
  * 2.2. How is it implemented internally? {@link spring.certification.security.Q002implementation link}<br>
  * 3. What is the delegating filter proxy? {@link spring.certification.security.Q003delegatingfilterproxy link}<br>
  * 4. What is the security filter chain? {@link spring.certification.security.Q004securityfilterchain link}<br>
- * 5. What is a security context?<br>
+ * 5. What is a security context? {@link spring.certification.security.Q005securitycontext link}<br>
  * <p>
  * 6. Why do you need the intercept-url?<br>
  * 7. In which order do you have to write multiple intercept-url's?<br>

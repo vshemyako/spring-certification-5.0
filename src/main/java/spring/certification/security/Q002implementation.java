@@ -29,7 +29,7 @@ import org.springframework.web.filter.DelegatingFilterProxy;
  * {@link DelegatingFilterProxy} delegates filtering functionality to a single instance of {@link FilterChainProxy} which <b>is</b>
  * a Spring bean, thus lifecycle of it is managed by {@link ApplicationContext}. {@link FilterChainProxy} holds a list of
  * {@link SecurityFilterChain security filter chains} which contain all security logic.
- * Only <b>one</b> security filter chain can process web-request at a time.<br>
+ * Only <b>one</b> security filter chain can process a single web-request.<br>
  *
  * @author Valentine Shemyako
  * @since January 17, 2019
