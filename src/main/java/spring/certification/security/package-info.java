@@ -5,7 +5,7 @@
  * 1. What are authentication and authorization? Which must come first? {@link spring.certification.security.Q001concepts link}<br>
  * 2.1. Is security a cross cutting concern? {@link spring.certification.security.Q002implementation link}<br>
  * 2.2. How is it implemented internally? {@link spring.certification.security.Q002implementation link}<br>
- * 3. What is the delegating filter proxy?<br>
+ * 3. What is the delegating filter proxy? {@link spring.certification.security.Q003delegatingfilterproxy link}<br>
  * 4. What is the security filter chain?<br>
  * 5. What is a security context?<br>
  * <p>
