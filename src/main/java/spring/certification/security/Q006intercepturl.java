@@ -21,5 +21,5 @@ import org.springframework.security.web.util.matcher.RequestMatcher;
  * @author Valentine Shemyako
  * @since January 17, 2019
  */
-public class Q006url {
+public class Q006intercepturl {
 }
