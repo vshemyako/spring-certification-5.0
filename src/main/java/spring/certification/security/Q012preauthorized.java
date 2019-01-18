@@ -16,7 +16,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
  * <p>
  * Discrepancies:<br>
  * {@link RolesAllowed} supports only a list of authentications (roles). It's an annotation defined by JSR-250 specification.<br>
- * {@link PreAuthorize} supports SPeL, it's a Spring Security framework annotation.<br>
+ * {@link PreAuthorize} supports SpEL, it's a Spring Security framework annotation.<br>
  *
  * @author Valentine Shemyako
  * @since January 18, 2019
