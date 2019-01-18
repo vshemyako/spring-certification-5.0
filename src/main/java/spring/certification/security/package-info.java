@@ -23,7 +23,7 @@
  * 14. How are method security annotations implemented? {@link spring.certification.security.Q014annotationworkings link}<br>
  * 15. In which security annotation are you allowed to use SpEL? {@link spring.certification.security.Q015spel link}<br>
  * 16. Is it enough to hide sections of my output (e.g. JSP-Page or Mustache template)? {@link spring.certification.security.Q016hidden link}<br>
- * 17. Spring security offers a security tag library for JSP, would you recognize it if you saw it in an example?<br>
+ * 17. Spring security offers a security tag library for JSP, would you recognize it if you saw it in an example? {@link spring.certification.security.Q017jsplib link}<br>
  *
  * @author Valentine Shemyako
  * @since January 16, 2019
