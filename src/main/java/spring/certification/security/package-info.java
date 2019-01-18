@@ -16,15 +16,14 @@
  * 10.1. Does Spring Security support password hashing? {@link spring.certification.security.Q010hashing link}<br>
  * 10.2. What is salting? {@link spring.certification.security.Q010hashing link}<br>
  * <p>
- * 11.1. Why do you need method security?<br>
- * 11.2. What type of object is typically secured at the method level (think of its purpose not its Java type).<br>
+ * 11.1. Why do you need method security? {@link spring.certification.security.Q011methodsecurity link}<br>
+ * 11.2. What type of object is typically secured at the method level (think of its purpose not its Java type). {@link spring.certification.security.Q011methodsecurity link}<br>
  * 12. What do @PreAuthorized and @RolesAllowed do? What is the difference between them?<br>
  * 13. What does Spring’s @Secured do?<br>
  * 14. How are these annotations implemented?<br>
  * 15. In which security annotation are you allowed to use SpEL?<br>
  * 16. Is it enough to hide sections of my output (e.g. JSP-Page or Mustache template)?<br>
- * 17. Spring security offers a security tag library for JSP, would you recognize it if you saw it
- * in an example?<br>
+ * 17. Spring security offers a security tag library for JSP, would you recognize it if you saw it in an example?<br>
  *
  * @author Valentine Shemyako
  * @since January 16, 2019
