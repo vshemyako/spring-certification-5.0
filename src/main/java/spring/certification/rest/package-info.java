@@ -13,7 +13,7 @@
  * 7. Is REST scalable and/or interoperable? {@link spring.certification.rest.Q007scalability link}<br>
  * 8. Which HTTP methods does REST use? {@link spring.certification.rest.Q008httpmethods link}<br>
  * 9. What is an HttpMessageConverter? {@link spring.certification.rest.Q009messageconverter link}<br>
- * 10. Is REST normally stateless?<br>
+ * 10. Is REST normally stateless? {@link spring.certification.rest.Q010statelessness link}<br>
  * 11. What does @RequestMapping do?<br>
  * 12.1. Is @Controller a stereotype?<br>
  * 12.2. Is @RestController a stereotype?<br>
