@@ -11,7 +11,7 @@
  * 6.1. What are idempotent operations? {@link spring.certification.rest.Q006idempotent link}<br>
  * 6.2. Why is idempotency important? {@link spring.certification.rest.Q006idempotent link}<br>
  * 7. Is REST scalable and/or interoperable?<br>
- * 8. Which HTTP methods does REST use?<br>
+ * 8. Which HTTP methods does REST use? {@link spring.certification.rest.Q008httpmethods link}<br>
  * 9. What is an HttpMessageConverter?<br>
  * 10. Is REST normally stateless?<br>
  * 11. What does @RequestMapping do?<br>
@@ -25,8 +25,8 @@
  * 17. When do you need @ResponseStatus?<br>
  * 18.1. Where do you need @ResponseBody?<br>
  * 18.2. What about @RequestBody?<br>
- * 19. If you saw example Controller code, would you understand what it is doing? Could you tell if it was annotated
- * correctly?<br>
+ * 19.1. If you saw example Controller code, would you understand what it is doing?<br>
+ * 19.2. Could you tell if it was annotated correctly?<br>
  * 20. Do you need Spring MVC in your classpath?<br>
  * 21. What Spring Boot starter would you use for a Spring REST application?<br>
  * 22. What are the advantages of the RestTemplate?<br>
