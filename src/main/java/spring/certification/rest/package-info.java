@@ -5,8 +5,8 @@
  * 1. What does REST stand for? {@link spring.certification.rest.Q001rest link}<br>
  * 2. What is a resource? {@link spring.certification.rest.Q002resource link}<br>
  * 3. What does CRUD mean? {@link spring.certification.rest.Q003crud link}<br>
- * 4.1. Is REST secure?<br>
- * 4.2. What can you do to secure it?<br>
+ * 4.1. Is REST secure? {@link spring.certification.rest.Q004security link}<br>
+ * 4.2. What can you do to secure it? {@link spring.certification.rest.Q004security link}<br>
  * 5. What are safe REST operations? {@link spring.certification.rest.Q005safe link}<br>
  * 6.1. What are idempotent operations? {@link spring.certification.rest.Q006idempotent link}<br>
  * 6.2. Why is idempotency important? {@link spring.certification.rest.Q006idempotent link}<br>
