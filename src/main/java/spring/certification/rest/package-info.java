@@ -10,7 +10,7 @@
  * 5. What are safe REST operations? {@link spring.certification.rest.Q005safe link}<br>
  * 6.1. What are idempotent operations? {@link spring.certification.rest.Q006idempotent link}<br>
  * 6.2. Why is idempotency important? {@link spring.certification.rest.Q006idempotent link}<br>
- * 7. Is REST scalable and/or interoperable?<br>
+ * 7. Is REST scalable and/or interoperable? {@link spring.certification.rest.Q007scalability link}<br>
  * 8. Which HTTP methods does REST use? {@link spring.certification.rest.Q008httpmethods link}<br>
  * 9. What is an HttpMessageConverter?<br>
  * 10. Is REST normally stateless?<br>
