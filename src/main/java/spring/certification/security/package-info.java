@@ -19,7 +19,7 @@
  * 11.1. Why do you need method security? {@link spring.certification.security.Q011methodsecurity link}<br>
  * 11.2. What type of object is typically secured at the method level (think of its purpose not its Java type). {@link spring.certification.security.Q011methodsecurity link}<br>
  * 12. What do @PreAuthorized and @RolesAllowed do? What is the difference between them?<br>
- * 13. What does Spring’s @Secured do?<br>
+ * 13. What does Spring’s @Secured do? {@link spring.certification.security.Q013secured link}<br>
  * 14. How are method security annotations implemented? {@link spring.certification.security.Q014annotationworkings link}<br>
  * 15. In which security annotation are you allowed to use SpEL?<br>
  * 16. Is it enough to hide sections of my output (e.g. JSP-Page or Mustache template)?<br>
