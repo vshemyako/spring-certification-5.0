@@ -1,5 +1,8 @@
 package spring.certification.security;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -15,6 +18,8 @@ package spring.certification.security;
  * <p>
  * Method level security is all about protecting sensitive data, which is usually managed by business (service)
  * layer of an application. Spring method-security aims to protect exactly that layer of an application.<br>
+ * <p>
+ * To enable method security {@link Configuration} class has to be marked with {@link EnableGlobalMethodSecurity} annotation.<br>
  *
  * @author Valentine Shemyako
  * @since January 17, 2019
