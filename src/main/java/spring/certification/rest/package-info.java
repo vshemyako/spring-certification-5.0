@@ -14,7 +14,7 @@
  * 8. Which HTTP methods does REST use? {@link spring.certification.rest.Q008httpmethods link}<br>
  * 9. What is an HttpMessageConverter? {@link spring.certification.rest.Q009messageconverter link}<br>
  * 10. Is REST normally stateless? {@link spring.certification.rest.Q010statelessness link}<br>
- * 11. What does @RequestMapping do?<br>
+ * 11. What does @RequestMapping do? {@link spring.certification.rest.Q011requestmapping link}<br>
  * 12.1. Is @Controller a stereotype? {@link spring.certification.rest.Q012stereotype link}<br>
  * 12.2. Is @RestController a stereotype? {@link spring.certification.rest.Q012stereotype link}<br>
  * 12.3. What is a stereotype annotation? What does that mean? {@link spring.certification.rest.Q012stereotype link}<br>
