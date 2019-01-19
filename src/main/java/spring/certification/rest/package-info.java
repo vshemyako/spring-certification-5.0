@@ -20,11 +20,11 @@
  * 12.3. What is a stereotype annotation? What does that mean? {@link spring.certification.rest.Q012stereotype link}<br>
  * 13. What is the difference between @Controller and @RestController? {@link spring.certification.rest.Q013restcontroller link}<br>
  * 14. When do you need @ResponseBody? {@link spring.certification.rest.Q014responsebody link}<br>
- * 15. What does @PathVariable do?<br>
+ * 15. What does @PathVariable do? {@link spring.certification.rest.Q015pathvariable link}<br>
  * 16. What are the HTTP status return codes for a successful GET, POST, PUT or DELETE operation?<br>
  * 17. When do you need @ResponseStatus? {@link spring.certification.rest.Q017responsestatus link}<br>
- * 18.1. Where do you need @ResponseBody?<br>
- * 18.2. What about @RequestBody?<br>
+ * 18.1. Where do you need @ResponseBody? {@link spring.certification.rest.Q018requestbody link}<br>
+ * 18.2. What about @RequestBody? {@link spring.certification.rest.Q018requestbody link}<br>
  * 19.1. If you saw example Controller code, would you understand what it is doing? {@link spring.certification.rest.Q019correctness}<br>
  * 19.2. Could you tell if it was annotated correctly? {@link spring.certification.rest.Q019correctness}<br>
  * 20. Do you need Spring MVC in your classpath? {@link spring.certification.rest.Q020webmvcjar link}<br>
