@@ -22,7 +22,7 @@
  * 14. When do you need @ResponseBody?<br>
  * 15. What does @PathVariable do?<br>
  * 16. What are the HTTP status return codes for a successful GET, POST, PUT or DELETE operation?<br>
- * 17. When do you need @ResponseStatus?<br>
+ * 17. When do you need @ResponseStatus? {@link spring.certification.rest.Q017responsestatus link}<br>
  * 18.1. Where do you need @ResponseBody?<br>
  * 18.2. What about @RequestBody?<br>
  * 19.1. If you saw example Controller code, would you understand what it is doing?<br>
