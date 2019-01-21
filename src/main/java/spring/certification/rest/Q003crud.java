@@ -13,7 +13,7 @@ package spring.certification.rest;
  * database records management. Mappings between those operations are roughly the following:<br>
  * - Create - POST<br>
  * - Read - GET<br>
- * - Update - PUT<br>
+ * - Update - PUT, PATCH<br>
  * - Delete - DELETE<br>
  *
  * @author Valentine Shemyako

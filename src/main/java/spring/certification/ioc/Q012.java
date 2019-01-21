@@ -33,7 +33,7 @@ import java.lang.annotation.Target;
  * standardized role. Spring framework defines a set of <b>stereotype</b> annotations to highlight the main purpose
  * of an annotated class (in addition to being auto-detected as a Spring bean):<br>
  * 1. {@link Component} - root annotation, which may serve as a meta-annotation.<br>
- * 2. {@link Service} - general-purpose role class<br>
+ * 2. {@link Service} - general-purpose role class, usually specifies business-logic of an application<br>
  * 3. {@link Repository} - data access object class<br>
  * 4. {@link Controller} - web controller class<br>
  * 5. {@link Configuration} - class which contains bean meta-information<br>
