@@ -2,7 +2,7 @@
  * Spring v5.0 Professional Certification.
  * <p>
  * Table of contents:<br>
- * 1. What is Spring Boot?<br>
+ * 1. What is Spring Boot? {@link spring.certification.boot.Q001concepts link}<br>
  * 2. What are the advantages of using Spring Boot?<br>
  * 3. Why is Spring Boot “opinionated”?<br>
  * 4. How does Spring Boot work? How does it know what to configure?<br>
