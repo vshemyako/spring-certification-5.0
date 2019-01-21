@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
 }
 
 group 'spring'
@@ -19,6 +21,7 @@ task copyDependencies(type: Copy) {
 }
 
 dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.0.RELEASE'
     compile group: 'org.springframework.security', name: 'spring-security-config', version: '5.1.0.RELEASE'
     compile group: 'org.springframework.security', name: 'spring-security-web', version: '5.1.0.RELEASE'
     compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.0.RELEASE'
