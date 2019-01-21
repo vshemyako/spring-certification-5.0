@@ -29,7 +29,7 @@
  * 19.2. Could you tell if it was annotated correctly? {@link spring.certification.rest.Q019correctness link}<br>
  * 20. Do you need Spring MVC in your classpath? {@link spring.certification.rest.Q020webmvcjar link}<br>
  * 21. What Spring Boot starter would you use for a Spring REST application? {@link spring.certification.rest.Q021springbootmvc link}<br>
- * 22. What are the advantages of the RestTemplate?<br>
+ * 22. What are the advantages of the RestTemplate? {@link spring.certification.rest.Q022advantages link}<br>
  * 23. If you saw an example using RestTemplate would you understand what it is doing?<br>
  *
  * @author Valentine Shemyako
