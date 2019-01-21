@@ -7,8 +7,8 @@
  * 3. Why is Spring Boot “opinionated”? {@link spring.certification.boot.Q003opinionated link}<br>
  * 4. How does Spring Boot work? How does it know what to configure?<br>
  * 5. What things affect what Spring Boot sets up?<br>
- * 6.1. How are properties defined?<br>
- * 6.2. Where is Spring Boot’s default property source?<br>
+ * 6.1. How are properties defined? {@link spring.certification.boot.Q006properties link}<br>
+ * 6.2. Where is Spring Boot’s default property source? {@link spring.certification.boot.Q006properties link}<br>
  * 7. Would you recognize common Spring Boot annotations and configuration properties if you saw them in the exam?<br>
  * 8. What is the difference between an embedded container and a WAR?<br>
  * 9. What embedded containers does Spring Boot support? {@link spring.certification.boot.Q009embeddedcontainer link}<br>
