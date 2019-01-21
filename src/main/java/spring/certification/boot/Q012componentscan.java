@@ -16,6 +16,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * {@link SpringBootApplication} - component scan is performed recursively in depth from the main configuration package
  * (where {@link SpringBootApplication} is placed). Default scan policy can be amended via {@link SpringBootApplication#scanBasePackageClasses()}
  * or {@link SpringBootApplication#scanBasePackages()} attributes.<br>
+ * <p>
+ * Note: Spring Boot reference documentation suggests to locate main application class in a root package (obviously annotated
+ * with {@link SpringBootApplication}), thus recursive in-depth component-scan will automatically register all stereotype classes.<br>
  *
  * @author Valentine Shemyako
  * @since January 21, 2019

@@ -14,7 +14,8 @@ package spring.certification.boot;
  * - declarative dependency management - it's possible to define dependencies without explicitly specifying required dependency version.
  * Each Spring Boot release provides curated list of dependencies that it supports.<br>
  * - Spring CLI.<br>
- * - The Actuator - application monitoring facility.<br>
+ * - the Actuator - application monitoring facility.<br>
+ * - possibility to create single jar file with embedded container.<br>
  *
  * @author Valentine Shemyako
  * @since January 21, 2019
