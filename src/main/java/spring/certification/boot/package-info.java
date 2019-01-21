@@ -9,7 +9,7 @@
  * 5. What things affect what Spring Boot sets up? {@link spring.certification.boot.Q005factors link}<br>
  * 6.1. How are properties defined? {@link spring.certification.boot.Q006properties link}<br>
  * 6.2. Where is Spring Boot’s default property source? {@link spring.certification.boot.Q006properties link}<br>
- * 7. Would you recognize common Spring Boot annotations and configuration properties if you saw them in the exam?<br>
+ * 7. Would you recognize common Spring Boot annotations and configuration properties if you saw them in the exam? {@link spring.certification.boot.Q007common link}<br>
  * 8. What is the difference between an embedded container and a WAR?<br>
  * 9. What embedded containers does Spring Boot support? {@link spring.certification.boot.Q009embeddedcontainer link}<br>
  * 10. What does @EnableAutoConfiguration do? {@link spring.certification.boot.Q010enableautoconfiguration link}<br>
