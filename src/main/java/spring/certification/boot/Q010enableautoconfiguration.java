@@ -15,5 +15,5 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
  * @author Valentine Shemyako
  * @since January 21, 2019
  */
-public class Q010autoconfiguration {
+public class Q010enableautoconfiguration {
 }
