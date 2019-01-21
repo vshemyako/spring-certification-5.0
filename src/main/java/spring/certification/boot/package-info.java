@@ -14,8 +14,8 @@
  * 9. What embedded containers does Spring Boot support? {@link spring.certification.boot.Q009embeddedcontainer link}<br>
  * 10. What does @EnableAutoConfiguration do? {@link spring.certification.boot.Q010autoconfiguration link}<br>
  * 11. What does @SpringBootApplication do? {@link spring.certification.boot.Q011springbootapplication link}<br>
- * 12.1. Does Spring Boot do component scanning?<br>
- * 12.2. Where does it look by default?<br>
+ * 12.1. Does Spring Boot do component scanning? {@link spring.certification.boot.Q012componentscan link}<br>
+ * 12.2. Where does it look by default? {@link spring.certification.boot.Q012componentscan link}<br>
  * 13.1. What is a Spring Boot starter POM? {@link spring.certification.boot.Q013starter link}<br>
  * 13.2. Why is it useful? {@link spring.certification.boot.Q013starter link}<br>
  * 14. Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them?<br>
