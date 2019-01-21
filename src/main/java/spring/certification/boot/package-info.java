@@ -16,8 +16,8 @@
  * 11. What does @SpringBootApplication do?<br>
  * 12.1. Does Spring Boot do component scanning?<br>
  * 12.2. Where does it look by default?<br>
- * 13.1. What is a Spring Boot starter POM?<br>
- * 13.2. Why is it useful?<br>
+ * 13.1. What is a Spring Boot starter POM? {@link spring.certification.boot.Q013starter link}<br>
+ * 13.2. Why is it useful? {@link spring.certification.boot.Q013starter link}<br>
  * 14. Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them?<br>
  * 15. How can you control logging with Spring Boot?<br>
  *
