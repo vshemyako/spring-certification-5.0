@@ -12,7 +12,7 @@
  * 7. Would you recognize common Spring Boot annotations and configuration properties if you saw them in the exam?<br>
  * 8. What is the difference between an embedded container and a WAR?<br>
  * 9. What embedded containers does Spring Boot support? {@link spring.certification.boot.Q009embeddedcontainer link}<br>
- * 10. What does @EnableAutoConfiguration do?<br>
+ * 10. What does @EnableAutoConfiguration do? {@link spring.certification.boot.Q010autoconfiguration link}<br>
  * 11. What does @SpringBootApplication do?<br>
  * 12.1. Does Spring Boot do component scanning?<br>
  * 12.2. Where does it look by default?<br>

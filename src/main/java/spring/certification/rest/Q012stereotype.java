@@ -15,7 +15,8 @@ import spring.certification.ioc.Q012;
  * Answer:<br>
  * Annotations which are placed in <code>stereotype</code> package are considered as <i>stereotype annotations</i>.
  * {@link Controller} annotation is also placed there. {@link RestController} is a compound annotation which
- * is meta-annotated with {@link Controller}, thus it can also be considered as <i>stereotype</i>.<br>
+ * is meta-annotated with {@link Controller}, thus it can also be considered as <i>stereotype</i> (Spring Boot documentation
+ * actually refers to a {@link RestController} as being a stereotype annotation).<br>
  * <i>Stereotype annotation</i> relates to some community agreed role of a class to which a stereotype annotation
  * is applied. Stereotype annotations are discussed in more details in the {@link Q012 IoC sections}.<br>
  *
