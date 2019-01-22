@@ -2,7 +2,7 @@
  * Spring v5.0 Professional Certification.
  * <p>
  * Table of contents:<br>
- * 1. What is dependency injection and what are the advantages? {@link spring.certification.ioc.Q001DependencyInjection link}<br>
+ * 1. What is dependency injection and what are the advantages? {@link spring.certification.ioc.q001.DependencyInjection link}<br>
  * 2.1. What is a pattern? {@link spring.certification.ioc.Q002 link}<br>
  * 2.2. What is an anti-pattern? {@link spring.certification.ioc.Q002 link}<br>
  * 2.3. Is dependency injection a pattern? {@link spring.certification.ioc.Q002 link}<br>

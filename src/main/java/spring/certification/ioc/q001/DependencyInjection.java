@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q001;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -35,8 +35,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 2. Creation of unnecessary interfaces<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q001DependencyInjection.WithoutInjector} - an example which doesn't utilize Dependency Injection design pattern.<br>
- * {@link Q001DependencyInjection.WithInjector} - an example which utilizes Dependency Injection design pattern.<br>
+ * {@link DependencyInjection.WithoutInjector} - an example which doesn't utilize Dependency Injection design pattern.<br>
+ * {@link DependencyInjection.WithInjector} - an example which utilizes Dependency Injection design pattern.<br>
  * {@link DependencyInjectionTypes#injectThroughConstructor()} - an example of injecting dependencies through
  * constructor.<br>
  * {@link DependencyInjectionTypes#injectThroughSetter()} - an example of injecting dependencies through setter.<br>
@@ -46,8 +46,9 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Valentine Shemyako
  * @since November 9, 2018
  */
-public class Q001DependencyInjection {
+public class DependencyInjection {
 
+    // TODO: remove dummy examples after Autowired tests.
     /**
      * Example demonstrates dependencies creation by an object itself.
      */
