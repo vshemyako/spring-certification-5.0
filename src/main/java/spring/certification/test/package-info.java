@@ -9,9 +9,8 @@
  * 5. How are mock frameworks such as Mockito or EasyMock used? {@link spring.certification.test.Q005mock link}<br>
  * 6. How is @ContextConfiguration used? {@link spring.certification.test.Q006configuration link}<br>
  * 7. How does Spring Boot simplify writing tests? {@link spring.certification.test.Q007boot link}<br>
- * // TODO: questions related to spring-boot will answered after investigation of spring-boot documentation
- * 8.1. What does @SpringBootTest do?<br>
- * 8.2. How does it interact with @SpringBootApplication and @SpringBootConfiguration?<br>
+ * 8.1. What does @SpringBootTest do? {@link spring.certification.test.Q008bootannotations link}<br>
+ * 8.2. How does it interact with @SpringBootApplication and @SpringBootConfiguration? {@link spring.certification.test.Q008bootannotations link}<br>
  *
  * @author Valentine Shemyako
  * @since December 30, 2018
