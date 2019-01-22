@@ -12,16 +12,17 @@ import org.springframework.beans.factory.annotation.Autowired;
  * <b>Dependency injection</b> is a design pattern which implements <b>Inversion of Control (IoC)</b> design principle,
  * whereby objects only define their dependencies letting some other code to <b>inject</b> those dependencies during
  * object creation. That is why this process is called an inversion: an object doesn't control instantiation of its
- * dependencies on its own.
+ * dependencies.
  * <p>
  * There are several dependency <b>injection types</b>:<br>
- * 1. Constructor injection - dependencies are provided through a constructor<br>
- * 2. Setter injection - dependencies are provided through an exposed setter method<br>
+ * 1. Constructor injection - dependencies are provided through a constructor.<br>
+ * 2. Setter injection - dependencies are provided through an exposed setter method.<br>
  * 3. Field injection - dependencies are injected directly in the field, with no constructor or setter method.
  * In Java language field injection is performed with the help of 'magical' reflection technology, so even private
  * fields can be populated in that way. Fields have to be annotated with the {@link Autowired} annotation to become
- * candidate to field injection<br>
- * 4. Interface injection - dependencies are provided through an exposed setter method of implemented interface<br>
+ * field injection candidates.<br>
+ * 4. Interface injection - dependencies are provided through an exposed setter method of implemented interface.<br>
+ * 5. Method injection - dependencies are provided from overridden methods of container managed bean.<br>
  * <p>
  * Dependency injection <b>advantages</b> are the following:<br>
  * 1. Code is cleaner (object configuration details are externalized)<br>
@@ -34,8 +35,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 2. Creation of unnecessary interfaces<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q001.WithoutInjector} - an example which doesn't utilize Dependency Injection design pattern.<br>
- * {@link Q001.WithInjector} - an example which utilizes Dependency Injection design pattern.<br>
+ * {@link Q001DependencyInjection.WithoutInjector} - an example which doesn't utilize Dependency Injection design pattern.<br>
+ * {@link Q001DependencyInjection.WithInjector} - an example which utilizes Dependency Injection design pattern.<br>
  * {@link DependencyInjectionTypes#injectThroughConstructor()} - an example of injecting dependencies through
  * constructor.<br>
  * {@link DependencyInjectionTypes#injectThroughSetter()} - an example of injecting dependencies through setter.<br>
@@ -45,7 +46,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Valentine Shemyako
  * @since November 9, 2018
  */
-public class Q001 {
+public class Q001DependencyInjection {
 
     /**
      * Example demonstrates dependencies creation by an object itself.
