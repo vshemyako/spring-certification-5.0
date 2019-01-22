@@ -22,10 +22,10 @@ import java.util.Map;
  * Answer:<br>
  * Property source is any source of key/value pairs. Spring's {@link Environment} provides a configurable hierarchy of
  * property sources:<br>
- * 1. For a <b>stand-alone</b> application two default property sources are available:
+ * 1. For a <b>stand-alone</b> application two default property sources are available:<br>
  * - JVM properties<br>
  * - OS properties<br>
- * 2. For a <b>web</b> application additional default property source are registered:
+ * 2. For a <b>web</b> application additional default property source are registered:<br>
  * - ServletConfig parameters<br>
  * - ServletContext parameters<br>
  * - JNDI properties<br>
@@ -34,7 +34,7 @@ import java.util.Map;
  * {@link org.springframework.core.env.PropertySource} interface and adding it via {@link MutablePropertySources#addFirst}
  * method call).<br>
  * <p>
- * Spring offers an easier way to register custom property source via {@link PropertySource} annotation with has to be
+ * Spring offers an easier way to register custom property source via {@link PropertySource} annotation which has to be
  * used in conjunction with {@link Configuration} classes.<br>
  * Examples of mentioned terms:<br>
  * {@link Q016.ProcessedByPostProcessorConfiguration} - demonstrates the most basic usage of {@link PropertySource}
