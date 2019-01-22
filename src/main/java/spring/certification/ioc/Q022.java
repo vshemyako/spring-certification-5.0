@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.test.util.ReflectionTestUtils;
 
 /**
  * Spring v5.0 Professional Certification.
  * <p>
  * Question 022:<br>
  * What do you have to do, if you would like to inject something into a private field?<br>
- * // TODO: add explanation, example and unit test after studying Spring Test library
  * How does this impact testing?<br>
  * <p>
  * Answer:<br>
@@ -18,6 +18,13 @@ import org.springframework.context.annotation.Configuration;
  * methods are omitted):<br>
  * 1. Using {@link Autowired} annotation<br>
  * 2. Using {@link Value} annotation<br>
+ * <p>
+ * Impact on testing:<br>
+ * One should avoid injection of values into private fields directly, because it complicates testing (complicates
+ * usage of mocks). Better approach is to rely on constructor or setter injection, thus substitution of collaborators
+ * becomes much easier (one doesn't have to rely on reflection).<br>
+ * Note: Spring Framework offers utility class for accessing private fields and methods, thus making testing of those easier
+ * (please look at {@link ReflectionTestUtils} class).<br>
  * <p>
  * Examples of mentioned terms:<br>
  * {@link Q022.SpringFramework} - demonstrates how to inject values into private fields using {@link Autowired} or

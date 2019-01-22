@@ -1,5 +1,9 @@
 package spring.certification.ioc;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.web.WebAppConfiguration;
+import spring.certification.ioc.Q006.ContextConfiguration;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -7,10 +11,9 @@ package spring.certification.ioc;
  * How are you going to create an ApplicationContext in an integration test?<br>
  * <p>
  * Answer:<br>
- * // TODO: add explanation, example and unit test after studying Spring Test library
- * <p>
- * Examples of mentioned terms:<br>
- * -
+ * {@link ApplicationContext} for an integration test is loaded via {@link ContextConfiguration} annotation (for standalone application)
+ * or via {@link WebAppConfiguration} annotation used along with {@link ContextConfiguration} annotation (for web application).<br>
+ * More info about integration testing can be found in the {@link spring.certification.test test package}.<br>
  *
  * @author Valentine Shemyako
  * @since November 30, 2018

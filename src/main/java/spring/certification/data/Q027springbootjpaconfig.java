@@ -10,7 +10,10 @@ package spring.certification.data;
  * Answer:<br>
  * Please take a look at {@link Q023entitymanagerfactory} and related integration tests which explain how to configure
  * JPA in Spring application.<br>
- * // TODO: details about Spring-Boot approach will be added later
+ * <p>
+ * Spring Boot framework provides specific starter jar (<b>spring-boot-starter-data-jpa</b>) which aggregates JPA
+ * related dependencies. In case in-memory database jar is added on the classpath - Spring Boot autoconfigures data
+ * access layer related beans.<br>
  *
  * @author Valentine Shemyako
  * @since January 08, 2019
