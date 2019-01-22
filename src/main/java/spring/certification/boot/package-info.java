@@ -19,7 +19,7 @@
  * 13.1. What is a Spring Boot starter POM? {@link spring.certification.boot.Q013starter link}<br>
  * 13.2. Why is it useful? {@link spring.certification.boot.Q013starter link}<br>
  * 14. Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them? {@link spring.certification.boot.Q014yaml link}<br>
- * 15. How can you control logging with Spring Boot?<br>
+ * 15. How can you control logging with Spring Boot? {@link spring.certification.boot.Q015logging link}<br>
  *
  * @author Valentine Shemyako
  * @since January 21, 2018
