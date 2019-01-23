@@ -26,8 +26,7 @@
  * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
  * 16.2. Why would you define a static @Bean method? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
  * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
- * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When
- * are they called? {@link spring.certification.ioc.Q017 link}<br>
+ * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When are they called? {@link spring.certification.ioc.q017.BeanCustomization link}<br>
  * 18.1. What is an initialization method and how is it declared on a Spring bean?
  * {@link spring.certification.ioc.Q018 link}<br>
  * 18.2. What is a destroy method, how is it declared and when is it called?

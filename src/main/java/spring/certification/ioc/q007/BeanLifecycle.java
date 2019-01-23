@@ -7,7 +7,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
-import spring.certification.ioc.Q017;
+import spring.certification.ioc.q017.BeanCustomization;
 import spring.certification.ioc.Q018;
 import spring.certification.ioc.Q019;
 
@@ -38,7 +38,7 @@ import spring.certification.ioc.Q019;
  * 7.3. {@link Bean#destroyMethod()}
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q017.AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
+ * {@link BeanCustomization.AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
  * instance.<br>
  * {@link Q018.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
  * type elements usage<br>
