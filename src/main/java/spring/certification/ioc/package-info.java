@@ -8,7 +8,7 @@
  * 2.3. Is dependency injection a pattern? {@link spring.certification.ioc.q002.Pattern link}<br>
  * 3.1. What is an interface and what are the advantages of making use of them in Java? {@link spring.certification.ioc.q003.Interface link}<br>
  * 3.2. Why are they recommended for Spring beans? {@link spring.certification.ioc.q003.Interface link}<br>
- * 4. What is meant by 'application-context'? {@link spring.certification.ioc.Q004 link}<br>
+ * 4. What is meant by 'application-context'? {@link spring.certification.ioc.q004.ApplicationContext link}<br>
  * 5. What is the concept of a 'container' and what is its lifecycle? {@link spring.certification.ioc.Q005 link}<br>
  * 6. How are you going to create a new instance of an ApplicationContext? {@link spring.certification.ioc.Q006 link}<br>
  * 7. Can you describe the lifecycle of a Spring Bean in an ApplicationContext? {@link spring.certification.ioc.Q007 link}<br>

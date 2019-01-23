@@ -1,6 +1,4 @@
-package spring.certification.ioc;
-
-import org.springframework.context.ApplicationContext;
+package spring.certification.ioc.q004;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -11,8 +9,8 @@ import org.springframework.context.ApplicationContext;
  * Answer:<br>
  * By <b>application context</b> is usually meant an <b>advanced</b> IoC container. It's called an 'advanced' because
  * of it superset capabilities in comparison to simple bean factory. Term 'application-context' is directly related to
- * {@link ApplicationContext} interface which is central in Spring framework. As related JavaDoc says,
- * {@link ApplicationContext} offers the following functionality:<br>
+ * {@link org.springframework.context.ApplicationContext} interface which is central in Spring framework. As related JavaDoc says,
+ * {@link org.springframework.context.ApplicationContext} offers the following functionality:<br>
  * 1. Bean factory<br>
  * 2. Resource loading<br>
  * 3. Events publishing to registered listeners<br>
@@ -22,5 +20,5 @@ import org.springframework.context.ApplicationContext;
  * @author Valentine Shemyako
  * @since November 16, 2018
  */
-public class Q004 {
+public class ApplicationContext {
 }
