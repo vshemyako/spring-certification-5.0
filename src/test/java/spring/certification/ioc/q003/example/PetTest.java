@@ -3,6 +3,7 @@ package spring.certification.ioc.q003.example;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -34,6 +35,8 @@ public class PetTest {
     public void shouldPrintFeedingMessage() {
         Pet pet = new Pet(human);
         pet.eat();
+
+        verify(human).feed();
         assertThat(capture.toString()).isEqualTo(FEEDING_MESSAGE);
     }
 }
