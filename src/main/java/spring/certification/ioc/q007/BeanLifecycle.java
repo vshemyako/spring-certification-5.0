@@ -9,7 +9,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import spring.certification.ioc.q017.BeanCustomization;
 import spring.certification.ioc.q018.BeanLifecycleCallbacks;
-import spring.certification.ioc.Q019;
+import spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -42,7 +42,7 @@ import spring.certification.ioc.Q019;
  * instance.<br>
  * {@link BeanLifecycleCallbacks.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
  * type elements usage<br>
- * {@link Q019.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
+ * {@link JSR250BeanLifecycleCallbacks.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
  *
  * @author Valentine Shemyako
  * @since November 23, 2018
