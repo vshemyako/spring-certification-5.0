@@ -1,8 +1,8 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q008;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.web.WebAppConfiguration;
-import spring.certification.ioc.q006.ApplicationContextConstruction.ContextConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -18,5 +18,5 @@ import spring.certification.ioc.q006.ApplicationContextConstruction.ContextConfi
  * @author Valentine Shemyako
  * @since November 30, 2018
  */
-public class Q008 {
+public class IntegrationTestApplicationContextConstruction {
 }

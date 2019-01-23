@@ -12,7 +12,7 @@
  * 5. What is the concept of a 'container' and what is its lifecycle? {@link spring.certification.ioc.q005.Container link}<br>
  * 6. How are you going to create a new instance of an ApplicationContext? {@link spring.certification.ioc.q006.ApplicationContextConstruction link}<br>
  * 7. Can you describe the lifecycle of a Spring Bean in an ApplicationContext? {@link spring.certification.ioc.q007.BeanLifecycle link}<br>
- * 8. How are you going to create an ApplicationContext in an integration test? {@link spring.certification.ioc.Q008 link}<br>
+ * 8. How are you going to create an ApplicationContext in an integration test? {@link spring.certification.ioc.q008.IntegrationTestApplicationContextConstruction link}<br>
  * 9.1. What is the preferred way to close an application context? {@link spring.certification.ioc.Q009 link}<br>
  * 9.2. Does Spring Boot close application context for you? {@link spring.certification.ioc.Q009 link}<br>
  * 10. Describe dependency injection using Java configuration. {@link spring.certification.ioc.Q010 link}<br>
