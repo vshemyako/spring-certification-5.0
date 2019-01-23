@@ -1,6 +1,7 @@
 package spring.certification.ioc;
 
 import org.springframework.context.annotation.Bean;
+import spring.certification.ioc.q010.DependencyInjectionJavaConfig;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -24,7 +25,7 @@ import org.springframework.context.annotation.Bean;
  * configuration classes are used (unless specific software is used (e.g. Spring Tool Suite).
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q010} - shows simplistic java-based configuration
+ * {@link DependencyInjectionJavaConfig} - shows simplistic java-based configuration
  *
  * @author Valentine Shemyako
  * @since November 13, 2018
