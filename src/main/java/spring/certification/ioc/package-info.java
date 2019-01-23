@@ -32,7 +32,7 @@
  * 19.1. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get called? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
  * 19.2. How else can you define an initialization or destruction method for a Spring bean? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
  * 20. What does component-scanning do? {@link spring.certification.ioc.q020.ComponentScanDuplicate link}<br>
- * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.Q021 link}<br>
+ * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.q021.Autowiring link}<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.Q022 link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>

@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q021;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
@@ -26,5 +26,5 @@ import java.util.Optional;
  * @author Valentine Shemyako
  * @since November 30, 2018
  */
-public class Q021 {
+public class Autowiring {
 }
