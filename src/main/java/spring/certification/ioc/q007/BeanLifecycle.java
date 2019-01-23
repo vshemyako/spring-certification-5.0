@@ -1,13 +1,15 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q007;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.Aware;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import spring.certification.ioc.Q017;
+import spring.certification.ioc.Q018;
+import spring.certification.ioc.Q019;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -38,12 +40,12 @@ import javax.annotation.PreDestroy;
  * Examples of mentioned terms:<br>
  * {@link Q017.AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
  * instance.<br>
- * {@link Q019.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
  * {@link Q018.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
  * type elements usage<br>
+ * {@link Q019.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
  *
  * @author Valentine Shemyako
  * @since November 23, 2018
  */
-public class Q007 {
+public class BeanLifecycle {
 }
