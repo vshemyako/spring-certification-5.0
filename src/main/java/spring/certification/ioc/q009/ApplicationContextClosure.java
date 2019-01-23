@@ -1,5 +1,6 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q009;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.context.ContextLoaderListener;
 
@@ -17,11 +18,11 @@ import org.springframework.web.context.ContextLoaderListener;
  * <b>Web application</b> is closed automatically by {@link ContextLoaderListener#contextDestroyed} method which actually
  * invokes {@link ConfigurableApplicationContext#close} method.
  * <p>
- * Spring Boot closes stand-alone and web applications in the same way, but manual registering of shutdown hook isn't
- * required for stand-alone applications.<br>
+ * Spring Boot closes stand-alone and web applications in the same way, but manual registering of the shutdown hook isn't
+ * required for stand-alone applications (look at {@link SpringApplication#refreshContext} method).<br>
  *
  * @author Valentine Shemyako
  * @since November 25, 2018
  */
-public class Q009 {
+public class ApplicationContextClosure {
 }
