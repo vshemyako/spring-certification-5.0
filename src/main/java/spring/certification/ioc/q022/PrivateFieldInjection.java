@@ -1,10 +1,9 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q022;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.test.util.ReflectionTestUtils;
+import spring.certification.ioc.q022.example.SpringFramework;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -27,54 +26,11 @@ import org.springframework.test.util.ReflectionTestUtils;
  * (please look at {@link ReflectionTestUtils} class).<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q022.SpringFramework} - demonstrates how to inject values into private fields using {@link Autowired} or
+ * {@link SpringFramework} - demonstrates how to inject values into private fields using {@link Autowired} or
  * {@link Value} annotations<br>
  *
  * @author Valentine Shemyako
  * @since November 29, 2018
  */
-public class Q022 {
-
-    /**
-     * Demonstrates how to inject values into private fields.
-     */
-    @Configuration
-    public static class PrivateFieldInjection {
-
-        @Bean
-        public String ceo() {
-            return "Rod Johnson";
-        }
-
-        @Bean
-        public SpringFramework springFramework() {
-            return new SpringFramework();
-        }
-    }
-
-    /**
-     * Framework which simplifies java development.
-     */
-    public static class SpringFramework {
-
-        /**
-         * Chief executive officer.
-         */
-        @Autowired
-        private String ceo;
-
-        /**
-         * Leading developer.
-         */
-        @Value("Juergen Hoeller")
-        private String dev;
-
-        public String getCeo() {
-            return ceo;
-        }
-
-        public String getDev() {
-            return dev;
-        }
-    }
+public class PrivateFieldInjection {
 }

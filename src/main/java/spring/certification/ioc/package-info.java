@@ -34,7 +34,7 @@
  * 20. What does component-scanning do? {@link spring.certification.ioc.q020.ComponentScanDuplicate link}<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.q021.Autowiring link}<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
- * testing? {@link spring.certification.ioc.Q022 link}<br>
+ * testing? {@link spring.certification.ioc.q022.PrivateFieldInjection link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>
  * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?
  * {@link spring.certification.ioc.Q024 link}<br>
