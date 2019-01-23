@@ -3,9 +3,9 @@
  * <p>
  * Table of contents:<br>
  * 1. What is dependency injection and what are the advantages? {@link spring.certification.ioc.q001.DependencyInjection link}<br>
- * 2.1. What is a pattern? {@link spring.certification.ioc.Q002 link}<br>
- * 2.2. What is an anti-pattern? {@link spring.certification.ioc.Q002 link}<br>
- * 2.3. Is dependency injection a pattern? {@link spring.certification.ioc.Q002 link}<br>
+ * 2.1. What is a pattern? {@link spring.certification.ioc.q002.Pattern link}<br>
+ * 2.2. What is an anti-pattern? {@link spring.certification.ioc.q002.Pattern link}<br>
+ * 2.3. Is dependency injection a pattern? {@link spring.certification.ioc.q002.Pattern link}<br>
  * 3.1. What is an interface and what are the advantages of making use of them in Java?
  * {@link spring.certification.ioc.Q003 link}<br>
  * 3.2. Why are they recommended for Spring beans? {@link spring.certification.ioc.Q003 link}<br>
