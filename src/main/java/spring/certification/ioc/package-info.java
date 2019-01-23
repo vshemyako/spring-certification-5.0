@@ -23,10 +23,9 @@
  * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.q013.BeanScopes link}<br>
  * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour? {@link spring.certification.ioc.q014.LazyBeanCreation link}<br>
  * 15. What is a property source? How would you use @PropertySource annotation? {@link spring.certification.ioc.q015.PropertySourceUsage link}<br>
- * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked?
- * {@link spring.certification.ioc.Q016 link}<br>
- * 16.2. Why would you define a static @Bean method? {@link spring.certification.ioc.Q016 link}<br>
- * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.Q016 link}<br>
+ * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
+ * 16.2. Why would you define a static @Bean method? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
+ * 16.3. What is a PropertySourcePlaceholderConfigurer used for? {@link spring.certification.ioc.q016.BeanDefinitionCustomization link}<br>
  * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When
  * are they called? {@link spring.certification.ioc.Q017 link}<br>
  * 18.1. What is an initialization method and how is it declared on a Spring bean?

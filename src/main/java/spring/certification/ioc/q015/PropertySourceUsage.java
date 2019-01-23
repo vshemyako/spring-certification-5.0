@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.MutablePropertySources;
-import spring.certification.ioc.Q016;
+import spring.certification.ioc.q016.BeanDefinitionCustomization;
 import spring.certification.ioc.q015.example.CustomPropertySourceConfiguration;
 
 /**
@@ -32,7 +32,7 @@ import spring.certification.ioc.q015.example.CustomPropertySourceConfiguration;
  * Spring offers an easier way to register custom property source via {@link PropertySource} annotation which has to be
  * used in conjunction with {@link Configuration} classes.<br>
  * Examples of mentioned terms:<br>
- * {@link Q016.ProcessedByPostProcessorConfiguration} - demonstrates the most basic usage of {@link PropertySource}
+ * {@link BeanDefinitionCustomization.ProcessedByPostProcessorConfiguration} - demonstrates the most basic usage of {@link PropertySource}
  * annotation<br>
  * {@link CustomPropertySourceConfiguration} - demonstrates programmatic registration of custom source of
  * properties<br>

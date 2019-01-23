@@ -2,9 +2,9 @@ package spring.certification.data;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import spring.certification.ioc.Q016.Holiday;
 
 import java.util.List;
+import spring.certification.ioc.q016.example.Holiday;
 
 /**
  * Spring v5.0 Professional Certification.
