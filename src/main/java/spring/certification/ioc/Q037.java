@@ -1,6 +1,7 @@
 package spring.certification.ioc;
 
 import spring.certification.boot.Q006properties;
+import spring.certification.ioc.q015.PropertySourceUsage;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -9,7 +10,7 @@ import spring.certification.boot.Q006properties;
  * Where can properties in the environment come from?<br>
  * <p>
  * Answer:<br>
- * Property sources for stand-alone and web applications are discussed in {@link Q015 the IoC section}.<br>
+ * Property sources for stand-alone and web applications are discussed in {@link PropertySourceUsage the IoC section}.<br>
  * Property sources of Spring Boot applications are discussed in {@link Q006properties the Spring Boot section}.<br>
  *
  * @author Valentine Shemyako
