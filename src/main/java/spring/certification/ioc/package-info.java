@@ -20,7 +20,7 @@
  * 12.1. Describe component-scanning. {@link spring.certification.ioc.q012.ComponentScan link}<br>
  * 12.2. Describe stereotypes. {@link spring.certification.ioc.q012.ComponentScan link}<br>
  * 12.3. Describe meta-annotations. {@link spring.certification.ioc.q012.ComponentScan link}<br>
- * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.Q013 link}<br>
+ * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.q013.BeanScopes link}<br>
  * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour?
  * {@link spring.certification.ioc.Q014 link}<br>
  * 15. What is a property source? How would you use @PropertySource annotation?
@@ -40,8 +40,7 @@
  * 19.2. How else can you define an initialization or destruction method for a Spring bean?
  * {@link spring.certification.ioc.Q019 link}<br>
  * 20. What does component-scanning do? {@link spring.certification.ioc.Q020 link}<br>
- * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and
- * method injection? {@link spring.certification.ioc.Q021 link}<br>
+ * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.Q021 link}<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.Q022 link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>
