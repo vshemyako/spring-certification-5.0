@@ -17,9 +17,9 @@
  * 9.2. Does Spring Boot close application context for you? {@link spring.certification.ioc.q009.ApplicationContextClosure link}<br>
  * 10. Describe dependency injection using Java configuration. {@link spring.certification.ioc.q010.DependencyInjectionJavaConfig link}<br>
  * 11. Describe dependency injection using annotations (@Component, @Autowired). {@link spring.certification.ioc.q011.DependencyInjectionAnnotationConfig link}<br>
- * 12.1. Describe component-scanning. {@link spring.certification.ioc.Q012 link}<br>
- * 12.2. Describe stereotypes. {@link spring.certification.ioc.Q012 link}<br>
- * 12.3. Describe meta-annotations. {@link spring.certification.ioc.Q012 link}<br>
+ * 12.1. Describe component-scanning. {@link spring.certification.ioc.q012.ComponentScan link}<br>
+ * 12.2. Describe stereotypes. {@link spring.certification.ioc.q012.ComponentScan link}<br>
+ * 12.3. Describe meta-annotations. {@link spring.certification.ioc.q012.ComponentScan link}<br>
  * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.Q013 link}<br>
  * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour?
  * {@link spring.certification.ioc.Q014 link}<br>
@@ -44,7 +44,7 @@
  * method injection? {@link spring.certification.ioc.Q021 link}<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.Q022 link}<br>
- * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.Q023 link}<br>
+ * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>
  * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?
  * {@link spring.certification.ioc.Q024 link}<br>
  * 24.2. What are the limitations of these proxies (per type)? {@link spring.certification.ioc.Q024 link}<br>

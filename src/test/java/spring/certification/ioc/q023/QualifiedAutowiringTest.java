@@ -1,15 +1,18 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q023;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.UnsatisfiedDependencyException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import spring.certification.ioc.q023.example.Cinema;
+import spring.certification.ioc.q023.example.NonQualifiedConfiguration;
+import spring.certification.ioc.q023.example.QualifiedConfiguration;
 
 /**
  * Verifies appropriate usage of {@link Qualifier} annotations.
  */
-public class Q012Test {
+public class QualifiedAutowiringTest {
 
     /**
      * Verifies that application-context will fail in initialize in case dependency injection cannot be performed
@@ -18,8 +21,8 @@ public class Q012Test {
     @Test(expected = UnsatisfiedDependencyException.class)
     public void configurationShouldFail() {
         try (AnnotationConfigApplicationContext context =
-                     new AnnotationConfigApplicationContext(Q012.NonQualifiedConfiguration.class)) {
-            context.getBean(Q012.Cinema.class);
+                     new AnnotationConfigApplicationContext(NonQualifiedConfiguration.class)) {
+            context.getBean(Cinema.class);
         }
     }
 
@@ -30,8 +33,8 @@ public class Q012Test {
     @Test
     public void configurationShouldSucceed() {
         try (AnnotationConfigApplicationContext context =
-                     new AnnotationConfigApplicationContext(Q012.QualifiedConfiguration.class)) {
-            Q012.Cinema cinema = context.getBean(Q012.Cinema.class);
+                     new AnnotationConfigApplicationContext(QualifiedConfiguration.class)) {
+            Cinema cinema = context.getBean(Cinema.class);
             String filmName = cinema.getFilm().getFilmName();
             Assert.assertEquals("Fight Club", filmName);
         }

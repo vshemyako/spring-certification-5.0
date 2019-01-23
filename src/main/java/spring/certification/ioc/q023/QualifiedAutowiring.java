@@ -1,7 +1,8 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q023;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import spring.certification.ioc.q023.example.QualifiedConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -20,11 +21,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
  * 3. Define your custom annotation and use it at the bean definition level and at the injection point level.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q012.QualifiedConfiguration} - demonstrates usage of custom annotation defined both at bean definition level
+ * {@link QualifiedConfiguration} - demonstrates usage of custom annotation defined both at bean definition level
  * and at the injection point level<br>
  *
  * @author Valentine Shemyako
  * @since November 30, 2018
  */
-public class Q023 {
+public class QualifiedAutowiring {
 }
