@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q020;
 
 import spring.certification.ioc.q011.DependencyInjectionAnnotationConfig;
 import spring.certification.ioc.q012.ComponentScan;
@@ -11,11 +11,13 @@ import spring.certification.ioc.q023.QualifiedAutowiring;
  * What does component-scanning do?<br>
  * <p>
  * Answer:<br>
- * See related questions {@link DependencyInjectionAnnotationConfig}, {@link ComponentScan}, {@link QualifiedAutowiring}<br>
- * <p>
+ * Component scan question has been already answered previously. Please take a look at:<br>
+ * - {@link DependencyInjectionAnnotationConfig}<br>
+ * - {@link ComponentScan}<br>
+ * - {@link QualifiedAutowiring}<br>
  *
  * @author Valentine Shemyako
  * @since November 28, 2018
  */
-public class Q020 {
+public class ComponentScanDuplicate {
 }

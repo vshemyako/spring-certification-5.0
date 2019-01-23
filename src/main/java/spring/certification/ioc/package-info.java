@@ -29,11 +29,9 @@
  * 17. What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? What both of them do? When are they called? {@link spring.certification.ioc.q017.BeanCustomization link}<br>
  * 18.1. What is an initialization method and how is it declared on a Spring bean? {@link spring.certification.ioc.q018.BeanLifecycleCallbacks link}<br>
  * 18.2. What is a destroy method, how is it declared and when is it called? {@link spring.certification.ioc.q018.BeanLifecycleCallbacks link}<br>
- * 19.1. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get
- * called? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
- * 19.2. How else can you define an initialization or destruction method for a Spring bean?
- * {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
- * 20. What does component-scanning do? {@link spring.certification.ioc.Q020 link}<br>
+ * 19.1. Consider how you enable JSR-250 annotations like @PostConstruct and @PreDestroy? When/how will they get called? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
+ * 19.2. How else can you define an initialization or destruction method for a Spring bean? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
+ * 20. What does component-scanning do? {@link spring.certification.ioc.q020.ComponentScanDuplicate link}<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.Q021 link}<br>
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.Q022 link}<br>
