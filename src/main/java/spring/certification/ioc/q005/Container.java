@@ -37,9 +37,9 @@ import spring.certification.ioc.q007.BeanLifecycle;
  * 4. Bean definitions are adjusted by {@link BeanFactoryPostProcessor BeanFactoryPostProcessors}. An example of {@link BeanFactoryPostProcessor}
  * is {@link PropertySourcesPlaceholderConfigurer} which resolves ${...} placeholders.<br>
  * 5. Beans are created, properties are set<br>
- * 6. Methods of {@link Aware} beans are invoked<br>
- * 7. {@link BeanPostProcessor#postProcessBeforeInitialization} methods are invoked for each {@link BeanPostProcessor}. An example of {@link BeanPostProcessor}
+ * 6. {@link BeanPostProcessor#postProcessBeforeInitialization} methods are invoked for each {@link BeanPostProcessor}. An example of {@link BeanPostProcessor}
  * is {@link AutowiredAnnotationBeanPostProcessor} which autowires {@link Value}, {@link Autowired} and similar annotated fields.<br>
+ * 7. Methods of {@link Aware} beans are invoked<br>
  * 8. Creation life-cycle callbacks are called: {@link PostConstruct}, {@link InitializingBean#afterPropertiesSet()},
  * {@link Bean#initMethod()}<br>
  * 9. {@link BeanPostProcessor#postProcessAfterInitialization} methods are invoked for each {@link BeanPostProcessor}<br>

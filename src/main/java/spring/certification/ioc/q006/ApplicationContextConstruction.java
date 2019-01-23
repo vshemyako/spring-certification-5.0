@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q006;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
@@ -26,18 +26,19 @@ import org.springframework.web.context.WebApplicationContext;
  * For a <b>web-application</b> this process differs: application context is created automatically by
  * {@link ContextLoaderListener}. Central interface for a web-application also differs from a standalone application:
  * it is called a {@link WebApplicationContext} and it exposes a method to work with servlet-context.<br>
- * For a web-container to load appropriate configuration special configuration file has to be supplied (it's often
- * called a <b>deployment descriptor</b>), which defines concrete implementation of {@link ContextLoaderListener}
- * and required web-application-context.<br>
+ * For a web-container to load appropriate configuration the following steps should be taken:<br>
+ * 1. Special configuration file has to be supplied (it's often called a <b>deployment descriptor</b>),
+ * which defines concrete implementation of {@link ContextLoaderListener} and required web-application-context.<br>
+ * 2.
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q006.StandaloneApplication} - demonstrates what primary steps should be made in order to create Spring-powered
+ * {@link ApplicationContextConstruction.StandaloneApplication} - demonstrates what primary steps should be made in order to create Spring-powered
  * standalone application.<br>
  *
  * @author Valentine Shemyako
  * @since November 24, 2018
  */
-public class Q006 {
+public class ApplicationContextConstruction {
 
     /**
      * Demonstrates how an application context can be created and utilized in a stand-alone application.

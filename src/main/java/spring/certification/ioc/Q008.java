@@ -2,7 +2,7 @@ package spring.certification.ioc;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.web.WebAppConfiguration;
-import spring.certification.ioc.Q006.ContextConfiguration;
+import spring.certification.ioc.q006.ApplicationContextConstruction.ContextConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
