@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
 import org.springframework.context.annotation.Configuration;
+import spring.certification.ioc.q018.BeanLifecycleCallbacks;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -22,7 +23,7 @@ import javax.annotation.PreDestroy;
  * {@link CommonAnnotationBeanPostProcessor} class which is registered automatically in case of annotation-based
  * context configuration. Therefore some manual registering and enabling isn't required.<br>
  * Those annotation are invoked at the same lifecycle phases as {@link Bean#initMethod()} and {@link Bean#destroyMethod()}
- * respectively (discussed in details in {@link Q018}).
+ * respectively (discussed in details in {@link BeanLifecycleCallbacks}).
  * <p>
  * Another possibility to define init and destroy methods is to implement {@link InitializingBean} and {@link DisposableBean}
  * interfaces. The logic behind implemented methods is the same.

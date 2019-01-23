@@ -1,17 +1,31 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q018;
 
-import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import spring.certification.ioc.q018.example.Book;
+import spring.certification.ioc.q018.example.Library;
+import spring.certification.ioc.q018.example.LibraryConfiguration;
 
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Verifies functionality offered by {@link Bean} annotation, more specifically possibility to specify init and destroy
  * methods of a bean.
  */
-public class Q018Test {
+public class BeanLifecycleCallbacksTest {
+
+    private AnnotationConfigApplicationContext context;
+    private Library library;
+
+    @Before
+    public void setUp() {
+        context = new AnnotationConfigApplicationContext(LibraryConfiguration.class);
+        library = context.getBean(Library.class);
+    }
 
     /**
      * Verifies that init-method as well as destroy-method specified in {@link Bean} annotation are picked up and
@@ -19,15 +33,12 @@ public class Q018Test {
      */
     @Test
     public void shouldInvokeInitAndDestroyMethods() {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Q018.LibraryConfiguration.class);
-        Q018.Library library = context.getBean(Q018.Library.class);
-
         // Verify that book collection has been filled - thus init-method indeed has been invoked
-        List<Q018.Book> books = library.getBooks();
-        Assert.assertEquals(2, books.size());
+        List<Book> books = library.getBooks();
+        assertThat(books.size()).isEqualTo(2);
 
         // Verify that book collection has been cleaned - thus destroy-method indeed has been invoked
         context.close();
-        Assert.assertTrue(books.isEmpty());
+        assertThat(books).isEmpty();
     }
 }

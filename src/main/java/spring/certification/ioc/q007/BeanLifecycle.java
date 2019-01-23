@@ -8,7 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import spring.certification.ioc.q017.BeanCustomization;
-import spring.certification.ioc.Q018;
+import spring.certification.ioc.q018.BeanLifecycleCallbacks;
 import spring.certification.ioc.Q019;
 
 /**
@@ -40,7 +40,7 @@ import spring.certification.ioc.Q019;
  * Examples of mentioned terms:<br>
  * {@link BeanCustomization.AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
  * instance.<br>
- * {@link Q018.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
+ * {@link BeanLifecycleCallbacks.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
  * type elements usage<br>
  * {@link Q019.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
  *
