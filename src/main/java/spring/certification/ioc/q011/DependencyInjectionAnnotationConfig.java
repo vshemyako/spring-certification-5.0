@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q011;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
+import spring.certification.ioc.q011.example.ComponentScanPackageMarker;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -40,40 +41,10 @@ import javax.inject.Inject;
  * {@link PreDestroy}, etc.).<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q011.ComponentScanPackageMarker} - demonstrates basic usage of {@link ComponentScan} annotation.
+ * {@link ComponentScanPackageMarker} - demonstrates basic usage of {@link ComponentScan} annotation.
  *
  * @author Valentine Shemyako
  * @since November 28, 2018
  */
-public class Q011 {
-
-    /**
-     * Java-based configuration class which defines root package to start scanning from.
-     */
-    @ComponentScan
-    @Configuration
-    public static class ComponentScanPackageMarker {
-    }
-
-    /**
-     * Class annotated with <b>stereotype</b> annotation is a candidate for automatic detection and registering as
-     * {@link BeanDefinition} instance.
-     */
-    @Component
-    public static class Pen {
-
-        private Ink ink;
-
-        @Autowired
-        public Pen(Ink ink) {
-            this.ink = ink;
-        }
-    }
-
-    /**
-     * Auto-detected class which will be used as auto-wiring candidate for another auto-detected component.
-     */
-    @Component
-    public static class Ink {
-    }
+public class DependencyInjectionAnnotationConfig {
 }
