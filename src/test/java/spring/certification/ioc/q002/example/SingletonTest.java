@@ -1,6 +1,7 @@
-package spring.certification.ioc.q002;
+package spring.certification.ioc.q002.example;
 
 import org.junit.Test;
+import spring.certification.ioc.q002.example.Singleton;
 
 import static org.junit.Assert.assertSame;
 

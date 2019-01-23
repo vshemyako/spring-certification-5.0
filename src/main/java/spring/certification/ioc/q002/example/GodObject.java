@@ -1,4 +1,4 @@
-package spring.certification.ioc.q002;
+package spring.certification.ioc.q002.example;
 
 /**
  * An example of a class which offers too much non-related functionality which should

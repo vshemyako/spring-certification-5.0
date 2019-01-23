@@ -1,4 +1,4 @@
-package spring.certification.ioc.q002;
+package spring.certification.ioc.q002.example;
 
 /**
  * There's no reason to allow creation of several instances of a stateless class.

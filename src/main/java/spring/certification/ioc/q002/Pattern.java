@@ -1,6 +1,8 @@
 package spring.certification.ioc.q002;
 
 import spring.certification.ioc.q001.DependencyInjection;
+import spring.certification.ioc.q002.example.GodObject;
+import spring.certification.ioc.q002.example.Singleton;
 
 /**
  * Spring v5.0 Professional Certification.
