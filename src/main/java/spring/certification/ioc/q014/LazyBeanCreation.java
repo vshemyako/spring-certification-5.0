@@ -1,9 +1,10 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q014;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
+import spring.certification.ioc.q014.example.CoachPotato;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -21,32 +22,10 @@ import org.springframework.stereotype.Component;
  * It's possible to control bean initialization type at {@link Configuration} class level, {@link Component} class level,
  * or at {@link Bean} method factory level with the help of {@link Lazy} annotation.<br>
  * Examples of mentioned terms:<br>
- * {@link Q014.CoachPotato} - simplistic usage of {@link Lazy} annotation at {@link Configuration} class level.
+ * {@link CoachPotato} - simplistic usage of {@link Lazy} annotation at {@link Configuration} class level.
  *
  * @author Valentine Shemyako
  * @since November 22, 2018
  */
-public class Q014 {
-
-    /**
-     * Configuration of lazily-loaded beans: not created by container until requested.
-     */
-    @Lazy
-    @Configuration
-    public static class LazyConfiguration {
-
-        /**
-         * Bean factory to initialize lazy bean.
-         */
-        @Bean
-        public CoachPotato coachPotato() {
-            return new CoachPotato();
-        }
-    }
-
-    /**
-     * A lazy person.
-     */
-    public static class CoachPotato {
-    }
+public class LazyBeanCreation {
 }

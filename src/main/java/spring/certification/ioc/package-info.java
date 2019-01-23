@@ -21,8 +21,7 @@
  * 12.2. Describe stereotypes. {@link spring.certification.ioc.q012.ComponentScan link}<br>
  * 12.3. Describe meta-annotations. {@link spring.certification.ioc.q012.ComponentScan link}<br>
  * 13. Describe scopes for Spring beans. What is the default scope? {@link spring.certification.ioc.q013.BeanScopes link}<br>
- * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour?
- * {@link spring.certification.ioc.Q014 link}<br>
+ * 14. Are beans lazily of eagerly instantiated by default? How do you alter this behaviour? {@link spring.certification.ioc.q014.LazyBeanCreation link}<br>
  * 15. What is a property source? How would you use @PropertySource annotation?
  * {@link spring.certification.ioc.Q015 link}<br>
  * 16.1. What is a BeanFactoryPostProcessor and what is it used for? When is it invoked?
