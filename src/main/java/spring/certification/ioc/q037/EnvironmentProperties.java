@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q037;
 
 import spring.certification.boot.Q006properties;
 import spring.certification.ioc.q015.PropertySourceUsage;
@@ -16,5 +16,5 @@ import spring.certification.ioc.q015.PropertySourceUsage;
  * @author Valentine Shemyako
  * @since December 01, 2018
  */
-public class Q037 {
+public class EnvironmentProperties {
 }
