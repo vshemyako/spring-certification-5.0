@@ -1,4 +1,4 @@
-package spring.certification.aop;
+package spring.certification.aop.q001;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -34,11 +34,11 @@ package spring.certification.aop;
  * - application monitoring<br>
  * <p>
  * <b>Problems without AOP</b>:<br>
- * 1. Business and non-business logic is mixed. Code is harder to maintain and understand.<br>
+ * 1. Business and non-business logic are mixed. Code is harder to maintain and understand.<br>
  * 2. Code duplication, which otherwise could be moved to a separate class or package.<br>
  *
  * @author Valentine Shemyako
  * @since December 03, 2018
  */
-public class Q001concepts {
+public class AOPConcepts {
 }

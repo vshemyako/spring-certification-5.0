@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.security.web.FilterChainProxy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.filter.DelegatingFilterProxy;
+import spring.certification.aop.q001.AOPConcepts;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -15,7 +16,7 @@ import org.springframework.web.filter.DelegatingFilterProxy;
  * <p>
  * Answer:<br>
  * Security concern pertains to lots of layers of an application and therefore is considered to be a cross-cutting.
- * Those cross-cutting concerns where discussed in the {@linkplain spring.certification.aop.Q001concepts AOP section}.<br>
+ * Those cross-cutting concerns where discussed in the {@linkplain AOPConcepts AOP section}.<br>
  * <p>
  * Depending on what is secured Spring Security framework internals differ:<br>
  * 1. Method invocation is declarative and is implemented using AOP proxies (proxy object wraps secured one and applies
