@@ -1,4 +1,4 @@
-package spring.certification.test;
+package spring.certification.test.q004;
 
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.annotation.Rollback;
@@ -23,5 +23,5 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Valentine Shemyako
  * @since January 01, 2019
  */
-public class Q004transaction {
+public class TransactionalTestSupport {
 }

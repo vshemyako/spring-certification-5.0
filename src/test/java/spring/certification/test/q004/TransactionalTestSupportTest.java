@@ -1,6 +1,8 @@
-package spring.certification.test;
+package spring.certification.test.q004;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+
+import javax.sql.DataSource;
 import org.junit.Test;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,15 +15,13 @@ import org.springframework.test.context.transaction.AfterTransaction;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import javax.sql.DataSource;
-
 /**
  * Demonstrates usage of test-transaction functionality offered by spring-test module.
  *
  * @author Valentine Shemyako
  * @since January 01, 2019
  */
-public class Q004transactionTest {
+public class TransactionalTestSupportTest {
 
     /**
      * Tests default transactional functionality of test-module.
@@ -32,7 +32,7 @@ public class Q004transactionTest {
         private static final String HOLIDAYS_TABLE_NAME = "holidays";
 
         /**
-         * Setup method which runs out of a transaction.
+         * Setup method which runs before of a transaction.
          */
         @BeforeTransaction
         public void setUp() {
@@ -40,12 +40,12 @@ public class Q004transactionTest {
         }
 
         /**
-         * Tear down method which runs out of a transaction.
+         * Tear down method which runs after a transaction.
          */
         @AfterTransaction
         public void tearDown() {
             int rowCount = countRowsInTable(HOLIDAYS_TABLE_NAME);
-            Assert.assertEquals(0, rowCount);
+            assertEquals(0, rowCount);
 
             executeSqlScript("drop-database.sql", false);
         }
@@ -66,7 +66,7 @@ public class Q004transactionTest {
         public void shouldRollbackTransaction() {
             jdbcTemplate.execute(String.format("INSERT INTO holidays (name) VALUES ('%s')", HOLIDAYS_TABLE_NAME));
             int rowsCount = countRowsInTable(HOLIDAYS_TABLE_NAME);
-            Assert.assertEquals(1, rowsCount);
+            assertEquals(1, rowsCount);
         }
     }
 

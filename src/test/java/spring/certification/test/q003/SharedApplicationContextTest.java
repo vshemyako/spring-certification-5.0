@@ -1,4 +1,4 @@
-package spring.certification.test;
+package spring.certification.test.q003;
 
 import org.junit.Assert;
 import org.junit.ClassRule;
@@ -23,7 +23,7 @@ import org.springframework.test.context.junit4.rules.SpringMethodRule;
  * @author Valentine Shemyako
  * @since December 31, 2018
  */
-public class Q003contextTest {
+public class SharedApplicationContextTest {
 
     /**
      * Context is injected via means of {@link SpringRunner} class which as actually an alias for

@@ -1,6 +1,7 @@
-package spring.certification.test;
+package spring.certification.test.q006;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author Valentine Shemyako
  * @since January 03, 2019
  */
-public class Q006configurationTest {
+public class ContextConfigurationUsageTest {
 
     /**
      * Demonstrates usage of {@link ContextConfiguration} annotation applied to {@link Component} class.
@@ -48,8 +49,8 @@ public class Q006configurationTest {
 
         @Test
         public void shouldInitializeContext() {
-            Assert.assertNotNull(firTree);
-            Assert.assertNotNull(oakTree);
+            assertNotNull(firTree);
+            assertNotNull(oakTree);
         }
     }
 

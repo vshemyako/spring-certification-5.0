@@ -1,4 +1,4 @@
-package spring.certification.test;
+package spring.certification.test.q002;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -7,7 +7,7 @@ package spring.certification.test;
  * What type of tests typically use Spring?<br>
  * <p>
  * Answer:<br>
- * Most of the time Spring Framework is used to test <b>integration</b> between developed code and Spring Framework.
+ * Most of the time Spring Framework is used to test <b>integration</b> between developed code and Spring Framework.<br>
  * Those kind of tests are called <b>integration tests</b>. Main goals to use Spring Framework in tests are the following:<br>
  * - to manage Spring IoC container caching between tests<br>
  * - to provide Dependency Injection of test fixture instances<br>
@@ -17,5 +17,5 @@ package spring.certification.test;
  * @author Valentine Shemyako
  * @since December 31, 2018
  */
-public class Q002type {
+public class IntegrationTestSupport {
 }
