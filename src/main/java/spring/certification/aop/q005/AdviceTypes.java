@@ -24,7 +24,7 @@ import org.aspectj.lang.annotation.Before;
  * a join point. Join point can be invoked one, many or none times.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link spring.certification.aop.q005.example} - lots of examples of advice usages, test module verify behavior.<br>
+ * {@link spring.certification.aop.q005.example} - lots of examples of advice usages, test module verifies behavior.<br>
  *
  * @author Valentine Shemyako
  * @since December 07, 2018
