@@ -36,10 +36,9 @@
  * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
  * testing? {@link spring.certification.ioc.q022.PrivateFieldInjection link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>
- * 24.1. What is a proxy object and what are the two different types of proxies Spring can create?
- * {@link spring.certification.ioc.Q024 link}<br>
- * 24.2. What are the limitations of these proxies (per type)? {@link spring.certification.ioc.Q024 link}<br>
- * 24.3. What is the power of a proxy object and where are the disadvantages? {@link spring.certification.ioc.Q024 link}<br>
+ * 24.1. What is a proxy object and what are the two different types of proxies Spring can create? {@link spring.certification.ioc.q024.SpringAOP link}<br>
+ * 24.2. What are the limitations of these proxies (per type)? {@link spring.certification.ioc.q024.SpringAOP link}<br>
+ * 24.3. What is the power of a proxy object and where are the disadvantages? {@link spring.certification.ioc.q024.SpringAOP link}<br>
  * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.Q025 link}<br>
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.Q026 link}<br>
  * 27. What is the default bean id if you only use @Bean? How can you override this?

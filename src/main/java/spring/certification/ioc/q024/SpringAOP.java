@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q024;
 
 import spring.certification.aop.Q001concepts;
 import spring.certification.aop.Q003proxy;
@@ -21,5 +21,5 @@ import spring.certification.aop.Q004limitations;
  * @author Valentine Shemyako
  * @since November 30, 2018
  */
-public class Q024 {
+public class SpringAOP {
 }
