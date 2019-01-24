@@ -7,7 +7,7 @@
  * 1.3. What is cross cutting concern? {@link spring.certification.aop.q001.AOPConcepts link}<br>
  * 1.4. Name three typical cross cutting concerns. {@link spring.certification.aop.q001.AOPConcepts link}<br>
  * 1.5. What two problems arise if you don't solve a cross cutting concern via AOP? {@link spring.certification.aop.q001.AOPConcepts link}<br>
- * 2. What is a pointcut, a join point, an advice, an aspect, a weaving? {@link spring.certification.aop.Q002terminology link}<br>
+ * 2. What is a pointcut, a join point, an advice, an aspect, a weaving? {@link spring.certification.aop.q002.AOPTerminology link}<br>
  * 3. How does Spring framework solve a cross cutting concern? {@link spring.certification.aop.Q003proxy link}<br>
  * 4.1. What are the limitations of the two proxy types? {@link spring.certification.aop.Q004limitations link}<br>
  * 4.2. What visibility must Spring bean methods have to be proxied using Spring AOP? {@link spring.certification.aop.Q004limitations link}<br>
