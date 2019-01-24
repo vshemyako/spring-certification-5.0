@@ -11,9 +11,9 @@
  * 3. How does Spring framework solve a cross cutting concern? {@link spring.certification.aop.q003.CrossCuttingSolution link}<br>
  * 4.1. What are the limitations of the two proxy types? {@link spring.certification.aop.q004.ProxyLimitations link}<br>
  * 4.2. What visibility must Spring bean methods have to be proxied using Spring AOP? {@link spring.certification.aop.q004.ProxyLimitations link}<br>
- * 5.1. How many advice types does Spring support. Can you name each one? {@link spring.certification.aop.Q005advice link}<br>
- * 5.2. What different advice types are used for? {@link spring.certification.aop.Q005advice link}<br>
- * 5.3. Which types of advices can you use if you would like to try and catch exceptions? {@link spring.certification.aop.Q005advice link}<br>
+ * 5.1. How many advice types does Spring support. Can you name each one? {@link spring.certification.aop.q005.AdviceTypes link}<br>
+ * 5.2. What different advice types are used for? {@link spring.certification.aop.q005.AdviceTypes link}<br>
+ * 5.3. Which types of advices can you use if you would like to try and catch exceptions? {@link spring.certification.aop.q005.AdviceTypes link}<br>
  * 6.1. What do you have to do to enable the detection of the @Aspect annotation? {@link spring.certification.aop.Q006aspectj link}<br>
  * 6.2. What does @EnableAspectJAutoProxy do? {@link spring.certification.aop.Q006aspectj link}<br>
  * 7.1. If shown pointcut expressions, would you understand them? {@link spring.certification.aop.Q007pointcut link}<br>

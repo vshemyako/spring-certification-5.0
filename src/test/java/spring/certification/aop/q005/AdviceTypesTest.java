@@ -1,25 +1,31 @@
-package spring.certification.aop;
+package spring.certification.aop.q005;
 
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.certification.aop.Q005advice.ConfigurationMarker;
-import spring.certification.aop.Q005advice.Fool;
-import spring.certification.aop.Q005advice.PanicException;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import spring.certification.aop.q005.example.AdviceConfigurationMarker;
+import spring.certification.aop.q005.example.Fool;
+import spring.certification.aop.q005.example.PanicException;
 
 /**
  * Verifies functionality of different types of AOP advices.
  */
-public class Q005adviceTest {
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = AdviceConfigurationMarker.class)
+public class AdviceTypesTest {
 
     /**
      * Fields to redefine system streams.
@@ -27,22 +33,15 @@ public class Q005adviceTest {
     private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     private final PrintStream predefinedOutputStream = System.out;
 
-    /**
-     * Auto-configured application context.
-     */
-    private AnnotationConfigApplicationContext context;
+    @Autowired
     private Fool fool;
 
     /**
      * Substitutes system stream with 'dummy' byte array stream.
-     * Configures application-context and registers shut down hook.
      */
     @Before
     public void setUp() {
         System.setOut(new PrintStream(outputStream));
-        context = new AnnotationConfigApplicationContext(ConfigurationMarker.class);
-        context.registerShutdownHook();
-        fool = context.getBean(Fool.class);
     }
 
     /**
@@ -63,7 +62,7 @@ public class Q005adviceTest {
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Berlin", "Capital of Germany unknown")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 
     /**
@@ -76,21 +75,26 @@ public class Q005adviceTest {
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Queen of England unknown", "Elizabeth")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 
     /**
      * Verifies that {@link AfterThrowing} advice is executed 'after exception has been thrown' from
      * {@link Fool#nameContinent(String)} method.
      */
-    @Test(expected = PanicException.class)
+    @Test
     public void shouldExecuteAfterThrowingAdvice() {
-        fool.nameContinent("China");
+        try {
+            fool.nameContinent("China");
+            fail();
+        } catch (PanicException ex) {
+            // Legal to ignore.
+        }
 
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Asia")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 
     /**
@@ -104,21 +108,26 @@ public class Q005adviceTest {
         String actualString = outputStream.toString();
         String expectedString = Stream.of("No money no honey", "The euro")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 
     /**
      * Verifies that {@link org.aspectj.lang.annotation.After} advice is executed 'after' exceptional returning
      * of {@link Fool#nameCurrency(String)} method.
      */
-    @Test(expected = PanicException.class)
+    @Test
     public void shouldExecuteAfterExceptionalAdvice() {
-        fool.nameCurrency("Russia");
+        try {
+            fool.nameCurrency("Russia");
+            fail();
+        } catch (PanicException ex) {
+            // Legal to ignore.
+        }
 
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Russian ruble")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 
     /**
@@ -132,6 +141,6 @@ public class Q005adviceTest {
         String actualString = outputStream.toString();
         String expectedString = Stream.of("Poland", "No idea", "Ukraine")
                 .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
-        Assert.assertEquals(expectedString, actualString);
+        assertEquals(expectedString, actualString);
     }
 }
