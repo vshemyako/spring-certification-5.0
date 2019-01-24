@@ -1,4 +1,4 @@
-package spring.certification.test;
+package spring.certification.test.q006;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
@@ -21,5 +21,5 @@ import org.springframework.test.context.junit4.SpringRunner;
  * @author Valentine Shemyako
  * @since January 02, 2019
  */
-public class Q006configuration {
+public class ContextConfigurationUsage {
 }

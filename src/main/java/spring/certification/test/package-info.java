@@ -7,7 +7,7 @@
  * 3. How can you create a shared application context in a JUnit integration test? {@link spring.certification.test.q003.SharedApplicationContext link}<br>
  * 4. When and where do you use @Transactional in testing? {@link spring.certification.test.q004.TransactionalTestSupport link}<br>
  * 5. How are mock frameworks such as Mockito or EasyMock used? {@link spring.certification.test.q005.MockingSupport link}<br>
- * 6. How is @ContextConfiguration used? {@link spring.certification.test.Q006configuration link}<br>
+ * 6. How is @ContextConfiguration used? {@link spring.certification.test.q006.ContextConfigurationUsage link}<br>
  * 7. How does Spring Boot simplify writing tests? {@link spring.certification.test.Q007boot link}<br>
  * 8.1. What does @SpringBootTest do? {@link spring.certification.test.Q008bootannotations link}<br>
  * 8.2. How does it interact with @SpringBootApplication and @SpringBootConfiguration? {@link spring.certification.test.Q008bootannotations link}<br>
