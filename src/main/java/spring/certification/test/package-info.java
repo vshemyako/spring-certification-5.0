@@ -3,7 +3,7 @@
  * <p>
  * Table of contents:<br>
  * 1. Do you use Spring in a unit test? {@link spring.certification.test.q001.UnitTestSupport link}<br>
- * 2. What type of tests typically use Spring? {@link spring.certification.test.Q002type link}<br>
+ * 2. What type of tests typically use Spring? {@link spring.certification.test.q002.IntegrationTestSupport link}<br>
  * 3. How can you create a shared application context in a JUnit integration test? {@link spring.certification.test.Q003context link}<br>
  * 4. When and where do you use @Transactional in testing? {@link spring.certification.test.Q004transaction link}<br>
  * 5. How are mock frameworks such as Mockito or EasyMock used? {@link spring.certification.test.Q005mock link}<br>
