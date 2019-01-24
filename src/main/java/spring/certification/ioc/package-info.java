@@ -41,9 +41,9 @@
  * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.q025.JavaConfigAdvantages link}<br>
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.q026.BeanAnnotationFunctionality link}<br>
  * 27. What is the default bean id if you only use @Bean? How can you override this? {@link spring.certification.ioc.q027.BeanNaming link}<br>
- * 28.1. Why are you not allowed to annotate a final class with @Configuration? {@link spring.certification.ioc.Q028 link}<br>
- * 28.2. How do @Configuration annotated classes support singleton beans? {@link spring.certification.ioc.Q028 link}<br>
- * 28.3. Why can’t @Bean methods be final either? {@link spring.certification.ioc.Q028 link}<br>
+ * 28.1. Why are you not allowed to annotate a final class with @Configuration? {@link spring.certification.ioc.q028.ConfigurationAnnotationFunctionality link}<br>
+ * 28.2. How do @Configuration annotated classes support singleton beans? {@link spring.certification.ioc.q028.ConfigurationAnnotationFunctionality link}<br>
+ * 28.3. Why can’t @Bean methods be final either? {@link spring.certification.ioc.q028.ConfigurationAnnotationFunctionality link}<br>
  * 29.1. How do you configure profiles? {@link spring.certification.ioc.Q029 link}<br>
  * 29.2. What are possible use cases where they might be useful? {@link spring.certification.ioc.Q029 link}<br>
  * 30. Can you use @Bean together with @Profile? {@link spring.certification.ioc.Q030 link}<br>
