@@ -1,12 +1,10 @@
-package spring.certification.ioc;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
+package spring.certification.ioc.q030;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
-import java.time.Instant;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
+import spring.certification.ioc.q030.example.MethodLevelProfileConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -25,35 +23,11 @@ import java.time.Instant;
  * the profile is inconsistent among all overloaded methods, only {@link Profile} of the first declared method will be
  * considered.<br>
  * Examples of mentioned terms:<br>
- * {@link Q030.MethodLevelProfileConfiguration} - demonstrates simplistic usage of {@link Profile} annotation applied at
+ * {@link MethodLevelProfileConfiguration} - demonstrates simplistic usage of {@link Profile} annotation applied at
  * method level.<br>
  *
  * @author Valentine Shemyako
  * @since November 18, 2018
  */
-public class Q030 {
-
-    /**
-     * Shows basic usage of {@link Profile} annotations applied on method level.
-     */
-    @Configuration
-    public static class MethodLevelProfileConfiguration {
-
-        /**
-         * Point in time related to application startup.
-         */
-        @Profile("qa")
-        @Bean
-        public Instant startupInstant() {
-            return Instant.now();
-        }
-
-        /**
-         * Point in time related to scheduled shutdown of the application.
-         */
-        @Bean
-        public Instant shutdownInstant() {
-            return Instant.MAX;
-        }
-    }
+public class BeanMethodProfileConfiguration {
 }

@@ -8,6 +8,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Profile;
 
 import java.time.Instant;
+import spring.certification.ioc.q030.BeanMethodProfileConfiguration;
+import spring.certification.ioc.q030.example.MethodLevelProfileConfiguration;
 
 /**
  * Verifies {@link Profile} annotation functionality applied on method-level.
@@ -22,7 +24,7 @@ public class Q030Test {
     public void qaContainerShouldReturnStartupInstant() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.getEnvironment().setActiveProfiles("qa");
-        context.register(Q030.MethodLevelProfileConfiguration.class);
+        context.register(MethodLevelProfileConfiguration.class);
         context.refresh();
 
         verifyRegisteredBeans(context);
@@ -34,7 +36,7 @@ public class Q030Test {
      */
     @Test(expected = NoSuchBeanDefinitionException.class)
     public void qaContainerShouldFailToReturnStartupInstant() {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Q030.MethodLevelProfileConfiguration.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MethodLevelProfileConfiguration.class);
         verifyRegisteredBeans(context);
     }
 
