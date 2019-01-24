@@ -49,7 +49,7 @@
  * 30. Can you use @Bean together with @Profile? {@link spring.certification.ioc.q030.BeanMethodProfileConfiguration link}<br>
  * 31. Can you use @Component together with @Profile? {@link spring.certification.ioc.q031.ComponentClassProfileConfiguration link}<br>
  * 32. How many profiles can you have? {@link spring.certification.ioc.q032.ProfileAmountRestriction link}<br>
- * 33. How do you inject scalar/literal values into Spring beans? {@link spring.certification.ioc.Q033 link}<br>
+ * 33. How do you inject scalar/literal values into Spring beans? {@link spring.certification.ioc.q033.LiteralValueInjection link}<br>
  * 34. What is @Value used for? {@link spring.certification.ioc.Q034 link}<br>
  * 35. What is Spring Expression Language (SpEL for short)? {@link spring.certification.ioc.Q035 link}<br>
  * 36. What is the Environment abstraction in Spring? {@link spring.certification.ioc.Q036 link}<br>
