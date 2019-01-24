@@ -1,10 +1,11 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q039;
 
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
-import spring.certification.ioc.q034.ValueAnnotationFunctionality;
+import spring.certification.ioc.q034.example.ShelfConfiguration;
+import spring.certification.ioc.q038.example.ExpressionLanguageFeatures;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -19,10 +20,11 @@ import spring.certification.ioc.q034.ValueAnnotationFunctionality;
  * and are evaluated by {@link Expression}.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link ValueAnnotationFunctionality.ShelfConfiguration} - demonstrates usage of both types.
+ * {@link ShelfConfiguration} - demonstrates usage of both types.<br>
+ * {@link ExpressionLanguageFeatures} - demonstrates usage of SpEL expressions.<br>
  *
  * @author Valentine Shemyako
  * @since December 01, 2018
  */
-public class Q039 {
+public class DollarPoundDifference {
 }
