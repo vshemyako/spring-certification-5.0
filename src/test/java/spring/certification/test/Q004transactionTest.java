@@ -1,5 +1,6 @@
 package spring.certification.test;
 
+import javax.sql.DataSource;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.annotation.Bean;
@@ -12,8 +13,6 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
 import org.springframework.test.context.transaction.AfterTransaction;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.PlatformTransactionManager;
-
-import javax.sql.DataSource;
 
 /**
  * Demonstrates usage of test-transaction functionality offered by spring-test module.

@@ -1,4 +1,4 @@
-package spring.certification.test;
+package spring.certification.test.q003;
 
 import org.junit.runner.RunWith;
 import org.springframework.context.ApplicationContextAware;
@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.rules.SpringMethodRule;
  * How can you create a shared application context in a JUnit integration test?<br>
  * <p>
  * Answer:<br>
- * Possibilities differ depending on a version of a JUnit being used:<br>
+ * Possibilities differ depending on a version of JUnit being used:<br>
  * <b>JUnit 4</b>:<br>
  * - using {@link SpringRunner} class with {@link RunWith} annotation<br>
  * - using {@link SpringJUnit4ClassRunner} class with {@link RunWith}<br>
@@ -36,5 +36,5 @@ import org.springframework.test.context.junit4.rules.SpringMethodRule;
  * @author Valentine Shemyako
  * @since December 31, 2018
  */
-public class Q003context {
+public class SharedApplicationContext {
 }
