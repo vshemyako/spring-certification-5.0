@@ -4,6 +4,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
+import spring.certification.ioc.q034.ValueAnnotationFunctionality;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -18,7 +19,7 @@ import org.springframework.expression.ExpressionParser;
  * and are evaluated by {@link Expression}.<br>
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q034.ShelfConfiguration} - demonstrates usage of both types.
+ * {@link ValueAnnotationFunctionality.ShelfConfiguration} - demonstrates usage of both types.
  *
  * @author Valentine Shemyako
  * @since December 01, 2018
