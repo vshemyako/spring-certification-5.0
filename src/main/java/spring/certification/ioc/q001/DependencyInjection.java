@@ -48,7 +48,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class DependencyInjection {
 
-    // TODO: remove dummy examples after Autowired tests.
     /**
      * Example demonstrates dependencies creation by an object itself.
      */

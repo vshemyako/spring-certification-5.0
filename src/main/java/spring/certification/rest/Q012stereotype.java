@@ -2,7 +2,7 @@ package spring.certification.rest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
-import spring.certification.ioc.Q012;
+import spring.certification.ioc.q012.ComponentScan;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -18,7 +18,7 @@ import spring.certification.ioc.Q012;
  * is meta-annotated with {@link Controller}, thus it can also be considered as <i>stereotype</i> (Spring Boot documentation
  * actually refers to a {@link RestController} as being a stereotype annotation).<br>
  * <i>Stereotype annotation</i> relates to some community agreed role of a class to which a stereotype annotation
- * is applied. Stereotype annotations are discussed in more details in the {@link Q012 IoC sections}.<br>
+ * is applied. Stereotype annotations are discussed in more details in the {@link ComponentScan IoC sections}.<br>
  *
  * @author Valentine Shemyako
  * @since January 18, 2019
