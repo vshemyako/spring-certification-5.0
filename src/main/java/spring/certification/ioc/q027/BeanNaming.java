@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q027;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,12 +19,12 @@ import java.time.Period;
  * In case explicit naming is desired the {@code name} attribute, or the {@code value} attribute should be specified.
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q027.JavaBeanNameConfig} - demonstrates how to change default bean name.
+ * {@link BeanNaming.JavaBeanNameConfig} - demonstrates how to change default bean name.
  *
  * @author Valentine Shemyako
  * @since November 17, 2018
  */
-public class Q027 {
+public class BeanNaming {
 
     /**
      * Demonstrates how different bean names are declared.

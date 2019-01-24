@@ -1,29 +1,29 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q027.example;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 
 import java.time.Duration;
 import java.time.Period;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.NoSuchBeanDefinitionException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * Verifies bean naming functionality offered by Spring framework.
  */
-public class Q027Test {
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = JavaBeanNameConfig.class)
+public class JavaBeanNameConfigTest {
 
-    AnnotationConfigApplicationContext context;
-
-    /**
-     * Test fixture.
-     */
-    @Before
-    public void setUp() {
-        context = new AnnotationConfigApplicationContext(Q027.JavaBeanNameConfig.class);
-    }
+    @Autowired
+    private ApplicationContext context;
 
     /**
      * Verifies that default bean name is indeed bean factory method name.
@@ -31,7 +31,7 @@ public class Q027Test {
     @Test
     public void defaultNameShouldBeMethodName() {
         Period day = context.getBean("day", Period.class);
-        Assert.assertNotNull(day);
+        assertNotNull(day);
     }
 
     /**
@@ -40,7 +40,7 @@ public class Q027Test {
     @Test
     public void beanNameShouldBeNameAttributeValue() {
         Period week = context.getBean("week", Period.class);
-        Assert.assertNotNull(week);
+        assertNotNull(week);
 
         // Default name was substituted with attribute name.
         shouldFailToFindBean("sevenDays");
@@ -53,7 +53,7 @@ public class Q027Test {
     @Test
     public void beanNameShouldBeValueAttributeValue() {
         Period month = context.getBean("month", Period.class);
-        Assert.assertNotNull(month);
+        assertNotNull(month);
 
         // Default name was substituted with attribute name.
         shouldFailToFindBean("thirtyDays");
@@ -65,15 +65,15 @@ public class Q027Test {
     @Test
     public void beanNameShouldBeNameAttributeArrayOfValues() {
         Duration thirtyMinutes = context.getBean("thirtyMinutes", Duration.class);
-        Assert.assertNotNull(thirtyMinutes);
+        assertNotNull(thirtyMinutes);
         Duration halfAnHour = context.getBean("halfAnHour", Duration.class);
-        Assert.assertNotNull(halfAnHour);
+        assertNotNull(halfAnHour);
     }
 
     private void shouldFailToFindBean(String beanName) {
         try {
             context.getBean(beanName, Period.class);
-            Assert.fail("Default bean name should be discarded");
+            fail("Default bean name should be discarded");
         } catch (NoSuchBeanDefinitionException e) {
             // Legal to ignore.
         }
