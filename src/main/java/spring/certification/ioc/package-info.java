@@ -54,7 +54,7 @@
  * 35. What is Spring Expression Language (SpEL for short)? {@link spring.certification.ioc.q035.SpelFunctionality link}<br>
  * 36. What is the Environment abstraction in Spring? {@link spring.certification.ioc.q036.EnvironmentAbstraction link}<br>
  * 37. Where can properties in the environment come from? {@link spring.certification.ioc.q037.EnvironmentProperties link}<br>
- * 38. What can you reference using SpEL? {@link spring.certification.ioc.Q038 link}<br>
+ * 38. What can you reference using SpEL? {@link spring.certification.ioc.q038.SpelExamples link}<br>
  * 39. What is the difference between $ and # in @Value expressions {@link spring.certification.ioc.Q039 link}?
  *
  * @author Valentine Shemyako

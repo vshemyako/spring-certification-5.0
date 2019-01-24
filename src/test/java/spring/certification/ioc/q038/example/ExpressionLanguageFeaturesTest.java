@@ -1,34 +1,27 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q038.example;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.certification.ioc.Q038.ExpressionLanguageFeatures;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * Tests SpEL functionality utilized by {@link Value} annotation.
+ * Tests SpEL functionality offered by {@link Value} annotation.
  */
-public class Q038Test {
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = ComponentScanMarker.class)
+public class ExpressionLanguageFeaturesTest {
 
-    private AnnotationConfigApplicationContext context;
+    @Autowired
     private ExpressionLanguageFeatures languageFeatures;
-
-    /**
-     * Test fixture which initializes application-context.
-     */
-    @Before
-    public void setUp() {
-        this.context = new AnnotationConfigApplicationContext(Q038.ComponentScanMarker.class);
-        // Preferred way to close application context over plain #close method.
-        this.context.registerShutdownHook();
-        this.languageFeatures = context.getBean(ExpressionLanguageFeatures.class);
-    }
 
     /**
      * Verifies evaluation of <b>literal</b> expressions.
@@ -36,7 +29,7 @@ public class Q038Test {
     @Test
     public void shouldEvaluateLiteralExpression() {
         int number = languageFeatures.getLiteralExpression();
-        Assert.assertEquals(911, number);
+        assertEquals(911, number);
     }
 
     /**
@@ -45,7 +38,7 @@ public class Q038Test {
     @Test
     public void shouldEvaluateBeanProperty() {
         String beanName = languageFeatures.getCollaboratorBeanProperty();
-        Assert.assertEquals("collaborator", beanName);
+        assertEquals("collaborator", beanName);
     }
 
     /**
@@ -54,8 +47,8 @@ public class Q038Test {
     @Test
     public void shouldEvaluateInlineList() {
         List<Boolean> booleanValues = languageFeatures.getInlineList();
-        Assert.assertTrue(booleanValues.contains(true));
-        Assert.assertTrue(booleanValues.contains(false));
+        assertTrue(booleanValues.contains(true));
+        assertTrue(booleanValues.contains(false));
     }
 
     /**
@@ -64,10 +57,10 @@ public class Q038Test {
     @Test
     public void shouldEvaluateInlineMap() {
         Map<String, Integer> wordToNumber = languageFeatures.getInlineMap();
-        Assert.assertTrue(wordToNumber.containsKey("one"));
-        Assert.assertEquals(1, (int) wordToNumber.get("one"));
-        Assert.assertTrue(wordToNumber.containsKey("two"));
-        Assert.assertEquals(2, (int) wordToNumber.get("two"));
+        assertTrue(wordToNumber.containsKey("one"));
+        assertEquals(1, (int) wordToNumber.get("one"));
+        assertTrue(wordToNumber.containsKey("two"));
+        assertEquals(2, (int) wordToNumber.get("two"));
     }
 
     /**
@@ -77,9 +70,9 @@ public class Q038Test {
     public void shouldEvaluateInlineArray() {
         Character[] abc = languageFeatures.getInlineArray();
         List<Character> alphabet = Arrays.asList(abc);
-        Assert.assertTrue(alphabet.contains('a'));
-        Assert.assertTrue(alphabet.contains('b'));
-        Assert.assertTrue(alphabet.contains('c'));
+        assertTrue(alphabet.contains('a'));
+        assertTrue(alphabet.contains('b'));
+        assertTrue(alphabet.contains('c'));
     }
 
     /**
@@ -88,7 +81,7 @@ public class Q038Test {
     @Test
     public void shouldEvaluateMethodInvocation() {
         String greetingString = languageFeatures.getMethodInvocation();
-        Assert.assertEquals("Hello SpEL", greetingString);
+        assertEquals("Hello SpEL", greetingString);
     }
 
     /**
@@ -97,7 +90,7 @@ public class Q038Test {
     @Test
     public void shouldEvaluateComparison() {
         Boolean greaterThan = languageFeatures.getComparisonResult();
-        Assert.assertTrue(greaterThan);
+        assertTrue(greaterThan);
     }
 
     /**
@@ -106,6 +99,6 @@ public class Q038Test {
     @Test
     public void shouldEvaluateType() throws ClassNotFoundException {
         Class<String> stringType = languageFeatures.getStringType();
-        Assert.assertEquals(Class.forName("java.lang.Class"), stringType.getClass());
+        assertEquals(Class.forName("java.lang.Class"), stringType.getClass());
     }
 }
