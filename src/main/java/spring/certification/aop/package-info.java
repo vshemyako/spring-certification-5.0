@@ -16,8 +16,8 @@
  * 5.3. Which types of advices can you use if you would like to try and catch exceptions? {@link spring.certification.aop.q005.AdviceTypes link}<br>
  * 6.1. What do you have to do to enable the detection of the @Aspect annotation? {@link spring.certification.aop.q006.AspectJAnnotations link}<br>
  * 6.2. What does @EnableAspectJAutoProxy do? {@link spring.certification.aop.q006.AspectJAnnotations link}<br>
- * 7.1. If shown pointcut expressions, would you understand them? {@link spring.certification.aop.Q007pointcut link}<br>
- * 7.2. For example, in the course we matched getter methods on Spring Beans, what would be the correct pointcut expression to match both getter and setter methods? {@link spring.certification.aop.Q007pointcut link}<br>
+ * 7.1. If shown pointcut expressions, would you understand them? {@link spring.certification.aop.q007.PointcutExpressions link}<br>
+ * 7.2. For example, in the course we matched getter methods on Spring Beans, what would be the correct pointcut expression to match both getter and setter methods? {@link spring.certification.aop.q007.PointcutExpressions link}<br>
  * 8. What is the JoinPoint argument used for? {@link spring.certification.aop.q008.JoinPointArgument link}<br>
  * 9.1. What is a ProceedingJoinPoint? {@link spring.certification.aop.q009.ProceedingJoinPointArgument link}<br>
  * 9.2. When ProceedingJoinPoint is used? {@link spring.certification.aop.q009.ProceedingJoinPointArgument link}<br>

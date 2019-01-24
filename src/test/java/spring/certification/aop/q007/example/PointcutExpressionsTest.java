@@ -1,67 +1,38 @@
-package spring.certification.aop;
+package spring.certification.aop.q007.example;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.certification.aop.Q007pointcut.Executor;
-import spring.certification.aop.Q007pointcut.Politeness;
-import spring.certification.aop.helper.AnnotatedPointcutHelper;
-import spring.certification.aop.helper.PointcutHelper;
-import spring.certification.aop.helper.Pojo;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import spring.certification.aop.helper.AnnotatedPointcutHelper;
+import spring.certification.aop.helper.HelperConfigurationMarker;
+import spring.certification.aop.helper.PointcutHelper;
+import spring.certification.aop.helper.Pojo;
+import spring.certification.aop.helper.StreamRedefiner;
 
 /**
  * Verifies functionality of pointcuts designators.
  */
-public class Q007pointcutTest {
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = {PointcutConfigurationMarker.class, HelperConfigurationMarker.class})
+public class PointcutExpressionsTest extends StreamRedefiner {
 
     private static final String EMPTY_STRING = "";
 
-    /**
-     * Fields to redefine system streams.
-     */
-    private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-    private final PrintStream predefinedOutputStream = System.out;
-
-    /**
-     * Auto-configured application context.
-     */
-    private AnnotationConfigApplicationContext context;
+    @Autowired
     private Executor executor;
+    @Autowired
     private AnnotatedPointcutHelper annotatedHelper;
+    @Autowired
     private Politeness politeness;
+    @Autowired
     private PointcutHelper helper;
+    @Autowired
     private Pojo pojo;
-
-    /**
-     * Substitutes system stream with 'dummy' byte array stream.
-     * Configures application-context and registers shut down hook.
-     */
-    @Before
-    public void setUp() {
-        System.setOut(new PrintStream(outputStream));
-        context = new AnnotationConfigApplicationContext(Q007pointcut.PointcutConfigurationMarker.class);
-        context.registerShutdownHook();
-        politeness = context.getBean(Politeness.class);
-        executor = context.getBean(Executor.class);
-        annotatedHelper = context.getBean(AnnotatedPointcutHelper.class);
-        helper = context.getBean(PointcutHelper.class);
-        pojo = context.getBean(Pojo.class);
-    }
-
-    /**
-     * Set previously changed system stream back.
-     */
-    @After
-    public void tearDown() {
-        System.setOut(predefinedOutputStream);
-    }
 
     /**
      * Verifies functionality of public pointcut designator.
