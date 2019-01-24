@@ -1,4 +1,4 @@
-package spring.certification.aop;
+package spring.certification.aop.q002;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -21,5 +21,5 @@ package spring.certification.aop;
  * @author Valentine Shemyako
  * @since December 03, 2018
  */
-public class Q002terminology {
+public class AOPTerminology {
 }

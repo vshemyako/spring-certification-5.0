@@ -1,4 +1,4 @@
-package spring.certification.aop;
+package spring.certification.aop.q006;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.context.annotation.Bean;
@@ -24,5 +24,5 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @author Valentine Shemyako
  * @since December 05, 2018
  */
-public class Q006aspectj {
+public class AspectJAnnotations {
 }
