@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q035;
 
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
@@ -10,7 +10,7 @@ import org.springframework.expression.ExpressionParser;
  * What is Spring Expression Language (SpEL for short)?<br>
  * <p>
  * Answer:<br>
- * It's an independent expression language which can be used separately from Spring framework itself. But it's
+ * It's an independent expression language which can be used separately from Spring framework itself. But its
  * functionality and language features are driven directly by the requirements of the Spring framework.<br>
  * <p>
  * SpEL turns around usage of the following interfaces:<br>
@@ -24,10 +24,10 @@ import org.springframework.expression.ExpressionParser;
  * - class expressions<br>
  * - etc.<br>
  * Examples of mentioned terms:<br>
- * -
+ * Please look at the counterpart test suite - it demonstrates usage of SpEL language in framework agnostic way.<br>
  *
  * @author Valentine Shemyako
  * @since December 01, 2018
  */
-public class Q035 {
+public class SpelFunctionality {
 }

@@ -51,7 +51,7 @@
  * 32. How many profiles can you have? {@link spring.certification.ioc.q032.ProfileAmountRestriction link}<br>
  * 33. How do you inject scalar/literal values into Spring beans? {@link spring.certification.ioc.q033.LiteralValueInjection link}<br>
  * 34. What is @Value used for? {@link spring.certification.ioc.q034.ValueAnnotationFunctionality link}<br>
- * 35. What is Spring Expression Language (SpEL for short)? {@link spring.certification.ioc.Q035 link}<br>
+ * 35. What is Spring Expression Language (SpEL for short)? {@link spring.certification.ioc.q035.SpelFunctionality link}<br>
  * 36. What is the Environment abstraction in Spring? {@link spring.certification.ioc.Q036 link}<br>
  * 37. Where can properties in the environment come from? {@link spring.certification.ioc.Q037 link}<br>
  * 38. What can you reference using SpEL? {@link spring.certification.ioc.Q038 link}<br>

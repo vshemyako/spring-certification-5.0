@@ -1,18 +1,19 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q035;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Objects;
 import org.junit.Test;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
-import java.util.Objects;
-
 /**
- * Accompanies {@link Q035} answer to the question about basic features of SpEL language, more specifically verifies
+ * Accompanies {@link SpelFunctionality} answer to the question about basic features of SpEL language, more specifically verifies
  * functionality offered by {@link ExpressionParser} and {@link Expression} interfaces.
  */
-public class Q035Test {
+public class SpelFunctionalityTest {
 
     /**
      * SpEL parser used within unit tests. Reusable and thread-safe.
@@ -31,19 +32,19 @@ public class Q035Test {
 
         Expression characterExpression = PARSER.parseExpression(singleCharacter);
         Character evaluatedCharacter = characterExpression.getValue(Character.class);
-        Assert.assertTrue(Objects.equals('A', evaluatedCharacter));
+        assertTrue(Objects.equals('A', evaluatedCharacter));
 
         Expression stringExpression = PARSER.parseExpression(word);
         String evaluatedString = stringExpression.getValue(String.class);
-        Assert.assertEquals("Word", evaluatedString);
+        assertEquals("Word", evaluatedString);
 
         Expression integralNumberExpression = PARSER.parseExpression(integralNumber);
         Integer evaluatedIntegralNumber = integralNumberExpression.getValue(Integer.class);
-        Assert.assertEquals(1, (int) evaluatedIntegralNumber);
+        assertEquals(1, (int) evaluatedIntegralNumber);
 
         Expression floatingPointExpression = PARSER.parseExpression(floatingPointNumber);
         Double evaluatedFloatingPointExpression = floatingPointExpression.getValue(Double.class);
-        Assert.assertEquals(1.0, (double) evaluatedFloatingPointExpression, 0.01);
+        assertEquals(1.0, (double) evaluatedFloatingPointExpression, 0.01);
     }
 
     /**
@@ -52,10 +53,10 @@ public class Q035Test {
     @Test
     public void shouldEvaluateBooleanExpression() {
         Boolean trueValue = PARSER.parseExpression("true").getValue(Boolean.class);
-        Assert.assertTrue(trueValue);
+        assertTrue(trueValue);
 
         Boolean trueExpression = PARSER.parseExpression("0 < 1").getValue(Boolean.class);
-        Assert.assertTrue(trueExpression);
+        assertTrue(trueExpression);
     }
 
     /**
@@ -64,7 +65,7 @@ public class Q035Test {
     @Test
     public void shouldEvaluateRegexp() {
         Boolean regexpResult = PARSER.parseExpression("'Bonnie' matches '\\w*'").getValue(Boolean.class);
-        Assert.assertTrue(regexpResult);
+        assertTrue(regexpResult);
     }
 
     /**
@@ -73,8 +74,8 @@ public class Q035Test {
     @Test
     public void shouldEvaluateClassExpression() {
         WordWrapper wordWrapper = new WordWrapper();
-        String wrappedWord = PARSER.parseExpression("word").getValue(wordWrapper, String.class);
-        Assert.assertEquals("Santa is coming", wrappedWord);
+        String actualWord = PARSER.parseExpression("word").getValue(wordWrapper, String.class);
+        assertEquals(wordWrapper.getWord(), actualWord);
     }
 
     /**
