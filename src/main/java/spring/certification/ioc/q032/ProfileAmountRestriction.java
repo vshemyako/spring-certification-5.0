@@ -1,4 +1,4 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q032;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -8,12 +8,11 @@ package spring.certification.ioc;
  * <p>
  * Answer:<br>
  * Maximum number of profiles isn't mentioned in java-docs or Spring reference documentation, therefore we can assume
- * that number of profiles is only limited by maximum size of array in Java language which is 2^31 - 1
- * ({@link Integer#MAX_VALUE}).<br>
+ * that number of profiles is only limited by maximum size of array in Java language which is 2^31 - 1 ({@link Integer#MAX_VALUE}).
  * <p>
  *
  * @author Valentine Shemyako
  * @since November 18, 2018
  */
-public class Q032 {
+public class ProfileAmountRestriction {
 }
