@@ -1,7 +1,7 @@
 package spring.certification.ioc.q024;
 
 import spring.certification.aop.q001.AOPConcepts;
-import spring.certification.aop.Q003proxy;
+import spring.certification.aop.q003.CrossCuttingSolution;
 import spring.certification.aop.Q004limitations;
 
 /**
@@ -13,7 +13,7 @@ import spring.certification.aop.Q004limitations;
  * What is the power of a proxy object and where are the disadvantages?<br>
  * <p>
  * Answer:<br>
- * AOP implementation details as well as different types of proxy objects are discussed in the {@link Q003proxy proxy}
+ * AOP implementation details as well as different types of proxy objects are discussed in the {@link CrossCuttingSolution proxy}
  * question of the AOP certification section.<br>
  * Limitations are discussed in the {@link Q004limitations limitations} question of the AOP certification section.<br>
  * Advantages of using proxies are discussed in the {@link AOPConcepts consepts} question of the AOP certification section.<br>

@@ -1,4 +1,4 @@
-package spring.certification.aop;
+package spring.certification.aop.q003;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -14,9 +14,11 @@ package spring.certification.aop;
  * be intercepted.<br>
  * 2. CGLIB proxies - in case target object does not implement any interface, or in case all concrete object methods
  * invocations should be intercepted.<br>
+ * <p>
+ * Note: Test module contains verification logic of proxy types being created.<br>
  *
  * @author Valentine Shemyako
  * @since December 04, 2018
  */
-public class Q003proxy {
+public class CrossCuttingSolution {
 }
