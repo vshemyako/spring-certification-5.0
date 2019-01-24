@@ -3,6 +3,7 @@ package spring.certification.ioc;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import spring.certification.ioc.q029.ProfileAnnotationFunctionality;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Component;
  * is applied to {@link Configuration} class.
  * <p>
  * Examples of mentioned terms:<br>
- * {@link Q029.DevelopmentConfiguration} - demonstrates usage of {@link Profile} annotation applied to
+ * {@link ProfileAnnotationFunctionality.DevelopmentConfiguration} - demonstrates usage of {@link Profile} annotation applied to
  * {@link Configuration} class. {@link Configuration} annotation is meta-annotated by itself with {@link Component}
  * annotation, that is why {@link Profile} is involved in bean-registration process.
  *
