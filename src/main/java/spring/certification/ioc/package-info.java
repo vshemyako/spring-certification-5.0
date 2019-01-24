@@ -33,13 +33,12 @@
  * 19.2. How else can you define an initialization or destruction method for a Spring bean? {@link spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks link}<br>
  * 20. What does component-scanning do? {@link spring.certification.ioc.q020.ComponentScanDuplicate link}<br>
  * 21. What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection? {@link spring.certification.ioc.q021.Autowiring link}<br>
- * 22. What do you have to do, if you would like to inject something into a private field? How does this impact
- * testing? {@link spring.certification.ioc.q022.PrivateFieldInjection link}<br>
+ * 22. What do you have to do, if you would like to inject something into a private field? How does this impact testing? {@link spring.certification.ioc.q022.PrivateFieldInjection link}<br>
  * 23. How does the @Qualifier annotation complement the use of @Autowired? {@link spring.certification.ioc.q023.QualifiedAutowiring link}<br>
  * 24.1. What is a proxy object and what are the two different types of proxies Spring can create? {@link spring.certification.ioc.q024.SpringAOP link}<br>
  * 24.2. What are the limitations of these proxies (per type)? {@link spring.certification.ioc.q024.SpringAOP link}<br>
  * 24.3. What is the power of a proxy object and where are the disadvantages? {@link spring.certification.ioc.q024.SpringAOP link}<br>
- * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.Q025 link}<br>
+ * 25. What are the advantages of Java Config? What are the limitations? {@link spring.certification.ioc.q025.JavaConfigAdvantages link}<br>
  * 26. What does the @Bean annotation do? {@link spring.certification.ioc.Q026 link}<br>
  * 27. What is the default bean id if you only use @Bean? How can you override this?
  * {@link spring.certification.ioc.Q027 link}<br>

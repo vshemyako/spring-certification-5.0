@@ -1,7 +1,7 @@
-package spring.certification.ioc;
+package spring.certification.ioc.q025;
 
 import org.springframework.context.annotation.Bean;
-import spring.certification.ioc.q010.DependencyInjectionJavaConfig;
+import spring.certification.ioc.q010.example.JavaBasedConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -22,13 +22,13 @@ import spring.certification.ioc.q010.DependencyInjectionJavaConfig;
  * 1. Configuration code is just java plain code which is included in packaged jar / war file, therefore recompiling
  * is required in case of configuration changes.<br>
  * 2. It's not easy to quickly determine what bean definition declaration has been used in autowiring in case several
- * configuration classes are used (unless specific software is used (e.g. Spring Tool Suite).
+ * configuration classes are used (unless specific software is used (e.g. Spring Tool Suite, new versions of Intellij IDEA)).
  * <p>
  * Examples of mentioned terms:<br>
- * {@link DependencyInjectionJavaConfig} - shows simplistic java-based configuration
+ * {@link JavaBasedConfiguration} - shows simplistic java-based configuration
  *
  * @author Valentine Shemyako
  * @since November 13, 2018
  */
-public class Q025 {
+public class JavaConfigAdvantages {
 }
