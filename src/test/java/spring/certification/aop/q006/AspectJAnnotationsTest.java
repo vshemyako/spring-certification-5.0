@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
+import spring.certification.aop.helper.StreamRedefiner;
 import spring.certification.aop.q006.example.fair.FairWorldConfiguration;
 import spring.certification.aop.q006.example.people.Tramp;
 import spring.certification.aop.q006.example.unfair.UnfairWorldConfiguration;
@@ -57,31 +58,6 @@ public class AspectJAnnotationsTest {
             String expectedWordsSpoken = Stream.of("Living on a prayer", "Take my hand and we'll make it I swear")
                     .collect(Collectors.joining(System.lineSeparator(), "", System.lineSeparator()));
             assertEquals(expectedWordsSpoken, actualWordsSpoken);
-        }
-    }
-
-    public static class StreamRedefiner {
-
-        /**
-         * Fields to redefine system streams.
-         */
-        protected final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        protected final PrintStream predefinedOutputStream = System.out;
-
-        /**
-         * Substitutes system stream with 'dummy' byte array stream.
-         */
-        @Before
-        public void setUp() {
-            System.setOut(new PrintStream(outputStream));
-        }
-
-        /**
-         * Set previously changed system stream back.
-         */
-        @After
-        public void tearDown() {
-            System.setOut(predefinedOutputStream);
         }
     }
 }

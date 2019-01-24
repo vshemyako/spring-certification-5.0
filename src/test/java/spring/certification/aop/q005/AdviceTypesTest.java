@@ -3,19 +3,17 @@ package spring.certification.aop.q005;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
+import spring.certification.aop.helper.StreamRedefiner;
 import spring.certification.aop.q005.example.AdviceConfigurationMarker;
 import spring.certification.aop.q005.example.Fool;
 import spring.certification.aop.q005.example.PanicException;
@@ -25,32 +23,10 @@ import spring.certification.aop.q005.example.PanicException;
  */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = AdviceConfigurationMarker.class)
-public class AdviceTypesTest {
-
-    /**
-     * Fields to redefine system streams.
-     */
-    private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-    private final PrintStream predefinedOutputStream = System.out;
+public class AdviceTypesTest extends StreamRedefiner {
 
     @Autowired
     private Fool fool;
-
-    /**
-     * Substitutes system stream with 'dummy' byte array stream.
-     */
-    @Before
-    public void setUp() {
-        System.setOut(new PrintStream(outputStream));
-    }
-
-    /**
-     * Set previously changed system stream back.
-     */
-    @After
-    public void tearDown() {
-        System.setOut(predefinedOutputStream);
-    }
 
     /**
      * Verifies that {@link Before} advice is executed 'before' {@link Fool#nameCapital(String)} method.
