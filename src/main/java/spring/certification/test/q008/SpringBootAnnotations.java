@@ -1,5 +1,4 @@
-package spring.certification.test;
-
+package spring.certification.test.q008;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,5 +28,5 @@ import org.springframework.test.context.ContextConfiguration;
  * @author Valentine Shemyako
  * @since January 22, 2019
  */
-public class Q008bootannotations {
+public class SpringBootAnnotations {
 }
