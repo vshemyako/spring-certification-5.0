@@ -1,4 +1,4 @@
-package spring.certification.aop;
+package spring.certification.aop.q004;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -9,18 +9,17 @@ package spring.certification.aop;
  * <p>
  * Answer:<br>
  * <b>Common limitation:</b><br>
- * 1. Both JDK and CGLIB dynamic proxies is that interception of inner method calls is not
- * performed (due to limitation of run-time proxies).<br>
+ * 1. Both JDK and CGLIB dynamic proxies do not intercept inner method call (due to limitation of run-time proxies).<br>
  * <b>JDK proxies limitations (interface-based dynamic proxy):</b><br>
  * 1. Target object has to implement at least one interface.<br>
  * 2. Only overridden public method invocations are intercepted.<br>
  * <b>CGLIB proxies limitations (subclass-based dynamic proxy):</b><br>
  * 1. Objects of final classes cannot be proxied.<br>
  * 2. Calls to final methods cannot be intercepted.<br>
- * 3. Only protected and public method calls are intercepted.<br>
+ * 3. Non-private method calls are intercepted.<br>
  *
  * @author Valentine Shemyako
  * @since December 04, 2018
  */
-public class Q004limitations {
+public class ProxyLimitations {
 }
