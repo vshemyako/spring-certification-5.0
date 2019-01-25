@@ -58,7 +58,8 @@
  * 39. What is the difference between $ and # in @Value expressions {@link spring.certification.ioc.q039.DollarPoundDifference link}?
  * <p>
  * Below follows some questions which were written by myself to clarify IoC workings.<br>
- * 40. What well-known dependencies are automatically resolved without manual set-up?<br>
+ * 40. What well-known dependencies are automatically resolved without manual set-up? {@link spring.certification.ioc.advanced.q040.AutoRegisteredBeans link}<br>
+ * 41. What will happen if bean wiring will be applied to beans of different scopes (e.g. singleton bean depends on prototype bean)? {@link spring.certification.ioc.advanced.q041.DifferentScopeWiring link}
  *
  * @author Valentine Shemyako
  * @since November 17, 2018

@@ -15,6 +15,7 @@ package spring.certification.rest;
  * until satisfactory response is returned back.<br>
  * The following http methods are considered idempotent:<br>
  * - all operation which are considered {@link Q005safe safe}<br>
+ * plus<br>
  * - DELETE<br>
  * - PUT<br>
  * <p>
