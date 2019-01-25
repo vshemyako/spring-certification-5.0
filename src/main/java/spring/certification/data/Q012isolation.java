@@ -17,8 +17,8 @@ import org.springframework.transaction.annotation.Transactional;
  * There are four isolation levels:<br>
  * - read uncommitted - concurrent transaction may read even uncommitted changes by another transaction. This isolation
  * level may result in <b>dirty read</b> phenomena.<br>
- * - read committed - in such isolation level only write locks are held, therefore non-repeatable phenomena might occur.<br>
- * - repeatable read - in such isolation level read and write locks are held, but range locks are omitted. Phantom read
+ * - read committed - in such isolation level only write locks are held, therefore <b>non-repeatable phenomena</b> might occur.<br>
+ * - repeatable read - in such isolation level read and write locks are held, but range locks are omitted. <b>Phantom read</b>
  * phenomena might occur.<br>
  * - serializable - range, read and write locks are held. No phenomena is possible, records are completely locked.<br>
  * <p>

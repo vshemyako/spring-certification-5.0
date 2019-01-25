@@ -56,6 +56,9 @@
  * 37. Where can properties in the environment come from? {@link spring.certification.ioc.q037.EnvironmentProperties link}<br>
  * 38. What can you reference using SpEL? {@link spring.certification.ioc.q038.SpelExamples link}<br>
  * 39. What is the difference between $ and # in @Value expressions {@link spring.certification.ioc.q039.DollarPoundDifference link}?
+ * <p>
+ * Below follows some questions which were written by myself to clarify IoC workings.<br>
+ * 40. What well-known dependencies are automatically resolved without manual set-up?<br>
  *
  * @author Valentine Shemyako
  * @since November 17, 2018
