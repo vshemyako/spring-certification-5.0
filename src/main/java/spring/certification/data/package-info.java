@@ -5,8 +5,8 @@
  * 1.1. What's the difference between checked and unchecked exceptions? {@link spring.certification.data.q001.ExceptionHierarchy link}<br>
  * 1.2. Why does Spring prefer unchecked exceptions? {@link spring.certification.data.q001.ExceptionHierarchy link}<br>
  * 1.3. What is the data access exception hierarchy? {@link spring.certification.data.q001.ExceptionHierarchy link}<br>
- * 2.1. How do you configure a DataSource in Spring? {@link spring.certification.data.Q002datasource link}<br>
- * 2.2. Which bean is very useful for development/test databases? {@link spring.certification.data.Q002datasource link}<br>
+ * 2.1. How do you configure a DataSource in Spring? {@link spring.certification.data.q002.DataSourceTypes link}<br>
+ * 2.2. Which bean is very useful for development/test databases? {@link spring.certification.data.q002.DataSourceTypes link}<br>
  * 3. What is the Template design pattern and what is the JDBC template? {@link spring.certification.data.Q003template link}<br>
  * 4.1. What is a callback? {@link spring.certification.data.Q004callback link}<br>
  * 4.2. What are the three JdbcTemplate callback interfaces that can be used with queries? {@link spring.certification.data.Q004callback link}<br>
