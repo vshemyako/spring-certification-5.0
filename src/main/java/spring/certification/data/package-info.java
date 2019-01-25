@@ -8,9 +8,9 @@
  * 2.1. How do you configure a DataSource in Spring? {@link spring.certification.data.q002.DataSourceTypes link}<br>
  * 2.2. Which bean is very useful for development/test databases? {@link spring.certification.data.q002.DataSourceTypes link}<br>
  * 3. What is the Template design pattern and what is the JDBC template? {@link spring.certification.data.q003.TemplatePattern link}<br>
- * 4.1. What is a callback? {@link spring.certification.data.Q004callback link}<br>
- * 4.2. What are the three JdbcTemplate callback interfaces that can be used with queries? {@link spring.certification.data.Q004callback link}<br>
- * 4.3. What each JdbcTemplate is used for? {@link spring.certification.data.Q004callback link}<br>
+ * 4.1. What is a callback? {@link spring.certification.data.q004.Callback link}<br>
+ * 4.2. What are the three JdbcTemplate callback interfaces that can be used with queries? {@link spring.certification.data.q004.Callback link}<br>
+ * 4.3. What each JdbcTemplate is used for? {@link spring.certification.data.q004.Callback link}<br>
  * 5. Can you execute a plain SQL statement with the JDBC template? {@link spring.certification.data.Q005sql link}<br>
  * 6. When does the JDBC template acquire (and release) a connection  - for every method called or once per template?
  * {@link spring.certification.data.Q006connection link}<br>
