@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q001;
 
 import org.springframework.dao.DataAccessException;
 
@@ -12,14 +12,14 @@ import org.springframework.dao.DataAccessException;
  * <p>
  * Answer:<br>
  * All exceptions in Java application are <b>checked</b> exceptions, except those, which are subclasses of
- * {@link RuntimeException} or {@link Error} classes. {@link RuntimeException} and {@link Error} exceptions are considered
+ * {@link RuntimeException} or {@link Error} classes. {@link RuntimeException} and {@link Error} exceptions are known as
  * <b>unchecked</b> exceptions.<br>
  * Blocks of code which may throw a checked exception have to be wrapped in a <b>try-catch</b> blocks or declare in their
  * method signature that this code block by itself might throw such an exception. Well-written application should
  * anticipate such exceptions and recover from them.<br>
  * <p>
  * On the contrary unchecked exceptions are those exceptions which either designate some fatal error which isn't related
- * to the code being executed or designate programming bugs. Those kinds of exceptions usually can not be anticipated, and
+ * to the code being executed or designate programming bugs. Those kinds of exceptions usually cannot be anticipated, and
  * there's little a program can do with them at runtime.<br>
  * <p>
  * Very often (even in JDK) checked exceptions are used in cases where little can be done in case such an exception is thrown.
@@ -36,5 +36,5 @@ import org.springframework.dao.DataAccessException;
  * @author Valentine Shemyako
  * @since December 15, 2018
  */
-public class Q001exception {
+public class ExceptionHierarchy {
 }

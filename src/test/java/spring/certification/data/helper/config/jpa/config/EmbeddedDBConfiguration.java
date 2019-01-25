@@ -1,8 +1,11 @@
 package spring.certification.data.helper.config.jpa.config;
 
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -13,9 +16,6 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import spring.certification.data.helper.config.jpa.entity.Holiday;
 import spring.certification.data.helper.config.jpa.instant.InstantHolidayRepository;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
 
 /**
  * Embedded database configuration to verify Spring Framework support for Java Persistence API.
@@ -37,6 +37,14 @@ public class EmbeddedDBConfiguration {
                 .addScript("create-database.sql")
                 .addScript("database-data.sql")
                 .build();
+    }
+
+    /**
+     * Constructs template object over native java JDBC functionality.
+     */
+    @Bean
+    public JdbcTemplate jdbcTemplate() {
+        return new JdbcTemplate(dataSource());
     }
 
     /**
