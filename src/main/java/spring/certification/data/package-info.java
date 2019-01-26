@@ -18,8 +18,8 @@
  * <p>
  * 8.1. What is a transaction? {@link spring.certification.data.q008.TransactionTerm link}<br>
  * 8.2. What is the difference between a local and a global transaction? {@link spring.certification.data.q008.TransactionTerm link}<br>
- * 9.1. Is a transaction a cross cutting concern? {@link spring.certification.data.Q009implementation link}<br>
- * 9.2. How is it implemented by Spring? {@link spring.certification.data.Q009implementation link}<br>
+ * 9.1. Is a transaction a cross cutting concern? {@link spring.certification.data.q009.TransactionProxy link}<br>
+ * 9.2. How is it implemented by Spring? {@link spring.certification.data.q009.TransactionProxy link}<br>
  * 10.1. How are you going to define transaction in Spring? {@link spring.certification.data.Q010transactionmanager link}<br>
  * 10.2. What does @Transactional do? {@link spring.certification.data.Q010transactionmanager link}<br>
  * 10.3. What is the PlatformTransactionManager? {@link spring.certification.data.Q010transactionmanager link}<br>

@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q009;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -15,5 +15,5 @@ package spring.certification.data;
  * @author Valentine Shemyako
  * @since January 04, 2019
  */
-public class Q009implementation {
+public class TransactionProxy {
 }
