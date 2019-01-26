@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q013;
 
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 
@@ -15,5 +15,5 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
  * @author Valentine Shemyako
  * @since January 05, 2019
  */
-public class Q013enable {
+public class EnablingTransactionFunctionality {
 }

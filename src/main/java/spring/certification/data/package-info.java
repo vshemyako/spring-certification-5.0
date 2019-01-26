@@ -26,7 +26,7 @@
  * 11. Is the JDBC template able to participate in an existing transaction? {@link spring.certification.data.q011.JdbcTransaction link}<br>
  * 12.1. What is a transaction isolation level? {@link spring.certification.data.q012.IsolationLevels link}<br>
  * 12.2. How many transaction isolation levels do we have and how are they ordered? {@link spring.certification.data.q012.IsolationLevels link}<br>
- * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.Q013enable link}<br>
+ * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.q013.EnablingTransactionFunctionality link}<br>
  * 14. What does transaction propagation mean? {@link spring.certification.data.Q014propagation link}<br>
  * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the
  * same object instance? {@link spring.certification.data.Q015innercall link}<br>
