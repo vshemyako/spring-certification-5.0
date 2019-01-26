@@ -6,6 +6,7 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAttribute;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -28,6 +29,9 @@ import org.springframework.transaction.annotation.Transactional;
  * In case of declarative annotation-driven way of applying transaction functionality {@link Transactional} annotation
  * has to be used at class, method level or both if needed. In order for {@link Transactional} annotation to be processed
  * by the application-context {@link EnableTransactionManagement} annotation must mark a {@link Configuration} class.<br>
+ * <p>
+ * {@link Transactional} annotation is the direct analogous of {@link TransactionDefinition} and {@link TransactionAttribute}
+ * interfaces.<br>
  * <p>
  * Additional notes:<br>
  * Three core interfaces are used to define a transaction internally in Spring framework:<br>
