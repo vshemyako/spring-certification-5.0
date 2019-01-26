@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 /**
  * Verifies {@link JdbcTemplate} functionality for executing generic queries.
@@ -26,11 +26,10 @@ import static org.junit.Assert.*;
 public class JdbcGenericsSupportTest {
 
     private static final String GENERIC_SQL_QUERY = "SELECT %s FROM holidays WHERE name = ?";
-    private static final String LIMIT_SQL_QUERY = "SELECT %s FROM employees LIMIT %s";
+    private static final String LIMIT_SQL_QUERY = "SELECT %s FROM holidays LIMIT %s";
     private static final String CHRISTMAS_HOLIDAY_NAME = "Christmas";
     private static final String INDEPENDENCE_HOLIDAY_NAME = "Independence Day";
     private static final String EASTER_HOLIDAY_NAME = "Easter";
-    private static final String EMPLOYEE_LAST_NAME = "Simmel";
     private static final String ID_COLUMN = "id";
     private static final String WILDCARD = "*";
 
@@ -85,9 +84,10 @@ public class JdbcGenericsSupportTest {
      */
     @Test
     public void shouldQueryForList() {
-        String formattedQuery = String.format(LIMIT_SQL_QUERY, ID_COLUMN, 10);
+        int limit = 3;
+        String formattedQuery = String.format(LIMIT_SQL_QUERY, ID_COLUMN, limit);
         List<Integer> ids = jdbcTemplate.queryForList(formattedQuery, Integer.class);
-        assertEquals(10, ids.size());
+        assertThat(ids.size()).isEqualTo(limit);
     }
 
     /**
@@ -95,8 +95,8 @@ public class JdbcGenericsSupportTest {
      */
     @Test
     public void shouldQueryForMap() {
-        String formattedQuery = String.format(GENERIC_SQL_QUERY, "*");
-        Map<String, Object> columnToValueMap = jdbcTemplate.queryForMap(formattedQuery, EMPLOYEE_LAST_NAME, EMPLOYEE_LAST_NAME);
-        assertTrue(columnToValueMap instanceof Map);
+        String formattedQuery = String.format(GENERIC_SQL_QUERY, WILDCARD);
+        Map<String, Object> columnToValueMap = jdbcTemplate.queryForMap(formattedQuery, CHRISTMAS_HOLIDAY_NAME);
+        assertThat(columnToValueMap).containsValue(CHRISTMAS_HOLIDAY_NAME);
     }
 }
