@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q012;
 
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,5 +28,5 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Valentine Shemyako
  * @since December 27, 2018
  */
-public class Q012isolation {
+public class IsolationLevels {
 }
