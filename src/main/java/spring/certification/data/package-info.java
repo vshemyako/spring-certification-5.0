@@ -16,8 +16,8 @@
  * 7.1. How does the JdbcTemplate support generic queries? {@link spring.certification.data.q007.JdbcGenericsSupport link}<br>
  * 7.2. How does it return objects and lists/maps of objects? {@link spring.certification.data.q007.JdbcGenericsSupport link}<br>
  * <p>
- * 8.1. What is a transaction? {@link spring.certification.data.Q008transaction link}<br>
- * 8.2. What is the difference between a local and a global transaction? {@link spring.certification.data.Q008transaction link}<br>
+ * 8.1. What is a transaction? {@link spring.certification.data.q008.TransactionTerm link}<br>
+ * 8.2. What is the difference between a local and a global transaction? {@link spring.certification.data.q008.TransactionTerm link}<br>
  * 9.1. Is a transaction a cross cutting concern? {@link spring.certification.data.Q009implementation link}<br>
  * 9.2. How is it implemented by Spring? {@link spring.certification.data.Q009implementation link}<br>
  * 10.1. How are you going to define transaction in Spring? {@link spring.certification.data.Q010transactionmanager link}<br>
@@ -35,10 +35,8 @@
  * 17. What does declarative transaction management mean? {@link spring.certification.data.Q017declarative link}<br>
  * 18. What is the default rollback policy? How can you override it? {@link spring.certification.data.Q018rollbackpolicy link}<br>
  * 19. What is the default rollback policy in a JUnit test, when you use the @RunWith(SpringJUnit4ClassRunner.class) in
- * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?
- * {@link spring.certification.data.Q019testrollbackpolicy link}<br>
- * 20. Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
- * {@link spring.certification.data.Q020autocommit link}<br>
+ * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?{@link spring.certification.data.Q019testrollbackpolicy link}<br>
+ * 20. Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern? {@link spring.certification.data.Q020autocommit link}<br>
  * <p>
  * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.Q021jpa link}<br>
  * 21.2. What is the idea behind an ORM? {@link spring.certification.data.Q021jpa link}<br>

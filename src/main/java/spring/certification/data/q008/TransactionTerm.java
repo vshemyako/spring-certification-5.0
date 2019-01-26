@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q008;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -22,5 +22,5 @@ package spring.certification.data;
  * @author Valentine Shemyako
  * @since December 22, 2018
  */
-public class Q008transaction {
+public class TransactionTerm {
 }
