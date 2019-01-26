@@ -10,11 +10,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
-import spring.certification.data.Q005sql.*;
 import spring.certification.data.helper.Employee;
 import spring.certification.data.helper.config.EmployeesDBConfiguration;
+import spring.certification.data.q005.example.PlainSqlExecutor;
 
-import static spring.certification.data.Q005sql.*;
+import static spring.certification.data.helper.SqlQueries.*;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -65,7 +65,7 @@ public class Q011jdbctransaction {
             int nextNumber = generateNextNumber();
             employee.setNumber(nextNumber);
 
-            plainSqlExecutor.executeInsert(employee);
+            plainSqlExecutor.executeInsertEmployee(employee);
             throw new IllegalStateException("Failed to insert employee");
         }
 
@@ -78,7 +78,7 @@ public class Q011jdbctransaction {
             employee.setNumber(nextNumber);
 
             TransactionCallback<Void> callback = status -> {
-                plainSqlExecutor.executeInsert(employee);
+                plainSqlExecutor.executeInsertEmployee(employee);
                 status.setRollbackOnly();
                 return null;
             };
