@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q006;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -13,11 +13,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
  * confirms that (look at {@link JdbcTemplate#execute}). This connection acquire/release strategy is used to minimize
  * connection holding time allowing other client to utilize free connections.<br>
  * <p>
- * Examples of mentioned terms:<br>
- * -
  *
  * @author Valentine Shemyako
  * @since December 21, 2018
  */
-public class Q006connection {
+public class ConnectionAcquireStrategy {
 }
