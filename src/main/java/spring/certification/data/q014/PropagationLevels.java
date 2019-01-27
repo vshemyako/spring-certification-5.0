@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q014;
 
 import org.springframework.transaction.annotation.Propagation;
 
@@ -25,5 +25,5 @@ import org.springframework.transaction.annotation.Propagation;
  * @author Valentine Shemyako
  * @since January 06, 2019
  */
-public class Q014propagation {
+public class PropagationLevels {
 }

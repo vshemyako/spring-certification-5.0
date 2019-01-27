@@ -27,7 +27,7 @@
  * 12.1. What is a transaction isolation level? {@link spring.certification.data.q012.IsolationLevels link}<br>
  * 12.2. How many transaction isolation levels do we have and how are they ordered? {@link spring.certification.data.q012.IsolationLevels link}<br>
  * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.q013.EnablingTransactionFunctionality link}<br>
- * 14. What does transaction propagation mean? {@link spring.certification.data.Q014propagation link}<br>
+ * 14. What does transaction propagation mean? {@link spring.certification.data.q014.PropagationLevels link}<br>
  * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the
  * same object instance? {@link spring.certification.data.Q015innercall link}<br>
  * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.Q016transactional link}<br>
