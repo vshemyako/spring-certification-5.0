@@ -29,7 +29,7 @@
  * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.q013.EnablingTransactionFunctionality link}<br>
  * 14. What does transaction propagation mean? {@link spring.certification.data.q014.PropagationLevels link}<br>
  * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the
- * same object instance? {@link spring.certification.data.Q015innercall link}<br>
+ * same object instance? {@link spring.certification.data.q015.InnerTransactionalCalls link}<br>
  * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.Q016transactional link}<br>
  * 16.2. What is a typical usage if you put it at class level? {@link spring.certification.data.Q016transactional link}<br>
  * 17. What does declarative transaction management mean? {@link spring.certification.data.Q017declarative link}<br>
