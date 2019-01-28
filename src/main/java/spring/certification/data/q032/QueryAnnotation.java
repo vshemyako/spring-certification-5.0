@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q032;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -21,7 +21,7 @@ import spring.certification.ioc.q016.example.Holiday;
  * @author Valentine Shemyako
  * @since January 10, 2019
  */
-public class Q032query {
+public class QueryAnnotation {
 
     public interface HolidayRepository extends JpaRepository<Holiday, Integer> {
 
