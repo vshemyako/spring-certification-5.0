@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q020;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -16,5 +16,5 @@ package spring.certification.data;
  * @author Valentine Shemyako
  * @since January 03, 2019
  */
-public class Q020autocommit {
+public class AutoCommitMode {
 }
