@@ -1,5 +1,6 @@
-package spring.certification.data;
+package spring.certification.data.q029;
 
+import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.RepositoryDefinition;
 
@@ -19,9 +20,14 @@ import org.springframework.data.repository.RepositoryDefinition;
  * - most importantly instant repository doesn't define any implementation details, it just declares
  * methods to be implemented dynamically.<br>
  * - interfaces allow to create JDK dynamic proxies to intercept repository calls.<br>
+ * <p>
+ * <b>Important note:</b><br>
+ * Often it is useful to define some common data-access repository methods which are shared among different
+ * instant repositories. Such intermediate interfaces should be marked with {@link NoRepositoryBean} annotation,
+ * telling Spring Framework not to create dynamic proxy for it.<br>
  *
  * @author Valentine Shemyako
  * @since January 09, 2019
  */
-public class Q029instantrepositoryconfig {
+public class InstantRepositoryConfig {
 }
