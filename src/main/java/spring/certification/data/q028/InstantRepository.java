@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q028;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.repository.Repository;
@@ -22,5 +22,5 @@ import org.springframework.data.repository.RepositoryDefinition;
  * @author Valentine Shemyako
  * @since January 09, 2019
  */
-public class Q028instantrepository {
+public class InstantRepository {
 }

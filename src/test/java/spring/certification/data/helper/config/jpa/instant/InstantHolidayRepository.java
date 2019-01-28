@@ -1,9 +1,8 @@
 package spring.certification.data.helper.config.jpa.instant;
 
+import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import spring.certification.data.helper.config.jpa.entity.Holiday;
-
-import java.util.List;
 
 /**
  * The most basic example of a spring-data instant repository.

@@ -1,5 +1,13 @@
-package spring.certification.data;
+package spring.certification.data.q028;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,13 +20,6 @@ import spring.certification.data.helper.config.jpa.config.EmbeddedDBConfiguratio
 import spring.certification.data.helper.config.jpa.entity.Holiday;
 import spring.certification.data.helper.config.jpa.instant.InstantHolidayRepository;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import static org.junit.Assert.*;
-
 /**
  * Verified functionality of instant spring-data repositories.
  *
@@ -27,11 +28,11 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = EmbeddedDBConfiguration.class)
-public class Q028instantrepositoryTest {
+public class InstantRepositoryTest {
 
     private static final String CHRISTMAS = "Christmas";
-    public static final String NEW_YEAR = "New Year";
-    public static final String HALLOWEEN = "Halloween";
+    private static final String NEW_YEAR = "New Year";
+    private static final String HALLOWEEN = "Halloween";
 
     @Autowired
     private InstantHolidayRepository holidayRepository;
