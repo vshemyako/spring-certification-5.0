@@ -2,7 +2,10 @@ package spring.certification.data.helper.config.jpa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -11,6 +14,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.support.TransactionTemplate;
 import spring.certification.data.helper.config.jpa.entity.Holiday;
 import spring.certification.data.helper.config.jpa.instant.InstantHolidayRepository;
 
@@ -25,6 +30,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableJpaRepositories(basePackageClasses = InstantHolidayRepository.class)
+@EnableTransactionManagement
 public class EmbeddedDBConfiguration {
 
     /**
@@ -37,6 +43,14 @@ public class EmbeddedDBConfiguration {
                 .addScript("create-database.sql")
                 .addScript("database-data.sql")
                 .build();
+    }
+
+    /**
+     * Constructs template object over native java JDBC functionality.
+     */
+    @Bean
+    public JdbcTemplate jdbcTemplate() {
+        return new JdbcTemplate(dataSource());
     }
 
     /**
@@ -70,5 +84,23 @@ public class EmbeddedDBConfiguration {
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
         return new JpaTransactionManager(entityManagerFactory);
+    }
+
+    /**
+     * Configures simple {@link DataSource} {@Link PlatformTransactionManager}.
+     */
+    @Bean
+    @Primary
+    public PlatformTransactionManager dataSourceTransactionManager(DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
+
+    /**
+     * Configures {@link TransactionTemplate} bean to participate in existing transaction
+     * programmatically.
+     */
+    @Bean
+    public TransactionTemplate transactionTemplate(PlatformTransactionManager transactionManager) {
+        return new TransactionTemplate(transactionManager);
     }
 }

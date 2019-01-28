@@ -20,6 +20,15 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
  * layer of an application. Spring method-security aims to protect exactly that layer of an application.<br>
  * <p>
  * To enable method security {@link Configuration} class has to be marked with {@link EnableGlobalMethodSecurity} annotation.<br>
+ * <p>
+ * As a xml-based counterpart configuration the following elements should be used:<br>
+ * <pre class="code">
+ * &lt;global-method-security/&gt;
+ * Optionally enabling processing of different annotations:
+ * &lt;global-method-security secured-annotations="enabled"/&gt;
+ * &lt;global-method-security jsr250-annotations="enabled"/&gt;
+ * &lt;global-method-security pre-post-annotations="enabled"/&gt;
+ * </pre>
  *
  * @author Valentine Shemyako
  * @since January 17, 2019

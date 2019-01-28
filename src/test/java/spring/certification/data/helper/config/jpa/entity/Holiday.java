@@ -1,11 +1,11 @@
 package spring.certification.data.helper.config.jpa.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * Entity-class to verify workings of JPA.
@@ -15,9 +15,15 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "holidays")
-@Getter @Setter
+@Getter
+@Setter
+@NoArgsConstructor
 public class Holiday {
     @Id
     private int id;
     private String name;
+
+    public Holiday(String name) {
+        this.name = name;
+    }
 }
