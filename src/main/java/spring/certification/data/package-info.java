@@ -53,7 +53,7 @@
  * 29.1. How do you define an “instant” repository? {@link spring.certification.data.q029.InstantRepositoryConfig link}<br>
  * 29.2. Why is it an interface not a class? {@link spring.certification.data.q029.InstantRepositoryConfig link}<br>
  * 30. What is the naming convention for finder methods? {@link spring.certification.data.Q030findermethods link}<br>
- * 31. How are Spring Data repositories implemented by Spring at runtime? {@link spring.certification.data.Q031runtimegeneration link}<br>
+ * 31. How are Spring Data repositories implemented by Spring at runtime? {@link spring.certification.data.q031.RuntimeGeneration link}<br>
  * 32. What is @Query used for? {@link spring.certification.data.q032.QueryAnnotation link}<br>
  *
  * @author Valentine Shemyako
