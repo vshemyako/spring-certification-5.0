@@ -10,7 +10,7 @@ package spring.certification.boot;
  * Spring Boot framework is often called as being <i>opinionated</i> framework because Spring framework development team
  * has its own <i>opinion</i> of what default jars should make up spring-boot-starters and what beans should be autoconfigured
  * in case jars are detected on the classpath. More explicit term which is usually used within community is <i>convention
- * over configuration</i> - decisions which are made by a developer are minimized.<br>
+ * over configuration</i> - minimize decisions which are required from a developer.<br>
  *
  * @author Valentine Shemyako
  * @since January 21, 2019

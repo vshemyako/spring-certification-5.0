@@ -3,6 +3,7 @@ package spring.certification.boot;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.env.RandomValuePropertySource;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
@@ -42,7 +43,7 @@ import org.springframework.test.context.TestPropertySource;
  * Spring Boot's default property source is an <b>application.properties</b> file.<br>
  * <p>
  * <b>Note:</b> Spring Boot offers additional way to bind configuration properties to {@link Bean bean-methods} or simple Java classes.
- * This annotation doesn't support SpEL features but allows to validate injected values using JSR-303 compliant implementation.
+ * {@link ConfigurationProperties} annotation doesn't support SpEL features but allows to validate injected values using JSR-303 compliant implementation.
  *
  * @author Valentine Shemyako
  * @since January 21, 2019
