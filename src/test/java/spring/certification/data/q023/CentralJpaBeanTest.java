@@ -1,20 +1,19 @@
 package spring.certification.data.q023;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringRunner;
-import spring.certification.data.helper.config.jpa.config.EmbeddedDBConfiguration;
-import spring.certification.data.helper.config.jpa.entity.Holiday;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceUnit;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import spring.certification.data.helper.config.jpa.config.EmbeddedDBConfiguration;
+import spring.certification.data.helper.config.jpa.entity.Holiday;
 
 /**
  * Verifies functionality of JPA entity-manager configures for embedded database.
