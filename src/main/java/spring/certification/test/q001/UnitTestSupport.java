@@ -14,7 +14,8 @@ import spring.certification.test.q001.example.PropertyResolver;
  * Unit testing should not depend on any infrastructure framework / use it in some way in unit testing.
  * Spring framework advocates this non-invasive approach, thus your unit-tests do not depend on Spring.<br>
  * <b>Note:</b> Spring framework provides some mock objects and testing support classes that are convenient to be used
- * in unit testing (e.g. {@link MockPropertySource}, {@link MockEnvironment}...)<br>
+ * in unit testing (e.g. {@link MockPropertySource}, {@link MockEnvironment}...). Look at the {@link org.springframework.mock} package
+ * for more info.<br>
  * <p>
  * {@link PropertyResolver} and related unit test demonstrate basic usage of Spring Framework support classes.<br>
  *

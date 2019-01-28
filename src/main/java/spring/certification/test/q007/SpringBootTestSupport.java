@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
  * <p>
  * Answer:<br>
  * As always Spring Boot offers starter and autoconfigure jars to ease dependency management
- * and creation of often utilized beans. More over Spring Boot offers the following neat functionality:<br>
+ * and creation of commonly utilized beans. More over Spring Boot offers the following neat functionality:<br>
  * - No need to explicitly specify primary {@link Configuration} class, {@link SpringBootTest} will by default
  * try to locate {@link SpringBootApplication} or {@link SpringBootConfiguration} classes.<br>
  * - Allows to easily start a web server on a random port.<br>
