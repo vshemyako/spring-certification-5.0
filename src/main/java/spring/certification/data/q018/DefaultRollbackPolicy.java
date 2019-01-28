@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q018;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
@@ -23,5 +23,5 @@ import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
  * @author Valentine Shemyako
  * @since January 06, 2019
  */
-public class Q018rollbackpolicy {
+public class DefaultRollbackPolicy {
 }
