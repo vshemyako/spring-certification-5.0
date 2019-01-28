@@ -28,8 +28,7 @@
  * 12.2. How many transaction isolation levels do we have and how are they ordered? {@link spring.certification.data.q012.IsolationLevels link}<br>
  * 13. What is @EnableTransactionManagement for? {@link spring.certification.data.q013.EnablingTransactionFunctionality link}<br>
  * 14. What does transaction propagation mean? {@link spring.certification.data.q014.PropagationLevels link}<br>
- * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the
- * same object instance? {@link spring.certification.data.q015.InnerTransactionalCalls link}<br>
+ * 15. What happens if one @Transactional annotated method is calling another @Transactional annotated method on the same object instance? {@link spring.certification.data.q015.InnerTransactionalCalls link}<br>
  * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.q016.TransactionalAnnotation link}<br>
  * 16.2. What is a typical usage if you put it at class level? {@link spring.certification.data.q016.TransactionalAnnotation link}<br>
  * 17. What does declarative transaction management mean? {@link spring.certification.data.q017.DeclarativeTransactionManagement link}<br>
@@ -45,7 +44,7 @@
  * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.q022.EntityManagerTerm link}<br>
  * 23. What do you need to do in Spring if you would like to work with JPA? {@link spring.certification.data.q023.CentralJpaBean link}<br>
  * 24. Are you able to participate in a given transaction in Spring while working with JPA? {@link spring.certification.data.q024.TransactionParticipation link}<br>
- * 25. Which PlatformTransactionManager(s) can you use with JPA? {@link spring.certification.data.Q025jpatransaction link}<br>
+ * 25. Which PlatformTransactionManager(s) can you use with JPA? {@link spring.certification.data.q025.JpaTransaction link}<br>
  * 26. What does @PersistenceContext do? {@link spring.certification.data.Q026persistencecontext link}<br>
  * 27.1. What do you have to configure to use JPA with Spring? {@link spring.certification.data.Q027springbootjpaconfig link}<br>
  * 27.2. How does Spring Boot make this easier? {@link spring.certification.data.Q027springbootjpaconfig link}<br>

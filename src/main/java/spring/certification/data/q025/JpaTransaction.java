@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q025;
 
 import javax.persistence.EntityManagerFactory;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -18,5 +18,5 @@ import org.springframework.transaction.jta.JtaTransactionManager;
  * @author Valentine Shemyako
  * @since January 08, 2019
  */
-public class Q025jpatransaction {
+public class JpaTransaction {
 }
