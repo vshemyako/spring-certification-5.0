@@ -1,8 +1,7 @@
-package spring.certification.data;
-
-import org.springframework.orm.jpa.JpaTransactionManager;
+package spring.certification.data.q024;
 
 import javax.sql.DataSource;
+import org.springframework.orm.jpa.JpaTransactionManager;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -18,5 +17,5 @@ import javax.sql.DataSource;
  * @author Valentine Shemyako
  * @since January 08, 2019
  */
-public class Q024transactionparticipation {
+public class TransactionParticipation {
 }
