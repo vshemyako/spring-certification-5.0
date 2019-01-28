@@ -46,8 +46,8 @@
  * 24. Are you able to participate in a given transaction in Spring while working with JPA? {@link spring.certification.data.q024.TransactionParticipation link}<br>
  * 25. Which PlatformTransactionManager(s) can you use with JPA? {@link spring.certification.data.q025.JpaTransaction link}<br>
  * 26. What does @PersistenceContext do? {@link spring.certification.data.q026.PersistenceContextAnnotation link}<br>
- * 27.1. What do you have to configure to use JPA with Spring? {@link spring.certification.data.Q027springbootjpaconfig link}<br>
- * 27.2. How does Spring Boot make this easier? {@link spring.certification.data.Q027springbootjpaconfig link}<br>
+ * 27.1. What do you have to configure to use JPA with Spring? {@link spring.certification.data.q027.SpringBootJpaConfig link}<br>
+ * 27.2. How does Spring Boot make this easier? {@link spring.certification.data.q027.SpringBootJpaConfig link}<br>
  * <p>
  * 28. What is an "instant repository"? (hint: recall Spring Data) {@link spring.certification.data.Q028instantrepository link}<br>
  * 29.1. How do you define an “instant” repository? {@link spring.certification.data.Q029instantrepositoryconfig link}<br>

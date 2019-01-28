@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q027;
 
 import spring.certification.data.q023.CentralJpaBean;
 
@@ -20,5 +20,5 @@ import spring.certification.data.q023.CentralJpaBean;
  * @author Valentine Shemyako
  * @since January 08, 2019
  */
-public class Q027springbootjpaconfig {
+public class SpringBootJpaConfig {
 }
