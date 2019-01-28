@@ -38,9 +38,9 @@
  * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?{@link spring.certification.data.q019.TestRollbackPolicy link}<br>
  * 20. Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern? {@link spring.certification.data.q020.AutoCommitMode link}<br>
  * <p>
- * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.Q021jpa link}<br>
- * 21.2. What is the idea behind an ORM? {@link spring.certification.data.Q021jpa link}<br>
- * 21.3. What are benefits/disadvantages or ORM? {@link spring.certification.data.Q021jpa link}<br>
+ * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
+ * 21.2. What is the idea behind an ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
+ * 21.3. What are benefits/disadvantages of ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
  * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both? {@link spring.certification.data.Q022entitymanager link}<br>
  * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.Q022entitymanager link}<br>
  * 23. What do you need to do in Spring if you would like to work with JPA? {@link spring.certification.data.Q023entitymanagerfactory link}<br>

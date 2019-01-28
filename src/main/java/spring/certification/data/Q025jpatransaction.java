@@ -1,9 +1,8 @@
 package spring.certification.data;
 
+import javax.persistence.EntityManagerFactory;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.jta.JtaTransactionManager;
-
-import javax.persistence.EntityManagerFactory;
 
 /**
  * Spring v5.0 Professional Certification.

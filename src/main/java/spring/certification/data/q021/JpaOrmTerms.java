@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q021;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -6,7 +6,7 @@ package spring.certification.data;
  * Question 021:<br>
  * What does JPA stand for - what about ORM?<br>
  * What is the idea behind an ORM?<br>
- * What are benefits/disadvantages or ORM?<br>
+ * What are benefits/disadvantages of ORM?<br>
  * <p>
  * Answer:<br>
  * <b>JPA</b> stands for Java Persistence API - it's a specification, implementation of which is supplied by different
@@ -19,7 +19,7 @@ package spring.certification.data;
  * SQL agnostic (e.g. JPQL).<br>
  * <p>
  * <b>Advantages of ORM</b>:<br>
- * - mapping between database record and domain objects is declarative, which leads to much less code<br>
+ * - mapping between database records and domain objects is declarative, which leads to much less code<br>
  * - automatic management of connection acquisition and release, transaction, cache, etc.<br>
  * - concurrent<br>
  * <b>Disadvantages of ORM</b>:<br>
@@ -31,5 +31,5 @@ package spring.certification.data;
  * @author Valentine Shemyako
  * @since January 06, 2019
  */
-public class Q021jpa {
+public class JpaOrmTerms {
 }
