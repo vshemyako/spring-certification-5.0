@@ -1,4 +1,7 @@
-package spring.certification.data;
+package spring.certification.data.q019;
+
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.annotation.Rollback;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -9,10 +12,10 @@ package spring.certification.data;
  * <p>
  * Answer:<br>
  * By default, test transactions will be automatically rolled back after completion of the test; however, transactional
- * commit and rollback behavior can be configured via the @Commit and @Rollback annotations.<br>
+ * commit and rollback behavior can be configured via the {@link Commit} and {@link Rollback} annotations.<br>
  *
  * @author Valentine Shemyako
  * @since January 03, 2019
  */
-public class Q019testrollbackpolicy {
+public class TestRollbackPolicy {
 }

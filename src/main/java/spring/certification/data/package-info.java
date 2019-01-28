@@ -35,7 +35,7 @@
  * 17. What does declarative transaction management mean? {@link spring.certification.data.q017.DeclarativeTransactionManagement link}<br>
  * 18. What is the default rollback policy? How can you override it? {@link spring.certification.data.q018.DefaultRollbackPolicy link}<br>
  * 19. What is the default rollback policy in a JUnit test, when you use the @RunWith(SpringJUnit4ClassRunner.class) in
- * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?{@link spring.certification.data.Q019testrollbackpolicy link}<br>
+ * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?{@link spring.certification.data.q019.TestRollbackPolicy link}<br>
  * 20. Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern? {@link spring.certification.data.Q020autocommit link}<br>
  * <p>
  * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.Q021jpa link}<br>
