@@ -1,5 +1,7 @@
 package spring.certification.data;
 
+import spring.certification.data.q023.CentralJpaBean;
+
 /**
  * Spring v5.0 Professional Certification.
  * <p>
@@ -8,7 +10,7 @@ package spring.certification.data;
  * How does Spring Boot make this easier?<br>
  * <p>
  * Answer:<br>
- * Please take a look at {@link Q023entitymanagerfactory} and related integration tests which explain how to configure
+ * Please take a look at {@link CentralJpaBean} and related integration tests which explain how to configure
  * JPA in Spring application.<br>
  * <p>
  * Spring Boot framework provides specific starter jar (<b>spring-boot-starter-data-jpa</b>) which aggregates JPA

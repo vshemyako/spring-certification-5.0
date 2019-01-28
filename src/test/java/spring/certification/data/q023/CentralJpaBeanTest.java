@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q023;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
  */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = EmbeddedDBConfiguration.class)
-public class Q023entitymanagerfactoryTest {
+public class CentralJpaBeanTest {
 
     @PersistenceUnit
     private EntityManagerFactory entityManagerFactory;
@@ -41,7 +41,7 @@ public class Q023entitymanagerfactoryTest {
         criteriaQuery.select(criteriaBuilder.count(criteriaQuery.from(Holiday.class)));
 
         long entitiesCount = entityManager.createQuery(criteriaQuery).getSingleResult();
-        assertEquals(4, entitiesCount);
+        assertEquals(5, entitiesCount);
     }
 
     /**

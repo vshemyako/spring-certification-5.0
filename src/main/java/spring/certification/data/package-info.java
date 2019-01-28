@@ -41,9 +41,9 @@
  * 21.1. What does JPA stand for - what about ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
  * 21.2. What is the idea behind an ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
  * 21.3. What are benefits/disadvantages of ORM? {@link spring.certification.data.q021.JpaOrmTerms link}<br>
- * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both? {@link spring.certification.data.Q022entitymanager link}<br>
- * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.Q022entitymanager link}<br>
- * 23. What do you need to do in Spring if you would like to work with JPA? {@link spring.certification.data.Q023entitymanagerfactory link}<br>
+ * 22.1. What is a PersistenceContext and what is an EntityManager. What is the relationship between both? {@link spring.certification.data.q022.EntityManagerTerm link}<br>
+ * 22.2. Why do you need the @Entity annotation. Where can it be placed? {@link spring.certification.data.q022.EntityManagerTerm link}<br>
+ * 23. What do you need to do in Spring if you would like to work with JPA? {@link spring.certification.data.q023.CentralJpaBean link}<br>
  * 24. Are you able to participate in a given transaction in Spring while working with JPA? {@link spring.certification.data.Q024transactionparticipation link}<br>
  * 25. Which PlatformTransactionManager(s) can you use with JPA? {@link spring.certification.data.Q025jpatransaction link}<br>
  * 26. What does @PersistenceContext do? {@link spring.certification.data.Q026persistencecontext link}<br>
