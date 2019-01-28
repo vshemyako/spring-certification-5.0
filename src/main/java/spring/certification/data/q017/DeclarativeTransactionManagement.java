@@ -1,4 +1,4 @@
-package spring.certification.data;
+package spring.certification.data.q017;
 
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,5 +16,5 @@ import org.springframework.transaction.annotation.Transactional;
  * @author Valentine Shemyako
  * @since January 06, 2019
  */
-public class Q017declarative {
+public class DeclarativeTransactionManagement {
 }

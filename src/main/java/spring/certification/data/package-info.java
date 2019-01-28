@@ -32,7 +32,7 @@
  * same object instance? {@link spring.certification.data.q015.InnerTransactionalCalls link}<br>
  * 16.1. Where can the @Transactional annotation be used? {@link spring.certification.data.q016.TransactionalAnnotation link}<br>
  * 16.2. What is a typical usage if you put it at class level? {@link spring.certification.data.q016.TransactionalAnnotation link}<br>
- * 17. What does declarative transaction management mean? {@link spring.certification.data.Q017declarative link}<br>
+ * 17. What does declarative transaction management mean? {@link spring.certification.data.q017.DeclarativeTransactionManagement link}<br>
  * 18. What is the default rollback policy? How can you override it? {@link spring.certification.data.Q018rollbackpolicy link}<br>
  * 19. What is the default rollback policy in a JUnit test, when you use the @RunWith(SpringJUnit4ClassRunner.class) in
  * JUnit 4 or @ExtendWith(SpringExtension.class) in JUnit 5, and annotate your @Test annotated method with @Transactional?{@link spring.certification.data.Q019testrollbackpolicy link}<br>
