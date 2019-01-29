@@ -20,12 +20,11 @@ package spring.certification.rest;
  * 5. Layered system<br>
  * 6. Code on demand<br>
  * <p>
- * <p>
  * Each REST principle in more details:<br>
  * 1. <b>Uniform interface</b> is build upon the following things:<br>
- * - Each resource is uniquely identified using <b>URIs</b>. Those resource are conceptually separate from representations
+ * - Each resource is uniquely identified using <b>URIs</b>. Those resources are conceptually separate from representations
  * which are sent to the client (not db record is sent, but some JSON, XML or other representation).<br>
- * - Manipulation of resources is done through representations. Client, holding an representation with some attached
+ * - Manipulation of resources is done through representations. Client, holding a representation with some attached
  * metadata has enough information to somehow modify this resource on the server (in case client has permission to do so).<br>
  * - Messages which are sent to the client, are self-descriptive, e.g. http message media type gives a client enough
  * info about how to process (parse) resource representation which is sent along.<br>

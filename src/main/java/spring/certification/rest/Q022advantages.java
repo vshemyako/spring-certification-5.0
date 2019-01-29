@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  * What are the advantages of the RestTemplate?<br>
  * <p>
  * Answer:<br>
- * - Possibility to specify different HTTP library which will be used by {@link RestTemplate}.<br>
+ * - Possibility to specify a different HTTP library which will be used by {@link RestTemplate}.<br>
  * - High level API with lots of convenient methods: {@link RestTemplate#getForObject}, {@link RestTemplate#postForLocation}, etc.<br>
  * - Support of URI templates and URI template variables (specified within curly braces, e.g. /{name}).<br>
  * - URIs are automatically encoded (e.g. /hotel list will be encoded to /hotel%20list).<br>

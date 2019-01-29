@@ -31,7 +31,7 @@ import org.springframework.web.servlet.View;
  * Common usage is to serialize object to a <b>JSON</b> view. To minimize usage of {@link ResponseBody}
  * one might find helpful to annotate a class with {@link RestController} annotation which is a
  * compound annotation consisting of {@link Controller} and {@link ResponseBody} annotations, applied
- * to each level defined within annotated class.
+ * to each method defined within annotated class.
  *
  * @author Valentine Shemyako
  * @since January 16, 2019
