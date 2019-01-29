@@ -11,7 +11,7 @@ package spring.certification.mvc;
  * appropriate spring-mvc-controller. To decide which controller to send request to dispatcher servlet consults
  * one or more handler mappings. The main purpose of a dispatcher-servlet usage is to centralize security functionality
  * and error-handling functionality.<br>
- * Spring framework allows to defined multiple dispatcher servlet, each containing its own set of handler mappings,
+ * Spring framework allows to defined multiple dispatcher servlets, each containing its own set of handler mappings,
  * application context, spring-mvc-controllers.<br>
  *
  * @author Valentine Shemyako

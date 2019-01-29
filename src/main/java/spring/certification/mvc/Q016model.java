@@ -13,7 +13,7 @@ import org.springframework.web.servlet.View;
  * Answer:<br>
  * <b>{@link Model}</b> is a data displayed by a <b>{@link View}</b>. Once a controller
  * completes request processing - the model should contain all the data to display. Model
- * should not perform any data access and business logic, or in any case depend on
+ * should not perform any data access / business logic, or in any case be dependent on
  * web-framework. In Spring Mvc framework {@link Model} is envisioned and implemented
  * as a key-value collection (more specifically a {@link Map}).<br>
  *

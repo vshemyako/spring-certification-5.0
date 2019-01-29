@@ -22,7 +22,7 @@ import org.springframework.web.servlet.ViewResolver;
  * to return already set {@link View} object.<br>
  * 2.1. If {@link View} object wasn't determined in #1 - {@link ServletException} is thrown.<br>
  * 2.1. In case {@link View} object is determined - it is given a model object to actually
- * render the itself ({@link View} is invoked).<br>
+ * render itself ({@link View#render} is invoked).<br>
  *
  * @author Valentine Shemyako
  * @since January 16, 2019

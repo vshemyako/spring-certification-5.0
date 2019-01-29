@@ -9,8 +9,8 @@ import org.springframework.web.servlet.support.AbstractDispatcherServletInitiali
  * Is the DispatcherServlet instantiated via an application context?<br>
  * <p>
  * Answer:<br>
- * DispatcherServlet is instatiated by a servlet container. Each dispatcher servlet has its own context
- * which is instatiated along with each servlet. In particular such instantiation pattern is implemented
+ * DispatcherServlet is instantiated by a servlet container. Each dispatcher servlet has its own context
+ * which is instantiated along with each servlet. In particular such instantiation pattern is implemented
  * by {@link AbstractDispatcherServletInitializer#registerDispatcherServlet} method. This initializer
  * is also responsible for root application context bootstrapping which is shared among all servlet registered
  * within the application.<br>
