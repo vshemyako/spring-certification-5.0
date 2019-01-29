@@ -23,6 +23,9 @@ import org.aspectj.lang.annotation.Before;
  * 5. {@link Around} - advice that surrounds execution of a join point. Custom logic can be executed before and after
  * a join point. Join point can be invoked one, many or none times.<br>
  * <p>
+ * Note:<br>
+ * {@link AfterReturning} and {@link AfterThrowing} advice types have additional annotation attributes {@link AfterReturning#returning()}, {@link AfterThrowing#throwing()}
+ * which are used to bing return value / thrown exception to advice method parameters.<br>
  * Examples of mentioned terms:<br>
  * {@link spring.certification.aop.q005.example} - lots of examples of advice usages, test module verifies behavior.<br>
  *

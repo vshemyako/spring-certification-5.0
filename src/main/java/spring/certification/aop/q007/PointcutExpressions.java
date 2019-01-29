@@ -18,7 +18,7 @@ import spring.certification.aop.q007.example.ExecutionMatcher;
  * have {@code void} return type.<br>
  * Valid designators are:<br>
  * <b>execution</b> - matches method execution points.<br>
- * Pattern: [access-modifier] [return-type] [package].[class].[method]([parameters]) [throws exceptions]<br>
+ * Pattern: [access-modifier] (return-type) [package].[class].(method)([parameters]) [throws exceptions]<br>
  * <b>within</b> - matches method execution in specific class.<br>
  * Pattern: [package].[class]<br>
  * <b>@within</b> - matches method execution in a class annotated with specific annotation.<br>
