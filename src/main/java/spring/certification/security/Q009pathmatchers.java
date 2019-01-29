@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 1. {@link MvcRequestMatcher} is used for {@link RequestMapping} processing. Thus pattern matching both in
  * mvc module and security module will yield the same result.<br>
  * 2. {@link MvcRequestMatcher} implicitly adds .* suffix pattern matching
- * (e.g. /profile will also match /profile.pdf, /profile.csv, etc.)<br>
+ * (e.g. /profile will also match /profile/, /profile.pdf, /profile.csv, etc.)<br>
  *
  * @author Valentine Shemyako
  * @since January 17, 2019
