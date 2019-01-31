@@ -60,6 +60,9 @@
  * Below follows some questions which were written by myself to clarify IoC workings.<br>
  * 40. What well-known dependencies are automatically resolved without manual set-up? {@link spring.certification.ioc.advanced.q040.AutoRegisteredBeans link}<br>
  * 41. What will happen if bean wiring will be applied to beans of different scopes (e.g. singleton bean depends on prototype bean)? {@link spring.certification.ioc.advanced.q041.DifferentScopeWiring link}
+ * 42. What happens if several beans with the same name are defined with application context? {@link spring.certification.ioc.advanced.q042.NamingConflicts link}<br>
+ * 43. Does @Configuration class require no-args default constructor? {@link spring.certification.ioc.advanced.q043.NoArgsConfigConstructor link}<br>
+ * 44. Application context detect circular dependencies in case A bean is dependent on B bean and B bean is dependent on A bean. How to resolve this circular dependency? {@link spring.certification.ioc.advanced.q044.CircularDependency link}<br>
  *
  * @author Valentine Shemyako
  * @since November 17, 2018

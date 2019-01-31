@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Conditional;
  * {@link Conditional} annotation along with {@link Condition} interface offer infinite
  * possibilities to define what can actually affect Spring Boot autoconfiguration (it is
  * only limited by the Java language itself). The most basic cases, which are used almost
- * by every autoconfiguration Spring Boot class, are listed in {@link Q004autoconfiguration autoconfiguration question}.<br>
+ * by every autoconfiguration Spring Boot class, are listed in the {@link Q004autoconfiguration autoconfiguration question}.<br>
  *
  * @author Valentine Shemyako
  * @since January 21, 2019
