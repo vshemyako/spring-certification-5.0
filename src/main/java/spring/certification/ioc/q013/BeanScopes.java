@@ -21,7 +21,7 @@ import spring.certification.ioc.q013.example.ScopeConfiguration;
  * 2. Prototype scope - bean definition is used to create any number of beans that is requested. This is actually a
  * 'rough' replacement for the Java 'new' operator.<br>
  * <p>
- * Additional web-application scopes:
+ * Additional web-application scopes:<br>
  * 3. Request scope - bean definition is used to create a bean for each HTTP request ({@link RequestScope} annotation).<br>
  * 4. Session scope - bean definition is used to create a bean for each HTTP session ({@link SessionScope} annotation).<br>
  * 5. Application scope - bean definition is used to create a bean for the lifecycle of a ServletContext ({@link ApplicationScope} annotation).<br>

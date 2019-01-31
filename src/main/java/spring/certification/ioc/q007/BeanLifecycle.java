@@ -7,9 +7,9 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
-import spring.certification.ioc.q017.BeanCustomization;
-import spring.certification.ioc.q018.BeanLifecycleCallbacks;
-import spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks;
+import spring.certification.ioc.q017.example.AlcoholicPostProcessor;
+import spring.certification.ioc.q018.example.LibraryConfiguration;
+import spring.certification.ioc.q019.example.CinemaConfiguration;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -38,11 +38,11 @@ import spring.certification.ioc.q019.JSR250BeanLifecycleCallbacks;
  * 7.3. {@link Bean#destroyMethod()}
  * <p>
  * Examples of mentioned terms:<br>
- * {@link BeanCustomization.AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
+ * {@link AlcoholicPostProcessor} - example of a post-processor which substitutes bean with completely different
  * instance.<br>
- * {@link BeanLifecycleCallbacks.LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
+ * {@link LibraryConfiguration} - example of {@link Bean#initMethod()} and {@link Bean#destroyMethod()} annotation
  * type elements usage<br>
- * {@link JSR250BeanLifecycleCallbacks.CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
+ * {@link CinemaConfiguration} - example of {@link PostConstruct} and {@link PreDestroy} annotations.<br>
  *
  * @author Valentine Shemyako
  * @since November 23, 2018

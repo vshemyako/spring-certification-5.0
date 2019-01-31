@@ -5,7 +5,6 @@ import static org.junit.Assert.fail;
 
 import java.time.Duration;
 import java.time.Period;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -68,6 +67,15 @@ public class JavaBeanNameConfigTest {
         assertNotNull(thirtyMinutes);
         Duration halfAnHour = context.getBean("halfAnHour", Duration.class);
         assertNotNull(halfAnHour);
+    }
+
+    /**
+     * Verifies that stereotype classes have bean named within initial lowercase letter.
+     */
+    @Test
+    public void configurationClassBeanNameShouldBeLowerCased() {
+        JavaBeanNameConfig beanNameConfig = context.getBean("javaBeanNameConfig", JavaBeanNameConfig.class);
+        assertNotNull(beanNameConfig);
     }
 
     private void shouldFailToFindBean(String beanName) {

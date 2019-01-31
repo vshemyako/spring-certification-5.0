@@ -17,10 +17,15 @@ import spring.certification.ioc.q029.example.LeadDeveloperProductionConfiguratio
  * profile configuration is build upon {@link Profile} annotation.<br>
  * Application use cases:<br>
  * 1. Different application environments: development, testing, production. Each of those may require different beans
- * (e.g. database connections).<br>
+ * (e.g. datasource objects).<br>
  * 2. Performance measurement (isn't required when application has been already deployed on production system).<br>
  * 3. Different application behavior which depends on user/client type.<br>
  * <p>
+ * Additional note:<br>
+ * It also possible to control active / default profiles using Spring properties:<br>
+ * - spring.profiles.active - to specify active profile (comma separated values for multiple profiles)<br>
+ * - spring.profiles.default - default profile if none is active<br>
+ *
  * Examples of mentioned terms:<br>
  * {@link DevelopmentConfiguration}, {@link LeadDeveloperProductionConfiguration} - demonstrates usage of {@link Profile} annotation.
  *

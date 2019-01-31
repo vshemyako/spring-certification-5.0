@@ -23,7 +23,7 @@ import spring.certification.ioc.q027.BeanNaming;
  * <p>
  * In case {@link Bean} method is used within {@link Configuration} class it is processed by Spring IoC container
  * in a <b>full mode</b>. The <b>full mode</b> processing means that {@link Bean} methods can declare inter-dependencies
- * which will be intercept by Spring IoC container.<br>
+ * which will be intercepted by Spring IoC container.<br>
  * In case {@link Bean} method is used within {@link Component} class it is processed by Spring IoC container in a <b>lite
  * mode</b>. The <b>lite mode</b> means that internal calls between {@link Bean} methods are not intercepted by Spring IoC
  * container.

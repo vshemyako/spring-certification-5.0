@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Configuration;
  * Describe dependency injection using Java configuration.<br>
  * <p>
  * Answer:
- * Dependency injection using Java annotation is based on two central annotations:<br>
+ * Dependency injection using Java annotations is based on two central annotations:<br>
  * 1. {@link Bean} - indicates that annotated method produces a bean to be managed by the Spring container<br>
- * 2. {@link Configuration} - indicates that a class declares one or more {@link Bean} methods<br>
+ * 2. {@link Configuration} - indicates that a class declares one or more {@link Bean} methods. Configuration class itself is also created as a managed bean instance.<br>
  * <p>
  * For stand-alone applications such java-based configuration classes could be loaded into
  * {@link AnnotationConfigApplicationContext} class instance.

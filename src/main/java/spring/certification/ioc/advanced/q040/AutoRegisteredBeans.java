@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.MessageSource;
+import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
 
 /**
@@ -20,6 +21,7 @@ import org.springframework.core.io.ResourceLoader;
  * - {@link ResourceLoader}<br>
  * - {@link ApplicationEventPublisher}<br>
  * - {@link MessageSource}<br>
+ * - {@link Environment}<br>
  * <p>
  * {@link Autowired} annotation can be used for all of the well-known interfaces described above.<br>
  *

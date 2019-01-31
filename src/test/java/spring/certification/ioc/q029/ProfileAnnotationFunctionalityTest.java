@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import spring.certification.ioc.q029.example.DevelopmentConfiguration;
 import spring.certification.ioc.q029.example.LeadDeveloperProductionConfiguration;
@@ -74,6 +75,24 @@ public class ProfileAnnotationFunctionalityTest {
         public void shouldRegisterPasswordBean() {
             String password = context.getBean("password", String.class);
             assertThat("HighFive").isEqualTo(password);
+        }
+    }
+
+    /**
+     * Verifies that it's possible to specify default / active profile using properties.
+     */
+    @RunWith(SpringRunner.class)
+    @ContextConfiguration(classes = DevelopmentConfiguration.class)
+    @TestPropertySource(properties = "spring.profiles.active=production")
+    public static class PropertiesProfileTest {
+
+        @Autowired
+        private ApplicationContext context;
+
+        @Test
+        public void shouldRegisterStartupMessage() {
+            String startupMessage = context.getBean("startupMessage", String.class);
+            assertThat("Success!").isEqualTo(startupMessage);
         }
     }
 }
