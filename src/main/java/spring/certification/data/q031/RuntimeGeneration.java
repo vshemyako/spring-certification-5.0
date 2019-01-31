@@ -25,7 +25,7 @@ import org.springframework.data.repository.query.parser.PartTree;
  * - to a default {@link SimpleJpaRepository} implementation (in case JPA repositories are used)<br>
  * <p>
  * The order of {@link Query} and {@link PartTree} routing can be changed by specifying another
- * {@link QueryLookupStrategy} enum passed to {@link EnableJpaRepositories} annotation.<br>
+ * {@link QueryLookupStrategy} enum passed to {@link EnableJpaRepositories#queryLookupStrategy()} annotation's attribute.<br>
  *
  * @author Valentine Shemyako
  * @since January 10, 2019

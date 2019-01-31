@@ -19,7 +19,7 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
  * 2. application managed entity-manager factory - factory is managed directly by application.
  * {@link LocalEntityManagerFactoryBean} is a Spring Framework implementation of such a bean.<br>
  * <p>
- * Important note: for Spring-based applications difference between those kinds of factories is minor: in each case
+ * <b>Important note</b>: for Spring-based applications difference between those kinds of factories is minor: in each case
  * Spring Framework manages entity-manager factories by itself. The main difference is how those factories are configured:
  * application-managed factory configuration is primarily xml-based (using persistence.xml file).<br>
  * <p>

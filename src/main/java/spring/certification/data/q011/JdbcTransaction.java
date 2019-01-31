@@ -1,11 +1,10 @@
 package spring.certification.data.q011;
 
+import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
-
-import javax.sql.DataSource;
 
 /**
  * Spring v5.0 Professional Certification.
@@ -17,7 +16,7 @@ import javax.sql.DataSource;
  * It's possible to participate in database transaction using {@link JdbcTemplate} both programmatically (using
  * {@link TransactionTemplate}) and declaratively (using {@link Transactional} annotation). Both of these approaches
  * are examined in related test section.<br>
- * Another approach which actually relates to some third-party or legacy code is to wrap injected {@link DataSource}
+ * Another approach which is usually used with some third-party or legacy code is to wrap injected {@link DataSource}
  * instance with {@link TransactionAwareDataSourceProxy} object.<br>
  *
  * @author Valentine Shemyako

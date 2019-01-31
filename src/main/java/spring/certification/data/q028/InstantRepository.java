@@ -15,7 +15,7 @@ import org.springframework.data.repository.RepositoryDefinition;
  * is offered by 'spring-data-jpa' module.<br>
  * <p>
  * In order to utilize this functionality the following steps must be taken:<br>
- * - {@link Configuration} class has also be marked with Enable[Jpa]Repositories annotation.<br>
+ * - {@link Configuration} class has also be marked with <code>Enable[Jpa]Repositories</code> annotation.<br>
  * - custom repository interface has to extend {@link Repository} interface, or has to be marked with {@link RepositoryDefinition}
  * annotation.<br>
  *

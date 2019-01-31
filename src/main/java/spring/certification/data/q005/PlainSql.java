@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
  * Can you execute a plain SQL statement with the JDBC template?<br>
  * <p>
  * Answer:<br>
- * It seems that 'plain SQL' term is a bit vague, meaning that SQL string is executed as 'native' database string,
+ * It seems that 'plain SQL' term is a bit vague, meaning that SQL string is executed as is ('native' database string),
  * without additional processing or conversion by database-access framework. Actually the whole purpose of {@link JdbcTemplate}
  * is to execute SQL string as they are.<br>
  * The following methods allow to execute plain SQL statements (among many others):<br>

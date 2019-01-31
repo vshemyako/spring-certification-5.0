@@ -23,6 +23,7 @@ import org.springframework.dao.DataAccessException;
  * there's little a program can do with them at runtime.<br>
  * <p>
  * Very often (even in JDK) checked exceptions are used in cases where little can be done in case such an exception is thrown.
+ * (actually code behaves more like in case of unchecked exceptions).
  * As a consequence client's code is scattered with catch blocks which do not do anything useful. JDBC native library is a
  * good example where such exceptions were used inappropriately.<b>
  * Therefore Spring framework prefers unchecked exceptions which do not clutter client's code and, if needed, can also

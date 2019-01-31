@@ -17,7 +17,7 @@ import spring.certification.data.q004.example.CallbackExample;
  * - {@link org.springframework.jdbc.core.CallableStatementCreator} - is used for executing stored procedures<br>
  * - {@link org.springframework.jdbc.core.PreparedStatementCreator} - is used for repeatable executing of pre-compiled
  * SQL statements<br>
- * - {@link org.springframework.jdbc.core.RowCallbackHandler} - is used for mapping ResultSet results on one-row basis<br>
+ * - {@link org.springframework.jdbc.core.RowCallbackHandler} - is used for mapping ResultSet results on per-row basis<br>
  * <p>
  * Examples of mentioned terms:<br>
  * {@link CallbackExample} - demonstrates a basic usage of callback function.<br>

@@ -26,7 +26,7 @@ import org.springframework.jdbc.core.RowMapper;
  * <b>Big note</b>: quite often programmers expect <code>null</code> to be returned by query methods, but instead
  * {@link JdbcTemplate} will throw {@link DataAccessException} in case of empty result set.<br>
  * Examples of mentioned terms:<br>
- * Look at corresponding unit test section.<br>
+ * Look at the corresponding unit test section.<br>
  *
  * @author Valentine Shemyako
  * @since December 22, 2018

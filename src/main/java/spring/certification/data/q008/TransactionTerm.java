@@ -10,9 +10,10 @@ package spring.certification.data.q008;
  * Answer:<br>
  * A transaction is a unit of work that you want to treat as 'a whole'. It has to either happen in full or not at all.<br>
  * Transaction has to follow the following principles (ofter referred as ACID principles):<br>
- * - Atomicity - guaranties that all transaction-related operations are done, or none of them are done<br>
+ * - Atomicity - guaranties that all transaction-related operations are done, or none of them is done<br>
  * - Consistency - guaranties that none of the data constraints will be ever violated<br>
- * - Isolation - guaranties that one transaction cannot read data from another transaction until the first one finishes<br>
+ * - Isolation - guaranties that one transaction cannot read data from another transaction until the first one finishes
+ * (actually behavior is dependent on currently used isolation level)<br>
  * - Durability - guaranties that after a transaction completes - it is somehow reliably stored (e.g. on the hard drive)<br>
  * <p>
  * - <b>Local transactions</b> are transactions which work only with a single transactional resource (e.g. JDBC connection).<br>
