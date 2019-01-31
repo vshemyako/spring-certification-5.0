@@ -28,7 +28,7 @@ import org.springframework.core.Ordered;
  * defined by {@link Ordered} interface which has to be implemented too.<br>
  * <p>
  * It's important to remember that {@link BeanPostProcessor} beans are related to specific phase of application-context
- * initialization - they are instatiated as soon as possible to post-process all other 'normal' beans. Therefore, their
+ * initialization - they are instantiated as soon as possible to post-process all other 'normal' beans. Therefore, their
  * definition using java code should be done with the help of <b>static</b> factory methods which are loaded early.<br>
  * <p>
  * {@link BeanPostProcessor} and {@link BeanFactoryPostProcessor} are related in the sense that they both extend
