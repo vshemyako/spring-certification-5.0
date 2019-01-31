@@ -8,7 +8,7 @@ package spring.certification.aop.q002;
  * <p>
  * Answer:<br>
  * <b>An aspect</b> is a module (package) or a class which implements cross-cutting functionality of an application.<br>
- * <b>A join point</b> is a point of program execution where <b>aspect's</b> logic should be applied.<br>
+ * <b>A join point</b> is a point of program execution where <b>aspect's</b> logic cab be potentially applied.<br>
  * <b>An advice</b> is a logic applied at a specific <b>join point</b> implemented by an <b>aspect</b>.<br>
  * <b>A pointcut</b> is a logical expression (a predicate) which defines whether <b>an advice</b> should be applied at
  * a particular <b>join point</b> or not.<br>

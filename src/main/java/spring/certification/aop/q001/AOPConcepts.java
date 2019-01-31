@@ -34,7 +34,7 @@ package spring.certification.aop.q001;
  * - application monitoring<br>
  * <p>
  * <b>Problems without AOP</b>:<br>
- * 1. Business and non-business logic are mixed. Code is harder to maintain and understand.<br>
+ * 1. Business and non-business logic gets mixed. Code is harder to maintain and understand.<br>
  * 2. Code duplication, which otherwise could be moved to a separate class or package.<br>
  *
  * @author Valentine Shemyako

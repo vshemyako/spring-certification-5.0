@@ -18,7 +18,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * isn't yet integrated in Spring framework, therefore additional <b>AspectJ</b> dependency has to be added on the
  * application classpath.<br>
  * <p>
- * Note: plain java classes are not processed as aspect even though are marked with {@link Aspect} annotation - only
+ * <b>Note</b>: plain java classes are not processed as aspect even though are marked with {@link Aspect} annotation - only
  * {@link Bean} or stereotype classes are processed.<br>
  *
  * @author Valentine Shemyako

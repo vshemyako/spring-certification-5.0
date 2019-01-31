@@ -25,7 +25,7 @@ import org.aspectj.lang.annotation.Before;
  * <p>
  * Note:<br>
  * {@link AfterReturning} and {@link AfterThrowing} advice types have additional annotation attributes {@link AfterReturning#returning()}, {@link AfterThrowing#throwing()}
- * which are used to bing return value / thrown exception to advice method parameters.<br>
+ * which are used to bind return value / thrown exception to advice method parameters.<br>
  * Examples of mentioned terms:<br>
  * {@link spring.certification.aop.q005.example} - lots of examples of advice usages, test module verifies behavior.<br>
  *
