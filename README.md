@@ -6,5 +6,5 @@
 * [Spring Reference Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 * [Ivan Krizsan - Core Spring 5 Certification in Detail](https://leanpub.com/corespring5certificationindetail)
 
-#### As of 2019.02.01 I've successfully passed the exam with 94% score. As a general suggestion Ivan Krizsan's book and Spring Reference Documentation are the most valuable sources.
-#### Also, if you'd use this repository as a study guide - also look at [Spring Boot Web Application](https://github.com/vshemyako/spring-boot-web-application) and [Spring Web Application](https://github.com/vshemyako/web-application) repositories which cover some basic configuration and tests of Spring MVC and Spring Boot modules.
+#### As of 2019.02.01 I've successfully passed the exam with 94% score. As a general suggestion: Ivan Krizsan's book and Spring Reference Documentation are the most valuable sources.
+#### Also, if you'd use this repository as a study guide - look at [Spring Boot Web Application](https://github.com/vshemyako/spring-boot-web-application) and [Spring Web Application](https://github.com/vshemyako/web-application) repositories which cover some basic configurations and tests of Spring MVC and Spring Boot modules.
