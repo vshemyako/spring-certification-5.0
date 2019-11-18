@@ -11,7 +11,7 @@ public class StreamRedefiner {
      * Fields to redefine system streams.
      */
     protected final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-    protected final PrintStream predefinedOutputStream = System.out;
+    private final PrintStream predefinedOutputStream = System.out;
 
     /**
      * Substitutes system stream with 'dummy' byte array stream.

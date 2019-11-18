@@ -64,8 +64,8 @@ public class ProxyTypeConfigurationTest {
         @Before("execution(public void poseForPhoto())")
         public void applyMakeUp(JoinPoint joinPoint) {
             Object actualProxy = joinPoint.getThis();
-            assertThat(isAopProxy(actualProxy));
-            assertThat(isJdkDynamicProxy(actualProxy));
+            assertThat(isAopProxy(actualProxy)).isTrue();
+            assertThat(isJdkDynamicProxy(actualProxy)).isTrue();
         }
     }
 
@@ -79,8 +79,8 @@ public class ProxyTypeConfigurationTest {
         @Before("execution(public void playTheGuitar())")
         public void giveASignal(JoinPoint joinpoint) {
             Object actualProxy = joinpoint.getThis();
-            assertThat(isAopProxy(actualProxy));
-            assertThat(isCglibProxy(actualProxy));
+            assertThat(isAopProxy(actualProxy)).isTrue();
+            assertThat(isCglibProxy(actualProxy)).isTrue();
         }
     }
 }
